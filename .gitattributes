@@ -1,0 +1,18 @@
+# The LightGBM booster is a TEXT file that must keep LF endings. With
+# core.autocrlf=true (the Windows default) git rewrites it to CRLF on checkout
+# and LightGBM's parser then fails with
+#
+#   [LightGBM] [Fatal] Model format error, expect a tree here. met ...
+#
+# which adapter/ml_source.py catches: every tower silently falls back to the
+# physical noisy-OR index, `condition` reads null, and nothing at startup says
+# the served model is missing. The failure is invisible unless you read the
+# booster's own stderr.
+#
+# Checked out on Linux the file was always fine, so this only ever bit Windows
+# checkouts — which is exactly the sort of difference that makes a local
+# result and a deployed result disagree for no visible reason.
+data/malaysia/maintenance_model.txt -text
+
+# Same reason, pre-emptively: any future booster or model export.
+*.lgb -text

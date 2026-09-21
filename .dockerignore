@@ -1,0 +1,44 @@
+# Keeps the build context small and, more importantly, keeps secrets and local
+# state out of the image. The Dockerfile COPYs src/backend/ and data/ wholesale,
+# so anything excluded here is the only thing standing between a developer's
+# .env or .venv and a deployed container.
+
+.git
+.gitignore
+
+# Secrets. src/backend/.env holds ANTHROPIC_API_KEY and the GEE_* credentials;
+# it must never enter an image. Railway variables supply these instead.
+**/.env
+**/.env.*
+!**/.env.example
+
+# Virtualenvs and caches — platform-specific, and a Linux image cannot use a
+# Windows .venv anyway.
+**/.venv
+**/__pycache__
+**/*.pyc
+**/node_modules
+**/.vite
+src/frontend/dist
+
+# Re-fetchable provider responses (~700 MB when present). data/malaysia/.gitignore
+# already excludes these from git; repeat it here so a developer who has run the
+# producers locally does not ship them.
+data/malaysia/cache
+data/malaysia/observation_log.jsonl
+data/malaysia/maintenance_panel.csv
+
+# Not served by anything.
+notebooks
+docs
+outputs
+supabase
+*.pdf
+Makefile
+CLAUDE.md
+CLAUDE.original.md
+README.md
+implementation.md
+loops.md
+package-lock.json
+skills-lock.json

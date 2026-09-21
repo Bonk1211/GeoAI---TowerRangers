@@ -95,3 +95,94 @@ app.include_router(integrations.router)
 @app.get("/health")
 def health() -> dict:
     return {"status": "ok"}
+
+
+# --- Single-origin production serving (Railway) -----------------------------
+#
+# In development the browser talks to Vite, which proxies /api to this app and
+# strips the prefix (see src/frontend/vite.config.ts). In a one-service deploy
+# there is no Vite, so this app has to do both halves itself: answer the same
+# /api-prefixed requests the built bundle sends, and serve that bundle.
+#
+# The prefix is stripped in middleware rather than by mounting a second app,
+# because a mounted sub-app does not run its own lifespan — the map preloader
+# in `lifespan` above would silently never start. Rewriting the path keeps one
+# app, one lifespan, one router table, and leaves every route module's own
+# prefix untouched.
+#
+# STATIC_DIR is the Vite build output copied into the image. When it is absent
+# (any local checkout running `uvicorn api.main:app`) this whole block is inert
+# and the app behaves exactly as before.
+# Three of the frontend's client-side routes collide with real API paths —
+# /health (the router below AND Railway's healthcheck), /integrations and
+# /flood (the bundle's own PNGs live at /flood/*.png, while /flood/layers is a
+# route). A browser navigating to one of them must get the app shell; the
+# bundle asking for the same name under /api must get JSON. Both are resolved
+# here rather than by route registration order, which cannot see the
+# difference:
+#
+#   /api/<anything>  -> prefix stripped, routed as normal (JSON)
+#   a real file      -> served from disk (wins over any route of that name)
+#   anything else    -> index.html, so React Router owns the path
+#
+# Doing it in middleware, before routing, is what makes the file case win. It
+# also keeps one app and one lifespan — a mounted sub-app does not run its own,
+# so the map preloader in `lifespan` above would silently never start.
+#
+# STATIC_DIR is the Vite build copied into the image. Absent (any local
+# checkout running `uvicorn api.main:app` against Vite) this is all inert and
+# the app behaves exactly as before.
+import os
+import posixpath
+from pathlib import Path
+
+from fastapi.responses import FileResponse
+
+STATIC_DIR = Path(os.getenv("FRONTEND_DIST", Path(__file__).resolve().parents[1] / "static"))
+_STATIC_ROOT = STATIC_DIR.resolve() if STATIC_DIR.is_dir() else None
+
+
+def _static_file(path: str) -> Path | None:
+    """Resolve a URL path to a file inside STATIC_DIR, or None.
+
+    posixpath.normpath collapses any `..` before the join, and the result is
+    re-checked against the root, so a crafted path cannot escape the build
+    directory and read the data/ or config/ trees sitting beside it.
+    """
+    if _STATIC_ROOT is None:
+        return None
+    relative = posixpath.normpath(path.lstrip("/"))
+    if not relative or relative.startswith(("..", "/")):
+        return None
+    candidate = (_STATIC_ROOT / relative).resolve()
+    if _STATIC_ROOT not in candidate.parents:
+        return None
+    return candidate if candidate.is_file() else None
+
+
+@app.middleware("http")
+async def serve_spa(request, call_next):
+    path = request.scope["path"]
+
+    if path.startswith("/api/") or path == "/api":
+        # The prefix exists only so Vite knows what to forward in development;
+        # the routers below never see it. Strip it and route as normal.
+        request.scope["path"] = path[4:] or "/"
+        return await call_next(request)
+
+    if _STATIC_ROOT is not None and request.method in ("GET", "HEAD"):
+        file = _static_file(path)
+        if file is not None:
+            return FileResponse(file)
+
+        response = await call_next(request)
+        # Only a genuinely unclaimed path becomes a client-side route. A 404
+        # from a real API route (an unknown run_id, say) stays a 404, and a
+        # missing /assets/*.js stays a 404 too — serving index.html there
+        # returns HTML for a script request, which fails in the browser as a
+        # MIME error that reads like a bundler bug.
+        if response.status_code == 404 and not path.startswith("/assets/"):
+            return FileResponse(_STATIC_ROOT / "index.html")
+        return response
+
+    return await call_next(request)
