@@ -47,10 +47,7 @@ export interface Scenario {
   bounds: [number, number, number, number];
   floodExtents: FloodExtentFrame[];
   downTowerSelector: (towers: Tower[]) => string[];
-  /** Function over the live population, same reasoning as
-   *  `downTowerSelector` — see `selectGeneratorSites`'s own doc comment for
-   *  why it ranks by standing flood share rather than by the flood polygon
-   *  the down-tower selector uses. */
+  /** Higher-ground sites where civil crews pre-position backup power. */
   generatorSiteSelector: (towers: Tower[]) => string[];
 }
 
@@ -134,92 +131,44 @@ const FULL_EXTENT = ring([
   [116.038, 5.94],
 ]);
 
-/**
- * Selects the down towers by geography and band, never by hardcoded id.
- * "Highest flood exposure inside the flood footprint" — sorted by the
- * flood attribution share, so the scenario premise ("this is where the
- * flood hit") lines up with the risk index's own flood factor, which is
- * the honest connective tissue between "what the model already knew about
- * this ground" and "what the scenario says happened to it".
- *
- * Tested against `FULL_EXTENT`, not `SMALL_EXTENT` or `SCENARIO_BOUNDS`
- * (changed 2026-09-16, was SMALL_EXTENT). `SCENARIO_BOUNDS` is a loose
- * rectangle over the whole corridor, wide enough that a tower could pass it
- * while sitting nowhere near the blue shape the map actually draws.
- * SMALL_EXTENT alone only reaches the southern 7-tower sub-cluster, which
- * is too few to read as "41 towers down across 4 districts" even
- * approximately. `SABAH_FLOOD_SCENARIO.floodExtents` grows to FULL_EXTENT
- * at 26000ms, ahead of `tower-down`'s 27000ms — every down tower selected
- * here is guaranteed to sit inside whichever polygon is on screen at the
- * moment it goes OFFLINE, same invariant as before, just against the grown
- * extent rather than the small one.
- *
- * Decision band is `maintain`/`watch`/`ok` — measured live against
- * FULL_EXTENT, 25 of the 62 Sabah towers sit inside it, band mix
- * `ok`/`watch` (none `maintain` in this cluster). A flood scenario premise
- * is not the risk index's own claim about a tower ("this one needs
- * maintenance"); it is a stated external event, so a tower with a clean
- * model reading can still be picked as the flood's outage without that
- * being a contradiction — restricting to maintain/watch here would leave
- * the scenario with too few eligible towers on the current dataset.
- *
- * `MAX_DOWN_TOWERS = 12`, not 4 (2026-09-16). The real July 2024 event took
- * out 41 towers; this project's live Sabah population only has 25 OSM
- * points in the whole flood-affected corridor (OSM completeness, not real
- * deployment — see CLAUDE.md), so 41 is not reachable. 12 is roughly half
- * the full 25-tower cluster, which reads as "significant, multi-site
- * outage" on the map rather than the old 2-4, without claiming every
- * mapped tower in the corridor went down (a flood does not take out
- * literally 100% of a district's sites, and a scenario cap under the real
- * population size keeps that honest). The console's own `tower-down` beat
- * text states the real 41-tower/4-district figure as narration — this cap
- * governs only how many markers the map itself draws, not what the beat
- * claims happened.
- */
+/** Scenario capacity, not the historical event's tower count. */
 const MAX_DOWN_TOWERS = 12;
+// Match the four civil maintenance units visible before flood onset.
+const MAX_GENERATOR_SITES = 4;
 
-function selectDownTowers(towers: Tower[]): string[] {
-  const inFootprint = towers.filter(
-    (t) => t.territory === 'Sabah' && pointInPolygon(t.lon, t.lat, FULL_EXTENT),
-  );
-  return inFootprint
-    .slice()
-    .sort((a, b) => (b.attribution.flood ?? 0) - (a.attribution.flood ?? 0))
-    .slice(0, MAX_DOWN_TOWERS)
-    .map((t) => t.tower_id);
+/** Reuse the warning panel's low-ground threshold; this is an authored
+ * placement rule, not a measured flood depth or a field safety assessment. */
+function generatorSuitable(tower: Tower): boolean {
+  return Number.isFinite(tower.hand_m) && tower.hand_m! > 5;
 }
 
-/** Ceiling on generator markers drawn — the operator's own figure for this
- *  scenario ("Portable generators pre-positioned at 12 flood-prone
- *  sites"). Kept as its own constant rather than reusing `MAX_DOWN_TOWERS`:
- *  the two counts are unrelated quantities that happen to share a value
- *  here (both 12), and the 'generators' beat previously borrowed
- *  `downTowerCount` for its own `<n>` — narration coincidentally correct
- *  on this scenario, wrong in general (pre-positioning ahead of an event
- *  has no reason to match how many towers that event later takes down). */
-const MAX_GENERATOR_SITES = 12;
+function floodPriority(a: Tower, b: Tower): number {
+  return (b.attribution.flood ?? 0) - (a.attribution.flood ?? 0)
+    || a.tower_id.localeCompare(b.tower_id);
+}
 
-/**
- * Selects the sites for the 'generators' beat (T-24h, before the flood
- * extent exists at all) — deliberately NOT the same set `selectDownTowers`
- * picks. Real pre-positioning is a standing-risk decision made ahead of an
- * event, from the same STANDING flood-share ranking `urgency.py`'s
- * flood-coupled multiplier already treats as durable (see CLAUDE.md's "the
- * live forecast enters at urgency, never at risk" account) — not a lookup
- * against a flood polygon that, narratively, has not been drawn yet at
- * this beat's own timestamp. Ranked by `attribution.flood` share across
- * ALL of Sabah (not bounded to `FULL_EXTENT`), so a high-flood-share tower
- * outside this scenario's specific hand-authored polygon can still be a
- * legitimate pre-positioning site — pre-positioning is a fleet-wide policy
- * decision, not a reaction to this one scenario's footprint.
- */
+/** Low or unassessed ground cannot host a generator in this scenario.
+ * Select outages here so map marks, dispatch and drone coverage all agree. */
+function selectDownTowers(towers: Tower[]): string[] {
+  return towers
+    .filter(t => t.territory === 'Sabah' && pointInPolygon(t.lon, t.lat, FULL_EXTENT)
+      && !generatorSuitable(t))
+    .sort(floodPriority)
+    .slice(0, MAX_DOWN_TOWERS)
+    .map(t => t.tower_id);
+}
+
+/** Civil crews prepare higher-ground sites within this flood corridor.
+ * Missing terrain data never establishes suitability for backup power. */
 function selectGeneratorSites(towers: Tower[]): string[] {
-  const sabah = towers.filter((t) => t.territory === 'Sabah');
-  return sabah
-    .slice()
-    .sort((a, b) => (b.attribution.flood ?? 0) - (a.attribution.flood ?? 0))
+  return towers
+    // Operator excluded this northern Telipok/Menggatal site from generator placement.
+    .filter(t => t.tower_id !== 'MY_N12462360044')
+    .filter(t => t.territory === 'Sabah' && pointInPolygon(t.lon, t.lat, FULL_EXTENT)
+      && (t.attribution.flood ?? 0) > 0 && generatorSuitable(t))
+    .sort(floodPriority)
     .slice(0, MAX_GENERATOR_SITES)
-    .map((t) => t.tower_id);
+    .map(t => t.tower_id);
 }
 
 const SCENARIO_BOUNDS: [number, number, number, number] = [115.95, 5.82, 116.2, 6.12];

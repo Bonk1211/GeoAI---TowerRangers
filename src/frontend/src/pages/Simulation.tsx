@@ -11,6 +11,7 @@ import { SimulationSummary } from '../components/simulation/SimulationSummary';
 import { useSimulationBackendBeats } from '../components/simulation/useSimulationBackendBeats';
 import { useSimulation } from '../state/useSimulation';
 import { useSimulationRoads } from '../components/simulation/useSimulationRoads';
+import { FLOOD_PRIORITY_MS } from '../lib/simulationVisuals';
 import './Simulation.css';
 
 export function Simulation() {
@@ -19,7 +20,7 @@ export function Simulation() {
   const [cinematic, setCinematic] = useState(true);
   const roads = useSimulationRoads();
   const elapsedMs = useSimulation(s => Math.floor(s.elapsedMs / 1000) * 1000);
-  const stage = elapsedMs < 15000 ? 0 : elapsedMs < 40000 ? 1 : elapsedMs < 54000 ? 2 : elapsedMs < 88000 ? 3 : 4;
+  const stage = elapsedMs < FLOOD_PRIORITY_MS ? 0 : elapsedMs < 40000 ? 1 : elapsedMs < 54000 ? 2 : elapsedMs < 88000 ? 3 : 4;
 
   return (
     <div className="simulation-page flex h-full min-h-0 flex-col">

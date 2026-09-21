@@ -1,3 +1,5 @@
+import { FLOOD_PRIORITY_MS } from './simulationVisuals.ts';
+
 export interface SimulationCameraPose {
   center: [number, number];
   zoom: number;
@@ -9,9 +11,8 @@ interface CameraTargets {
   site: [number, number];
   maintenance: { center: [number, number]; zoom: number };
   assessment: { center: [number, number]; zoom: number };
+  flood: { center: [number, number]; zoom: number };
   response: { center: [number, number]; zoom: number };
-  responseSite: [number, number];
-  closure?: [number, number];
 }
 
 /** Shot timing uses only scenario time, so pausing and seeking reproduce the same pose. */
@@ -22,10 +23,9 @@ export function simulationCameraAt(elapsedMs: number, targets: CameraTargets, re
   const shots = [
     { at: 0, center: site, zoom: 13.3, pitch: 60, bearing: -28 },
     { at: 6_000, center: corridor, zoom: 11.05, pitch: 48, bearing: -16 },
+    { at: FLOOD_PRIORITY_MS, ...targets.assessment, pitch: 60, bearing: -12 },
     { at: 15_000, ...maintenance, pitch: 54, bearing: -12 },
-    { at: 27_000, ...targets.assessment, pitch: 60, bearing: -12 },
-    { at: 40_000, center: corridor, zoom: 11.15, pitch: 50, bearing: 48 },
-    { at: 47_000, center: targets.closure ?? site, zoom: targets.closure ? 15.3 : 12.8, pitch: 57, bearing: 64 },
+    { at: 24_000, ...targets.flood, pitch: 52, bearing: -12 },
     { at: 54_000, ...response, pitch: 54, bearing: 32 },
     { at: 88_000, center: corridor, zoom: 11.05, pitch: 48, bearing: 12 },
     { at: 92_000, center: site, zoom: 12.2, pitch: 60, bearing: -28 },

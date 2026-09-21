@@ -22,6 +22,7 @@ export function useSimulationRoads() {
   const optimizeRun = useSimulation(s => s.optimizeRun);
   const emergencyRun = useSimulation(s => s.emergencyRun);
   const downIds = useSimulation(s => s.downTowerIds);
+  const generatorIds = useSimulation(s => s.generatorSiteIds);
   const weights = useWeights(s => s.weights);
   const { towers } = useLiveTowers(weights);
   const { data: crews = [] } = useCrewsQuery();
@@ -41,13 +42,13 @@ export function useSimulationRoads() {
     // inside the road network this simulation loads. `floodExtentAt(26_000)`
     // is the same FULL_EXTENT the down-tower selector tests against.
     const corridor = floodExtentAt(26_000);
-    const hardening = simulationHardeningLegs(towers, crews, optimizeRun?.horizon?.[0] ?? '',
+    const hardening = simulationHardeningLegs(towers.filter(tower => generatorIds.has(tower.tower_id)), crews, optimizeRun?.horizon?.[0] ?? '',
       corridor ? (lon, lat) => pointInPolygon(lon, lat, corridor) : undefined);
     // Falls back to the plain optimizer legs rather than emptying the
     // pre-event map — if no Sabah tower carries a flood share, the honest
     // picture is the real assignments, not a blank frame.
     return hardening.length ? hardening : saved;
-  }, [responsePlan, emergencyRun, optimizeRun, crews, towers, downIds]);
+  }, [responsePlan, emergencyRun, optimizeRun, crews, towers, downIds, generatorIds]);
   const requests = simulationRoadRequests(planned);
   const blocked = elapsedMs >= 24_000 && elapsedMs < 88_000 ? network.data?.blocked_edge_ids ?? [] : [];
   // Keep the same assessed geometry through both flood onset and restoration.

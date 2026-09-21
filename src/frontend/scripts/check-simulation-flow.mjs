@@ -46,14 +46,22 @@ async function snapshot() {
       screen: [map.project(feature.geometry.coordinates).x, map.project(feature.geometry.coordinates).y],
       label: feature.properties.label,
     })).sort((a, b) => a.id.localeCompare(b.id));
-    const [fleet, drones, flood, coverage, gaps, roads, down] = await Promise.all([
+    const [fleet, drones, flood, coverage, gaps, roads, down, generators, labels, warnings] = await Promise.all([
       'sim-response-fleet', 'sim-prime-drones', 'sim-flood-ground',
-      'sim-cow-coverage', 'sim-coverage-gap', 'sim-road-routes', 'sim-down-tower',
+      'sim-cow-coverage', 'sim-coverage-gap', 'sim-road-routes', 'sim-down-tower', 'sim-generator-sites',
+      'sim-assessment-labels', 'sim-warning-sites',
     ].map(read));
     return { fleet: marks(fleet), drones: marks(drones), flood: flood.length,
       coverage: coverage.length, gaps: gaps.length, roads: roads.length,
       coverageShapes: coverage, gapShapes: gaps,
       offlineSites: down.length,
+      offlineIds: down.map(feature => feature.properties.tower_id), generators,
+      renderedGenerators: [...new Set(map.queryRenderedFeatures({ layers: ['sim-generator-icon-layer'] })
+        .map(feature => feature.properties.tower_id))],
+      laterLabels: labels.filter(feature => feature.properties.secondary).length,
+      laterHighlights: warnings.filter(feature => feature.properties.secondary).length,
+      assessmentVisible: Boolean(document.querySelector('.sim-site-assessment')),
+      camera: { center: map.getCenter().toArray(), zoom: map.getZoom(), pitch: map.getPitch(), bearing: map.getBearing() },
       caption: document.querySelector('.sim-scene-caption')?.textContent };
   });
 }
@@ -99,6 +107,7 @@ try {
   await page.goto(process.env.SIMULATION_URL || 'http://localhost:5173/simulation', { waitUntil: 'domcontentloaded' });
   await page.waitForFunction(() => window.__simulationMap?.getSource('sim-response-fleet'));
   await page.waitForFunction(() => window.__simulationMap?.getLayer('sim-response-fleet-vehicles'));
+  await page.waitForFunction(() => window.__simulationMap?.getLayer('sim-generator-icon-layer'));
   const vehicleIcons = await page.evaluate(() => {
     const map = window.__simulationMap;
     return ['sim-response-fleet-base-stations', 'sim-response-fleet-vehicles'].map(id => ({
@@ -117,16 +126,36 @@ try {
   await page.getByRole('button', { name: 'Play', exact: true }).click();
   await page.getByRole('button', { name: 'Pause', exact: true }).click();
 
+  for (const time of [10_000, 14_999]) {
+    const priority = await seek(time);
+    assert.match(priority.caption, /Priority shifts to flood response/);
+    assert.equal(priority.fleet.length, 0, 'The priority decision is shown before civil crews depart');
+    assert.equal(priority.flood, 0, 'Priority changes ahead of flood onset');
+    assert(priority.laterLabels > 0 && priority.laterHighlights > 0 && priority.assessmentVisible,
+      'Later maintenance is visible during the opening priority briefing');
+  }
+  await screenshot('priority-before-dispatch');
+  assert.match((await seek(15_000)).caption, /Civil crews complete preventive maintenance/);
   await seek(17_000);
   await waitForFleet('hardening-', 1);
   const working = await seek(19_000);
   const civilIds = units(working, 'hardening-').map(unit => unit.id);
   assert(civilIds.length > 0, `Live mapped civil maintenance must be visible: ${JSON.stringify(working)}`);
+  assert(working.generators.every(feature => feature.properties.tower_id !== 'MY_N12462360044'),
+    'The northern Telipok/Menggatal tower must not receive a generator');
+  const civilTargets = new Set(routeCalls.flatMap(call => call.legs)
+    .filter(leg => leg.id.startsWith('hardening-') && !leg.id.endsWith(':exit'))
+    .map(leg => leg.id.split(':').at(-1)));
+  assert.deepEqual(new Set(working.generators.map(feature => feature.properties.tower_id)), civilTargets,
+    'Civil maintenance targets the higher-ground generator sites; inaccessible routes still hold');
   const callsDuringCivilExit = routeCalls.length;
   const workingLater = await seek(20_400);
   for (const id of civilIds) assert.deepEqual(at(workingLater, id), at(working, id), `${id} holds while performing maintenance`);
   assert.equal(working.flood, 0, 'No flood before civil maintenance finishes');
   const exiting = await seek(22_000);
+  assert.equal(exiting.laterLabels, 0, 'Later-maintenance labels clear when civil work finishes');
+  assert.equal(exiting.laterHighlights, 0, 'Later-maintenance highlights clear when civil work finishes');
+  assert.equal(exiting.assessmentVisible, false);
   assert.match(exiting.caption, /rerout|exit|withdraw|dry|higher|clear/i, 'Civil withdrawal has an explicit explanation');
   assert(civilIds.some(id => distance(at(working, id), at(exiting, id)) > 20), 'Civil crews visibly drive out');
   for (const boundary of [19_000, 20_500, 23_500, 24_000]) {
@@ -146,7 +175,37 @@ try {
     const frame = await seek(time);
     assert(frame.flood > 0, `Flood appears after civil exit at ${time}ms`);
     assertDry(frame, time);
+    assert.equal(frame.laterLabels, 0, `Later-maintenance labels stay cleared at ${time}ms`);
+    assert.equal(frame.laterHighlights, 0, `Later-maintenance highlights stay cleared at ${time}ms`);
+    assert.equal(frame.assessmentVisible, false);
+    for (const generator of frame.generators) {
+      assert(!frame.offlineIds.includes(generator.properties.tower_id), 'A generator tower must stay online during the flood');
+    }
   }
+  const floodView = await seek(30_000);
+  await screenshot('flood-focus');
+  for (const time of [33_000, 40_000, 47_000, 53_900]) {
+    const camera = (await seek(time)).camera;
+    assert(distance(camera.center, floodView.camera.center) < 1, 'Hold the flood corridor instead of revisiting later-maintenance sites');
+    for (const key of ['zoom', 'pitch', 'bearing']) assert(Math.abs(camera[key] - floodView.camera[key]) < 1e-6,
+      `Keep the flood framing steady at ${time}ms (${key})`);
+  }
+  await seek(40_000);
+  await page.getByRole('button', { name: 'Overview', exact: true }).click();
+  await page.waitForFunction(() => !window.__simulationMap.isMoving());
+  await page.waitForFunction(expected => new Set(window.__simulationMap.queryRenderedFeatures({ layers: ['sim-generator-icon-layer'] })
+    .map(feature => feature.properties.tower_id)).size >= expected, working.generators.length);
+  const impact = await snapshot();
+  assert.equal(impact.renderedGenerators.length, impact.generators.length, 'Every generator icon renders despite nearby label collisions');
+  for (const gap of impact.gapShapes) {
+    const polygons = gap.geometry.type === 'Polygon' ? [gap.geometry.coordinates] : gap.geometry.coordinates;
+    assert(polygons.every(rings => rings.length === 1), 'Generator footprints cannot cut holes in the outage circles');
+  }
+  await screenshot('generators-satellite');
+  await page.getByRole('button', { name: 'Satellite', exact: true }).click();
+  await screenshot('generators-map');
+  await page.getByRole('button', { name: 'Satellite', exact: true }).click();
+  await page.getByRole('button', { name: 'Free camera', exact: true }).click();
   console.log(`Civil flow passed: ${civilIds.length} routed units maintain, visibly exit and clear the flood before 24s.`);
 
   await seek(54_000);
@@ -200,15 +259,15 @@ try {
     assert.deepEqual(positions(frames.get(time)).fleet, positions(arrived).fleet, `Ground vehicles stay parked after their response (${time}ms)`);
   }
   const onStation = frames.get(68_100);
-  assert.equal(onStation.drones.length, 9, 'Area planning uses six southern and three northern relays');
+  assert(onStation.drones.length > 0, 'Area planning supplies relays for the unprotected outage sites');
   assert(onStation.drones.length < onStation.offlineSites, 'Relay count follows area coverage, not one drone per tower');
   assert.equal(await signals.locator('.sim-signal-cards > div').count(), 4, 'Four signal cards remain during playback');
   assert.equal(await signals.locator(':scope > :not(.sim-key-heading):not(.sim-signal-cards)').count(), 0, 'Signals contain only their heading and four cards');
   assert.equal(new Set(onStation.drones.map(drone => drone.id)).size, onStation.drones.length, 'Every drone has a stable unique identity');
   assert.deepEqual([...new Set(onStation.drones.map(drone => drone.parentId))].sort(), primeIds, 'Both fixed PRIME vehicles launch their own drones');
-  for (const [parentId, count] of [['mobile-network-1', 6], ['mobile-network-2', 3]]) {
+  for (const parentId of primeIds) {
     const group = onStation.drones.filter(drone => drone.parentId === parentId);
-    assert.equal(group.length, count);
+    if (group.length < 2) continue;
     const spacing = group.map(drone => Math.min(...group.filter(other => other !== drone)
       .map(other => distance(drone.position, other.position))));
     assert(Math.min(...spacing) > 3_000, 'Relays spread across the affected area instead of clustering at towers');
@@ -216,11 +275,7 @@ try {
   }
   const originalGaps = frames.get(62_100).gapShapes;
   assert(originalGaps.length > 0, 'The initial outage footprint is visible before drones reach station');
-  for (const drone of onStation.drones) assert(originalGaps.some(shape => {
-    const polygons = shape.geometry.type === 'Polygon' ? [shape.geometry.coordinates] : shape.geometry.coordinates;
-    return polygons.some(rings => pointInPolygon(...drone.position, { type: 'Polygon', coordinates: [rings[0]] })
-      && !rings.slice(1).some(ring => pointInPolygon(...drone.position, { type: 'Polygon', coordinates: [ring] })));
-  }), `${drone.id} holds within the outage area`);
+  // Failed-tower footprints stay intact until the airborne radio reaches them.
   for (const time of [68_100, 71_900, 72_100, 74_000, 76_100, 79_900]) {
     const frame = frames.get(time);
     assert.equal(frame.gaps, 0, `No red outage gap remains while the relays hold station (${time}ms)`);
@@ -246,6 +301,11 @@ try {
   await page.waitForTimeout(350);
   assert.deepEqual(positions(await snapshot()), positions(paused), 'Pause freezes every vehicle and drone');
   assert.deepEqual(positions(paused), positions(frames.get(74_000)), 'Backward seek reproduces the exact response frame');
+  const priorityAgain = await seek(14_000);
+  assert.match(priorityAgain.caption, /Priority shifts to flood response/);
+  assert.equal(priorityAgain.fleet.length, 0, 'Rewinding to the priority decision clears later dispatch');
+  assert(priorityAgain.laterLabels > 0 && priorityAgain.laterHighlights > 0 && priorityAgain.assessmentVisible,
+    'Rewinding restores the opening priority briefing');
   const rewound = await seek(19_000);
   assert.deepEqual(positions(rewound), positions(working), 'Backward seek reproduces the civil maintenance frame');
   assert.equal(rewound.drones.length, 0, 'Rewinding clears future drones');

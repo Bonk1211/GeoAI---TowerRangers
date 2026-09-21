@@ -11,6 +11,8 @@
  * "short enough to run twice in a Q&A" target.
  */
 
+import { FLOOD_PRIORITY_MS } from './simulationVisuals.ts';
+
 export type SimulationPhase = 'pre' | 'impact' | 'response' | 'recovery';
 
 export type BeatKind = 'scripted' | 'backend';
@@ -143,6 +145,16 @@ export const BEATS: Beat[] = [
     evidence: 'real',
   },
   {
+    id: 'flood-priority',
+    atMs: FLOOD_PRIORITY_MS,
+    phase: 'pre',
+    clockLabel: 'T-42h',
+    headline: 'Priority shifts to flood response',
+    console: 'Flood preparation takes priority before civil maintenance dispatch. Prepare exposed towers first, confirm inbound and evacuation routes, and keep other maintenance on the follow-up list.',
+    kind: 'scripted',
+    evidence: 'illustrative',
+  },
+  {
     id: 'harden',
     atMs: 15000,
     phase: 'pre',
@@ -178,7 +190,7 @@ export const BEATS: Beat[] = [
     phase: 'pre',
     clockLabel: 'T-24h',
     headline: 'Backup power ready; civil crews confirm exit routes',
-    console: 'Portable generators pre-positioned at <n> flood-prone sites. Civil crews finish maintenance, then follow the highlighted exit routes before flood onset.',
+    console: 'Portable generators pre-positioned at <n> flood-prone sites on higher ground keep those towers online during the flood. Low-ground sites cannot host generators and rely on mobile drone coverage after power cuts. Civil crews follow the highlighted exit routes before flood onset.',
     kind: 'scripted',
     // Illustrative: generator pre-positioning is not its own built
     // mechanism (docs/Disaster_Response_Actions.md: dispatch is "mostly

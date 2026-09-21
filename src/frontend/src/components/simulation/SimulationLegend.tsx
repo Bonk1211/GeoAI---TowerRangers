@@ -39,7 +39,7 @@ const LEGEND_ENTRIES: { label: string; swatch: 'rain' | 'closure' | 'flood' | 's
   // docs/Disaster_Response_Actions.md: pre-positioning ahead of an outage
   // (as opposed to dispatching one afterward) has no built mechanism —
   // sites come from the scenario's own flood-share ranking, not a query.
-  { label: 'Generator pre-positioned', swatch: 'generator', evidence: 'illustrative' },
+  { label: 'Generator on higher ground · tower stays online', swatch: 'generator', evidence: 'illustrative' },
   // The route, the crew and the tower are real optimizer and road-network
   // output — these are the run's own Sabah civil `raise_cabinet_and_seal`
   // orders. What is invented is the TRIGGER: nothing in this system

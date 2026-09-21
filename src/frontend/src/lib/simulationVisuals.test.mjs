@@ -3,16 +3,16 @@ import test from 'node:test';
 import { simulationAssessmentPulseAt, simulationCrewStepAt, simulationEnvironmentAt, simulationRoadAccessAt, simulationSceneAt } from './simulationVisuals.ts';
 
 test('assessment markers pulse only during assessment and freeze deterministically', () => {
-  for (const [time, opacity] of [[27_000, 1], [27_800, .2], [28_600, 1], [54_000, 1]]) {
+  for (const [time, opacity] of [[10_000, 1], [10_800, .2], [11_600, 1], [54_000, 1]]) {
     assert.ok(Math.abs(simulationAssessmentPulseAt(time) - opacity) < 1e-12);
   }
-  const times = [26_999, 27_000, 27_800, 28_600, 33_000, 39_999, 40_000, 53_999, 54_000];
+  const times = [9_999, 10_000, 10_800, 11_600, 14_999, 15_000, 27_000, 33_000, 40_000, 53_999, 54_000];
   const forward = times.map(time => simulationAssessmentPulseAt(time));
   times.toReversed().forEach((time, i) => {
     assert.equal(simulationAssessmentPulseAt(time), forward[forward.length - 1 - i]);
     assert.equal(simulationAssessmentPulseAt(time, true), 1);
   });
-  for (const time of [-Infinity, -1, NaN, Infinity, 15_800, 26_999, 54_000, 96_000]) {
+  for (const time of [-Infinity, -1, NaN, Infinity, 9_999, 54_000, 96_000]) {
     assert.equal(simulationAssessmentPulseAt(time), 1);
   }
 });
@@ -61,8 +61,8 @@ test('visuals follow authored boundaries and interpolate deterministically when 
     assert.equal(simulationRoadAccessAt(time), road);
   }
 
-  const scenes = [[0, 'forecast'], [15_000, 'prepare'], [19_000, 'exit-plan'], [20_500, 'evacuate'], [23_500, 'civil-clear'], [24_000, 'impact'],
-    [27_000, 'prioritise'], [40_000, 'continuity'], [54_000, 'staging'], [62_000, 'drone-launch'],
+  const scenes = [[0, 'forecast'], [10_000, 'prioritise'], [15_000, 'prepare'], [19_000, 'exit-plan'], [20_500, 'evacuate'], [23_500, 'civil-clear'], [24_000, 'impact'],
+    [27_000, 'outages'], [40_000, 'continuity'], [54_000, 'staging'], [62_000, 'drone-launch'],
     [68_000, 'mobile-support'], [72_000, 'network-dispatch'], [78_000, 'network-hold'], [80_000, 'restore'], [88_000, 'recover']];
   for (let i = 0; i < scenes.length; i++) {
     const [time, id] = scenes[i];

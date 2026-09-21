@@ -24,10 +24,10 @@ import {
 import { retuneBearingAt, assignRetuningNeighbors, RETUNE_STILL_T } from '../../lib/responsePhaseGeometry';
 import { floodExtentAt, SABAH_FLOOD_SCENARIO } from '../../fixtures/scenarios/sabahFlood';
 import { simulationCameraAt } from '../../lib/simulationCamera';
-import { simulationAssessmentPulseAt, simulationEnvironmentAt } from '../../lib/simulationVisuals';
+import { FLOOD_PRIORITY_MS, simulationAssessmentPulseAt, simulationEnvironmentAt } from '../../lib/simulationVisuals';
 import { simulationAssessmentAt, simulationWarningsAt, type SimulationWarningId } from '../../lib/simulationWarnings';
 import type { SimulationRoadState } from './useSimulationRoads';
-import { simulationRoadCrewAt, type SimulationRoadLeg } from '../../lib/simulationRoads';
+import { HARDENING_EXIT_MS, simulationRoadCrewAt, type SimulationRoadLeg } from '../../lib/simulationRoads';
 import { prepareRoadMotion, roadHoldPoint, roadPositionAt } from '../../lib/simulationRoadMotion';
 import { droneFlightAt, DRONE_LAUNCH_MS } from '../../lib/droneFlight';
 import type { Tower } from '../../api/types';
@@ -86,7 +86,7 @@ const DRONE_ICON_SOURCE_PX = 512;
 
 const GENERATOR_ICON_ID = 'sim-generator-icon';
 const GENERATOR_ICON_URL = '/brand/generator.png';
-const GENERATOR_ICON_SIZE_PX = 18;
+const GENERATOR_ICON_SIZE_PX = 34;
 const GENERATOR_ICON_SOURCE_PX = 256;
 
 /** Beats that bound the response-phase animation window, from
@@ -190,13 +190,14 @@ export function SimulationMap({ mode, warning, roads, cinematic, onCinematicChan
     .flatMap(leg => [...(leg.road?.coordinates ?? []), ...(leg.road?.departure_route?.coordinates ?? [])]
       .map(([lon, lat]) => ({ lon, lat })))), [roads.legs]);
   const warningTime = Math.floor(elapsedMs / 1000) * 1000;
+  const showLaterMaintenance = elapsedMs >= FLOOD_PRIORITY_MS && elapsedMs < HARDENING_EXIT_MS;
   const rainIntensity = simulationEnvironmentAt(Math.floor(elapsedMs / 33) * 33).rain;
   const warningSiteIds = useMemo(() => {
     if (mode !== 'combined') return simulationWarningsAt(warningTime, sabahTowers).find((signal) => signal.id === warning)!.siteIds;
     const assessment = simulationAssessmentAt(warningTime, sabahTowers);
-    return [...assessment.exposedSiteIds, ...(warningTime >= 27_000 && warningTime < 88_000 ? assessment.nearbyPrioritySiteIds : [])];
+    return [...assessment.exposedSiteIds, ...(showLaterMaintenance ? assessment.nearbyPrioritySiteIds : [])];
   },
-    [warningTime, sabahTowers, warning, mode]);
+    [warningTime, sabahTowers, warning, mode, showLaterMaintenance]);
   const detailSite = useMemo(() => {
     const ids = downTowerIds.size ? downTowerIds : new Set(SABAH_FLOOD_SCENARIO.downTowerSelector(sabahTowers));
     const candidates = sabahTowers.filter(tower => ids.has(tower.tower_id));
@@ -600,10 +601,19 @@ export function SimulationMap({ mode, warning, roads, cinematic, onCinematicChan
           layout: {
             'icon-image': GENERATOR_ICON_ID,
             'icon-size': GENERATOR_ICON_SIZE_PX / GENERATOR_ICON_SOURCE_PX,
+            'icon-offset': [220, -110],
             'icon-allow-overlap': true,
             'icon-ignore-placement': true,
+            // A crowded label must never suppress the generator itself.
+            'text-optional': true,
+            'text-field': 'GENERATOR · ONLINE',
+            'text-size': 10,
+            'text-font': ['Noto Sans Bold'],
+            'text-anchor': 'top',
+            'text-offset': [2.9, 0.5],
           },
-        });
+          paint: { 'text-color': '#8dffdc', 'text-halo-color': '#102632', 'text-halo-width': 2 },
+        }, DRONE_SOURCE);
       };
 
       if (map.hasImage(GENERATOR_ICON_ID)) {
@@ -660,7 +670,7 @@ export function SimulationMap({ mode, warning, roads, cinematic, onCinematicChan
       // Dropped equipment must remain legible above 3D geometry and road-closure marks.
       // The drone rides last of all: it is airborne, so anything painting
       // over it would read as the relay flying under the ground it covers.
-      for (const id of [DEVICE_SOURCE, `${DEVICE_SOURCE}-icon`, `${DEVICE_SOURCE}-labels`,
+      for (const id of [DEVICE_SOURCE, `${DEVICE_SOURCE}-icon`, `${DEVICE_SOURCE}-labels`, GENERATOR_ICON_LAYER,
         DRONE_SOURCE, `${DRONE_SOURCE}-icon`, `${DRONE_SOURCE}-labels`]) {
         if (map.getLayer(id)) map.moveLayer(id);
       }
@@ -747,16 +757,16 @@ export function SimulationMap({ mode, warning, roads, cinematic, onCinematicChan
       secondary: mode === 'combined' && peakAssessment.nearbyPrioritySiteIds.includes(feature.properties?.tower_id) };
     (map.getSource(WARNING_SITES) as GeoJSONSource).setData(points);
     const labels: Feature<Point>[] = [];
-    if (mode === 'combined' && warningTime >= 27_000 && warningTime < 54_000) {
+    if (mode === 'combined' && warningTime >= FLOOD_PRIORITY_MS && warningTime < 54_000) {
       if (floodBounds) labels.push({ type: 'Feature', properties: { label: 'FIRST · FLOOD RESPONSE', secondary: false },
         geometry: { type: 'Point', coordinates: [(floodBounds.west + floodBounds.east) / 2, (floodBounds.south + floodBounds.north) / 2] } });
-      for (const tower of sabahTowers.filter(t => peakAssessment.nearbyPrioritySiteIds.includes(t.tower_id))) {
+      for (const tower of showLaterMaintenance ? sabahTowers.filter(t => peakAssessment.nearbyPrioritySiteIds.includes(t.tower_id)) : []) {
         labels.push({ type: 'Feature', properties: { label: 'LATER · MAINTENANCE', secondary: true },
           geometry: { type: 'Point', coordinates: [tower.lon, tower.lat] } });
       }
     }
     (map.getSource(ASSESSMENT_LABELS) as GeoJSONSource).setData({ type: 'FeatureCollection', features: labels });
-  }, [ready, mode, warning, warningTime, sabahTowers, warningSiteIds, peakAssessment, floodBounds]);
+  }, [ready, mode, warning, warningTime, sabahTowers, warningSiteIds, peakAssessment, floodBounds, showLaterMaintenance]);
 
   const assessmentPulse = simulationAssessmentPulseAt(Math.floor(elapsedMs / 33) * 33, Boolean(shouldReduceMotion));
   useEffect(() => {
@@ -825,18 +835,7 @@ export function SimulationMap({ mode, warning, roads, cinematic, onCinematicChan
         14, ['case', ['==', ['get', 'waterway'], 'river'], 3, 1.1], 18, 4]]);
   }, [ready, warningTime]);
 
-  // Generator markers: pre-positioned at the scenario's own
-  // `generatorSiteSelector` sites (2026-09-17 — see that function's doc
-  // comment in fixtures/scenarios/sabahFlood.ts for why this is a
-  // DIFFERENT set from `downTowerIds`, not a coincidence of the same
-  // count). Visible from the 'generators' beat (T-24h) until the 'withdraw'
-  // beat at T+36h, when they come down alongside the COWs and the crew
-  // routes (2026-09-20, operator review). An earlier note here argued for
-  // leaving them up on the grounds that a pre-positioned generator is fixed
-  // plant and no beat narrates its removal — but the withdraw beat says
-  // "temporary equipment pulled back" and portable generators are exactly
-  // that, so keeping them on screen through a receding flood was the
-  // reading that contradicted the console, not the one that matched it.
+  // Generator sites stay online throughout the flood; withdraw after restoration.
   useEffect(() => {
     const map = mapRef.current;
     if (!map || !ready) return;
@@ -1015,7 +1014,7 @@ export function SimulationMap({ mode, warning, roads, cinematic, onCinematicChan
   // Freeze assignment geography per solver result: live tower refreshes must not redirect a shot.
   const routeFrames = useRef<{
     run: number;
-    response?: { id: string; site: [number, number]; west: number; south: number; east: number; north: number };
+    response?: { id: string; west: number; south: number; east: number; north: number };
   }>({ run: -1 });
   // One camera timeline, like the scene: no wall-clock transitions survive a pause or seek.
   const cameraTime = Math.floor(elapsedMs / 33) * 33;
@@ -1031,29 +1030,23 @@ export function SimulationMap({ mode, warning, roads, cinematic, onCinematicChan
       const mapped = live.roadLegs.filter(leg => leg.road?.status === 'routed');
       const geometryKey = `${live.emergencyRun?.run_id}:${live.roadLegs.map(leg => `${leg.id}:${leg.road?.status}:${leg.road?.distance_km}:${leg.road?.departure_route?.distance_km}`).join('|')}`;
       if (routeFrames.current.response?.id !== geometryKey) {
-        const first = mapped.find(leg => leg.unitKind !== 'mobile-network') ?? mapped[0];
-        const unitId = first?.unitId ?? first?.crewId;
-        const legs = live.roadLegs.filter(leg => (leg.unitId ?? leg.crewId) === unitId);
-        const motion = simulationRoadCrewAt(72_600, true, legs, Boolean(shouldReduceMotion));
-        const path = motion?.leg.road ? prepareRoadMotion(motion.leg.road.coordinates) : null;
         const staging = live.roadLegs.flatMap(leg => leg.road?.staging ? [leg.road.staging] : []);
-        const focus = motion?.held ? roadHoldPoint(legs, motion.leg)
-          : path && motion ? roadPositionAt(path, motion.travel) : staging[0];
         const vertices = mapped.flatMap(leg => [...leg.road!.coordinates,
           ...(leg.road!.departure_route?.status === 'routed' ? leg.road!.departure_route.coordinates : [])].map(([lon, lat]) => ({ lon, lat })));
         const box = boundsOf([...vertices, ...staging]);
-        if (box && focus) routeFrames.current.response = { id: geometryKey, site: [focus.lon, focus.lat], ...box };
+        if (box) routeFrames.current.response = { id: geometryKey, ...box };
       }
     }
     const canvas = map.getCanvas();
     const fit = Math.min(0, Math.log2(Math.max(240, Math.min(canvas.clientWidth, canvas.clientHeight * 1.5)) / 760));
-    const overview = (box: ReturnType<typeof boundsOf> | undefined, framing: 'default' | 'comparison' | 'response' = 'default') => {
+    const overview = (box: ReturnType<typeof boundsOf> | undefined, framing: 'default' | 'comparison' | 'flood' | 'response' = 'default') => {
       const comparison = framing === 'comparison';
+      const flood = framing === 'flood';
       const response = framing === 'response';
       const camera = box ? map.cameraForBounds([[box.west, box.south], [box.east, box.north]], {
         bearing: response ? 32 : -12, pitch: response ? 54 : comparison ? 60 : 52, maxZoom: 12.2,
         // Fleet fitting uses its actual viewing angle; pitch leaves room above and below the road corridor.
-        padding: { top: Math.min(response ? 40 : comparison ? 80 : 150, canvas.clientHeight * 0.24), bottom: Math.min(response ? 80 : comparison ? 100 : 220, canvas.clientHeight * 0.3),
+        padding: { top: Math.min(response ? 40 : flood ? 100 : comparison ? 80 : 150, canvas.clientHeight * 0.24), bottom: Math.min(response || flood ? 80 : comparison ? 100 : 220, canvas.clientHeight * 0.3),
           left: Math.min(110, canvas.clientWidth * 0.15), right: Math.min(80, canvas.clientWidth * 0.1) },
       }) : null;
       return { center: camera?.center ? LngLat.convert(camera.center).toArray() : [detailSite.lon, detailSite.lat] as [number, number],
@@ -1061,8 +1054,7 @@ export function SimulationMap({ mode, warning, roads, cinematic, onCinematicChan
     };
     const pose = simulationCameraAt(cameraTime, {
       site: [detailSite.lon, detailSite.lat], maintenance: overview(maintenanceBounds ?? floodBounds), assessment: overview(assessmentBounds, 'comparison'),
-      response: overview(routeFrames.current.response ?? floodBounds, 'response'), responseSite: routeFrames.current.response?.site ?? [detailSite.lon, detailSite.lat],
-      closure: roads.network?.roads.features[0]?.geometry.coordinates[0] as [number, number] | undefined,
+      flood: overview(floodBounds, 'flood'), response: overview(routeFrames.current.response ?? floodBounds, 'response'),
     }, Boolean(shouldReduceMotion));
     // Closeups preserve the mast between the story caption and the lower legend.
     map.jumpTo({ ...pose, zoom: pose.zoom + fit,

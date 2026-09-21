@@ -20,6 +20,14 @@ test('every beat id is unique', () => {
   assert.equal(new Set(ids).size, ids.length);
 });
 
+test('flood priority is shown before civil maintenance dispatch and flood onset', () => {
+  const priority = beatById('flood-priority');
+  assert.equal(priority.atMs, 10_000);
+  assert.equal(priority.phase, 'pre');
+  assert(priority.atMs < beatById('harden').atMs);
+  assert(beatById('harden').atMs < beatById('flood-onset').atMs);
+});
+
 test('beatsUpTo is monotone: a later ms never returns fewer beats', () => {
   const at10 = beatsUpTo(10_000).length;
   const at50 = beatsUpTo(50_000).length;

@@ -21,10 +21,13 @@ function clampedTime(elapsedMs: number): number {
   return Math.max(0, Math.min(96_000, Number.isNaN(elapsedMs) ? 0 : elapsedMs));
 }
 
+/** Show the flood priority decision before civil crews depart at 15 seconds. */
+export const FLOOD_PRIORITY_MS = 10_000;
+
 /** A slow attention pulse during assessment; seeking and pausing freeze the same frame. */
 export function simulationAssessmentPulseAt(elapsedMs: number, reducedMotion = false): number {
-  if (reducedMotion || !Number.isFinite(elapsedMs) || elapsedMs < 27_000 || elapsedMs >= 54_000) return 1;
-  return 0.2 + 0.8 * (0.5 + 0.5 * Math.cos((elapsedMs - 27_000) / 1600 * Math.PI * 2));
+  if (reducedMotion || !Number.isFinite(elapsedMs) || elapsedMs < FLOOD_PRIORITY_MS || elapsedMs >= 54_000) return 1;
+  return 0.2 + 0.8 * (0.5 + 0.5 * Math.cos((elapsedMs - FLOOD_PRIORITY_MS) / 1600 * Math.PI * 2));
 }
 
 function interpolate(points: readonly [number, number][], time: number): number {
@@ -81,6 +84,13 @@ const SCENES: readonly [number, SimulationScene][] = [
     decision: 'Read rainfall, ground, river and access conditions together.',
     action: 'Compare exposed sites with the wider maintenance priority list.',
   }],
+  [FLOOD_PRIORITY_MS, {
+    id: 'prioritise',
+    title: 'Priority shifts to flood response',
+    observation: 'Prepare flood-exposed towers first. Other maintenance stays on the follow-up list.',
+    decision: 'Prioritise flood preparation before dispatching the civil crews.',
+    action: 'Check access and exit routes, then send civil crews for preventive maintenance.',
+  }],
   [15_000, {
     id: 'prepare',
     title: 'Civil crews complete preventive maintenance',
@@ -114,14 +124,14 @@ const SCENES: readonly [number, SimulationScene][] = [
     title: 'Flood reaches the towers',
     observation: 'The authored flood spreads and road access becomes constrained.',
     decision: 'Identify the affected sites and scenario outages in the flood corridor.',
-    action: 'Widen the assessment to nearby priority towers before deciding the response order.',
+    action: 'Follow the flood corridor and prepare coverage for affected towers.',
   }],
   [27_000, {
-    id: 'prioritise',
-    title: 'Priority shifts to flood response',
-    observation: 'Blinking towers still need maintenance. The flood emergency takes immediate response priority.',
-    decision: 'Prioritise immediate flood response; blinking amber towers retain their maintenance priority.',
-    action: 'Keep other maintenance on the follow-up list and check roads into the flood area.',
+    id: 'outages',
+    title: 'Low-ground towers lose power',
+    observation: 'Generator-equipped towers stay online. Low-ground outages need temporary network coverage.',
+    decision: 'Keep ground crews clear of the flood and support the remaining outages.',
+    action: 'Prepare drone coverage while other maintenance remains on the follow-up list.',
   }],
   [40_000, {
     id: 'continuity',

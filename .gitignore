@@ -12,3 +12,5 @@ supabase/.temp/
 
 # runtime feedback ledger (model/feedback.py), ~30 MB and grows per request
 data/malaysia/observation_log.jsonl
+
+Pei Kang/

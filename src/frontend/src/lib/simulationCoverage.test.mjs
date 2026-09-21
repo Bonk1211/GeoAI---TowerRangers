@@ -1,9 +1,51 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { simulationCoverageAt, simulationDroneMissions } from './simulationCoverage.ts';
+import { OUTAGE_COVERAGE_RADIUS_KM, simulationCoverageAt, simulationDroneMissions } from './simulationCoverage.ts';
+import { circlePolygon } from './coverageGeometry.ts';
 import { droneFlightAt, DRONE_LAUNCH_MS, DRONE_ON_STATION_MS, DRONE_LANDED_MS } from './droneFlight.ts';
 import { haversineKm } from './geo.ts';
-import { pointInPolygon } from '../fixtures/scenarios/sabahFlood.ts';
+import { pointInPolygon, SABAH_FLOOD_SCENARIO as scenario } from '../fixtures/scenarios/sabahFlood.ts';
+import { simulationHardeningLegs } from './simulationRoads.ts';
+
+test('civil generators keep their towers online without erasing neighboring outage circles before drones arrive', () => {
+  const site = (tower_id, lon, lat, hand_m) => ({ tower_id, lon, lat, hand_m,
+    territory: 'Sabah', attribution: { flood: 0.5 } });
+  const powered = site('higher-ground', 116.07, 5.95, 5.01);
+  const low = site('low-ground', 116.1, 5.95, 5);
+  const unknown = site('unknown-ground', 116.122, 6.067, undefined);
+  const towers = [powered, low, unknown, site('outside-corridor', 118.1, 5.84, 20),
+    site('MY_N12462360044', 116.1220885, 6.0663475, 5.28617382),
+    { ...powered, tower_id: 'other-state', territory: 'Selangor' }];
+  const generatorIds = scenario.generatorSiteSelector(towers);
+  const downIds = scenario.downTowerSelector(towers);
+  assert.deepEqual(generatorIds, [powered.tower_id], 'the northern Telipok/Menggatal tower is excluded from generator placement');
+  assert.deepEqual(downIds, [low.tower_id, unknown.tower_id]);
+  assert.deepEqual(scenario.generatorSiteSelector(towers.toReversed()), generatorIds);
+  assert.deepEqual(scenario.downTowerSelector(towers.toReversed()), downIds);
+  const generators = towers.filter(tower => generatorIds.includes(tower.tower_id));
+  const crew = { crew_id: 'SBH-C1', crew_type: 'civil', territory: 'Sabah', depot: { lon: 116.073, lat: 5.98 } };
+  assert.deepEqual(simulationHardeningLegs(generators, [crew], '').map(leg => leg.entry.tower_id), generatorIds);
+  const down = towers.filter(tower => downIds.includes(tower.tower_id));
+  const bases = down.map((tower, index) => ({ unitId: `prime-${index + 1}`, unitKind: 'mobile-network',
+    coverageTowerIds: [tower.tower_id], road: { status: 'routed', staging: { lon: 116.15, lat: 6.08 } } }));
+  for (const ms of [27_000, 54_000, 67_999, 68_000, 79_999, 80_000, 88_000, 27_000]) {
+    const coverage = simulationCoverageAt(ms, down, bases);
+    assert.equal(coverage.affectedCount, 2);
+    if (ms < 68_000) {
+      for (const tower of down) {
+        assert(contains(coverage.remaining, tower), 'unprotected sites still lose grid power');
+        for (const [lon, lat] of circlePolygon(tower, OUTAGE_COVERAGE_RADIUS_KM * 0.99).coordinates[0]) {
+          assert(contains(coverage.remaining, { lon, lat }), 'the full failed-tower circle stays red until drones arrive');
+        }
+      }
+    }
+    if (ms >= 68_000 && ms < 80_000) {
+      assert.equal(coverage.remaining, null, 'drones cover the remaining outage area');
+      assert(contains(coverage.supported, unknown));
+    }
+  }
+  assert.equal(simulationCoverageAt(27_000, [], bases).gap, null);
+});
 
 function contains(feature, point) {
   if (!feature) return false;
@@ -76,8 +118,8 @@ test('multiple relays cover the entire outage footprint, including the outer red
   assert.equal(simulationCoverageAt(88_000, sites, bases).activeDrones.length, 0);
 });
 
-test('the live Sabah outage uses nine evenly spaced area relays with complete coverage and stable homes', () => {
-  // Coordinates selected by the live Sabah scenario on 2026-09-21: seven southern and five northern sites.
+test('a twelve-site outage uses nine evenly spaced area relays with complete coverage and stable homes', () => {
+  // Historical twelve-site footprint without backup power: seven southern and five northern sites.
   const sites = [
     [116.067224, 5.9534048], [116.0675271, 5.9534155], [116.0864836, 5.9769392],
     [116.1046475, 5.95468], [116.1046918, 5.9542612], [116.1070508, 5.9547427],

@@ -4,9 +4,9 @@ import { useWeights } from '../../state/useWeights';
 import { useCrewsQuery } from '../../api/queries';
 import { useReducedMotion } from 'motion/react';
 import { BEATS } from '../../lib/simulationTimeline';
-import { simulationEnvironmentAt, simulationSceneAt, simulationRoadAccessAt } from '../../lib/simulationVisuals';
+import { FLOOD_PRIORITY_MS, simulationEnvironmentAt, simulationSceneAt, simulationRoadAccessAt } from '../../lib/simulationVisuals';
 import { simulationAssessmentAt } from '../../lib/simulationWarnings';
-import { simulationRoadCrewAt } from '../../lib/simulationRoads';
+import { HARDENING_EXIT_MS, simulationRoadCrewAt } from '../../lib/simulationRoads';
 import { bandColor } from '../../lib/colors';
 import type { SimulationRoadState } from './useSimulationRoads';
 import { responseUnitColor } from './simulationThreeLayer';
@@ -40,19 +40,20 @@ export function SimulationSignals({ roads }: { roads: SimulationRoadState }) {
 }
 
 export function SimulationBriefing() {
-  const elapsedMs = useSimulation(s => Math.floor(s.elapsedMs / 1000) * 1000);
+  const elapsedMs = useSimulation(s => Math.floor(s.elapsedMs / 100) * 100);
   const weights = useWeights(s => s.weights);
   const { towers } = useLiveTowers(weights);
+  if (elapsedMs >= HARDENING_EXIT_MS) return null;
   const assessment = simulationAssessmentAt(elapsedMs, towers);
   const priority = towers.filter(t => assessment.prioritySiteIds.includes(t.tower_id)).sort((a, b) => b.priority - a.priority);
   const outsideIds = new Set(assessment.outsideFloodPrioritySiteIds);
   const nearbyPriority = priority.filter(t => assessment.nearbyPrioritySiteIds.includes(t.tower_id));
   return <section className="sim-deployment sim-site-assessment" aria-label="Wider tower risk assessment">
       <div className="sim-panel-heading"><span className="sim-eyebrow">OTHER PRIORITY TOWERS</span><span className="sim-source-tag">MODEL</span></div>
-      {elapsedMs >= 27000 && <p className="sim-assessment-order"><strong>{elapsedMs < 88000 ? 'Flood response first.' : 'Review the remaining work.'}</strong> Nearby maintenance stays on the follow-up list.</p>}
+      {elapsedMs >= FLOOD_PRIORITY_MS && <p className="sim-assessment-order"><strong>Flood response first.</strong> Nearby maintenance stays on the follow-up list.</p>}
       <p className="sim-deployment-total"><strong>{outsideIds.size}</strong> priority sites outside the flood footprint</p>
-      <ul>{(elapsedMs >= 27000 ? nearbyPriority : priority.slice(0, 3)).map(tower => <li key={tower.tower_id}><i className="sim-risk-dot" style={{ background: bandColor(tower.decision) }} /><div><strong>{tower.tower_id}</strong><span>{tower.dominant_factor.replaceAll('_', ' ')} · {outsideIds.has(tower.tower_id) ? 'Outside flood' : 'Flood exposure'}</span></div><b className="sim-priority-label">{tower.decision === 'maintain' ? 'Maintain' : 'Watch'}</b></li>)}</ul>
-      <p className="sim-deployment-note">{elapsedMs >= 27000 ? `${nearbyPriority.length} nearby priority sites shown. This scenario response order keeps their maintenance needs visible; confirmed crew jobs follow the optimizer.` : 'Flood, terrain, power and equipment factors remain in the model assessment. Scenario weather does not overwrite site scores.'}</p>
+      <ul>{(elapsedMs >= FLOOD_PRIORITY_MS ? nearbyPriority : priority.slice(0, 3)).map(tower => <li key={tower.tower_id}><i className="sim-risk-dot" style={{ background: bandColor(tower.decision) }} /><div><strong>{tower.tower_id}</strong><span>{tower.dominant_factor.replaceAll('_', ' ')} · {outsideIds.has(tower.tower_id) ? 'Outside flood' : 'Flood exposure'}</span></div><b className="sim-priority-label">{tower.decision === 'maintain' ? 'Maintain' : 'Watch'}</b></li>)}</ul>
+      <p className="sim-deployment-note">{elapsedMs >= FLOOD_PRIORITY_MS ? `${nearbyPriority.length} nearby priority sites shown. This scenario response order keeps their maintenance needs visible; confirmed crew jobs follow the optimizer.` : 'Flood, terrain, power and equipment factors remain in the model assessment. Scenario weather does not overwrite site scores.'}</p>
     </section>;
 }
 
