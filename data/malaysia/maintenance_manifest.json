@@ -1,0 +1,49 @@
+{
+  "base_rate": 0.2088,
+  "calibrated_scale": 0.000125,
+  "caveat": "SYNTHETIC. No operator or MCMC maintenance history was available for this prototype, so these records are simulated. Figures computed against them validate the evaluation pipeline, not real-world accuracy, and will change when real work orders arrive.",
+  "demo_cases": 33,
+  "encroachment_gain": 0.3,
+  "encroachment_measured": 1164,
+  "encroachment_note": "The synthetic label deliberately carries measured EVI growth so change detection can be tested rather than guaranteed null. This grades our own generator, not real-world maintenance. Missing change adds no charge.",
+  "encroachment_term": true,
+  "generator_version": "2.3",
+  "history_months": 36,
+  "not_a_failure_label": "The target is 'a corrective work order was raised'. It is not an outage, a fault, or a probability of one.",
+  "panel": {
+    "base_rate": 0.1229,
+    "horizon_months": 6,
+    "rows": 34836,
+    "towers": 1164
+  },
+  "rejected_tickets": {
+    "closed_before_opened": 1,
+    "duplicate_ticket_id": 1,
+    "unknown_tower_id": 1
+  },
+  "reporting_noise": {
+    "drop_rate": 0.0,
+    "preventive_per_year": 0.3,
+    "spurious_rate": 0.0
+  },
+  "seed": 0,
+  "synthetic": true,
+  "target_base_rate": 0.21,
+  "telemetry": {
+    "columns": [
+      "rectifier_alarms_30d",
+      "battery_sag_events_30d",
+      "door_open_hours_30d"
+    ],
+    "noise": 0.5,
+    "note": "Current-period counters. Predictive but UNTRAINABLE here: the counters cover 30 days and the label covers 36 months, so no aligned (telemetry, outcome) pair exists. model/maintenance_need.py's FEATURES excludes it by design; model/novelty.py reads it because an unsupervised layer needs no labels.",
+    "window_days": 30
+  },
+  "tickets_valid": 3491,
+  "tickets_written": 3494,
+  "towers": 1164,
+  "window": [
+    "2023-08-01",
+    "2026-08-01"
+  ]
+}

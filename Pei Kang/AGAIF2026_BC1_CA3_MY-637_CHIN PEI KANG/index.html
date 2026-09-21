@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>ASEAN Atlas — Interactive Web Map</title>
+<meta name="description" content="Interactive Leaflet map of the ten ASEAN member states and 230 populated places." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231d7f92'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%2358d6e8' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%2358d6e8'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <div id="app">
+    <!-- ===================== side panel ===================== -->
+    <aside class="panel glass-raised" id="panel">
+      <header class="panel-head">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <h1>ASEAN Atlas</h1>
+          <p class="sub">Member states &amp; populated places</p>
+        </div>
+        <button id="panel-toggle" class="icon-btn" aria-label="Collapse panel" aria-expanded="true">&#8249;</button>
+      </header>
+
+      <div class="panel-body">
+        <section class="stat-row" aria-label="Dataset summary">
+          <div class="stat"><span class="stat-num" id="stat-countries">10</span><span class="stat-lab">Countries</span></div>
+          <div class="stat"><span class="stat-num" id="stat-places">230</span><span class="stat-lab">Places</span></div>
+          <div class="stat"><span class="stat-num" id="stat-pop">—</span><span class="stat-lab">Population</span></div>
+        </section>
+
+        <section class="field">
+          <label class="field-label" for="search">Search a place</label>
+          <div class="search-wrap">
+            <input id="search" type="search" placeholder="Kuala Lumpur, Hanoi, Cebu…" autocomplete="off" />
+          </div>
+          <ul id="results" class="results" role="listbox" hidden></ul>
+        </section>
+
+        <section class="field">
+          <label class="field-label" for="country">Filter by country</label>
+          <div class="select-wrap">
+            <select id="country">
+              <option value="">All ten member states</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="field">
+          <span class="field-label">Layers</span>
+          <label class="switch-row">
+            <span>Country boundaries</span>
+            <input type="checkbox" id="toggle-countries" checked /><span class="switch" aria-hidden="true"></span>
+          </label>
+          <label class="switch-row">
+            <span>Place labels</span>
+            <input type="checkbox" id="toggle-labels" /><span class="switch" aria-hidden="true"></span>
+          </label>
+          <label class="switch-row">
+            <span>Populated places</span>
+            <input type="checkbox" id="toggle-places" checked /><span class="switch" aria-hidden="true"></span>
+          </label>
+        </section>
+
+        <section class="field">
+          <span class="field-label">Legend — marker size by population</span>
+          <ul class="legend">
+            <li><i class="dot d1"></i>Unrecorded / &lt; 50k</li>
+            <li><i class="dot d2"></i>50k – 250k</li>
+            <li><i class="dot d3"></i>250k – 1M</li>
+            <li><i class="dot d4"></i>Over 1M</li>
+          </ul>
+          <ul class="legend legend-fill">
+            <li><i class="swatch"></i>ASEAN member state polygon</li>
+          </ul>
+        </section>
+
+        <section class="field">
+          <button id="reset" class="btn">Reset map view</button>
+        </section>
+
+        <footer class="panel-foot">
+          <p>Data: <strong>ASEAN Shp Data</strong> (Asean.shp, Place.shp) supplied for AGAIF 2026 Bootcamp 1,
+             reprojected from EPSG:3857 to EPSG:4326 and converted to GeoJSON.
+             Place attributes originate from OpenStreetMap.</p>
+          <p>Map engine <a href="https://leafletjs.com/" target="_blank" rel="noopener">Leaflet 1.9.4</a> ·
+             Basemap &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>
+             contributors, tiles &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>.</p>
+        </footer>
+      </div>
+    </aside>
+
+    <!-- ===================== map ===================== -->
+    <main class="map-shell">
+      <div id="map" role="application" aria-label="Interactive map of ASEAN"></div>
+      <div class="readout glass" id="readout" aria-live="polite">
+        <span class="readout-item"><b>Lat</b> <span id="ro-lat">—</span></span>
+        <span class="readout-item"><b>Lon</b> <span id="ro-lon">—</span></span>
+        <span class="readout-item"><b>Zoom</b> <span id="ro-zoom">—</span></span>
+      </div>
+    </main>
+  </div>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+# Scheduling policy — SLA caps, shift/capacity assumptions, travel model,
+# monsoon window (Backend_Handoff §2/§4). Assumed demo parameters, not
+# operator data (PRD §13); change here, not in code.
+
+planning_horizon_days: 7          # crew-days modeled per optimizer run
+
+shift:
+  # Capacity is a TIME budget, not a job count. A job fits a crew-day when
+  # travel-in + on-site duration still ends before the shift does. This is
+  # what makes the schedule timeline honest: a gap on the board is real
+  # spare capacity, and "day full" means the hours ran out, not that an
+  # arbitrary counter was hit.
+  day_start: "09:00"              # crews roll out of the depot at this time
+  hours_default: 8                # fallback when a crew record omits shift_hours
+  min_slot_hours: 0.5             # a day with less than this left is done
+
+travel:
+  # These two are now the FALLBACK, not the model. scheduler/travel.py reads
+  # data/travel_matrix.npz (real OSRM road distances and durations) and only
+  # falls back to this straight-line estimate for a pair the matrix does not
+  # contain. Build the matrix with data/prepare_travel_matrix.py; without it
+  # the scheduler behaves exactly as it did before, on these constants.
+  road_factor: 1.35                 # multiplies haversine km -> road km
+  avg_speed_kmh: 45                 # rural/mixed road assumption
+  max_travel_km_default: 120        # fallback if a crew record omits max_travel_km
+
+objective:
+  # priority_t = risk_t * log1p(exposed_pop_t), falls back to risk_t (PRD §7.1)
+  travel_weight_lambda: 0.05        # lambda * travel_cost term in the objective
+
+sla:
+  # urgency_days from the scored-tower record is the hard deadline (§4).
+  # this cap is a backstop if urgency_days is ever missing/malformed.
+  fallback_sla_days: 30
+
+monsoon:
+  # Weather-window constraint (PRD §7.3): no civil work in flood-zone towers
+  # during monsoon. Reuses the index's flood attribution as the zone mask —
+  # a tower counts as "flood zone" if flood is its dominant_factor or its
+  # flood attribution share exceeds flood_zone_share_threshold.
+  months: [11, 12, 1, 2, 3]         # Nov-Mar, NE monsoon (Concept_Overview §9)
+  flood_zone_share_threshold: 0.25
+  blocked_crew_types: [civil]
+
+demo_clock:
+  # optimizer needs a "today" to build the 7-day window against. Fixed for
+  # demo determinism; override via optimize_schedule(ctx) at call time.
+  today: "2026-08-17"
+
+readiness:
+  # Reserve capacity is protected from PLANNED work and is what unplanned
+  # incident insertion consumes FIRST, so a real incident displaces nothing.
+  # Assumed demo parameters (PRD §13), not operator data.
+  enabled: true
+
+  # Crew-days held free, per crew type, PER TERRITORY. A type absent here
+  # reserves 0. This count is not a national total — scheduler/reserve.py
+  # applies it independently to every territory that staffs the crew type,
+  # so "civil: 1" reserves one civil crew-day in Selangor AND one in Johor
+  # AND one in every other territory with a civil crew, each on every
+  # reserve day. A Johor civil crew cannot cover a Selangor incident, so
+  # readiness is inherently territorial — there is no meaningful single
+  # national count to hold instead.
+  #
+  # This is a THROUGHPUT TRADE, not a free win. Selangor alone has 2 civil
+  # crews over a 7-day horizon = 14 civil crew-days, and a 4h flood job plus
+  # travel fills a whole 8h shift, so Selangor's own ceiling is 14 jobs and
+  # its board is already saturated at 14 booked / 23 unscheduled before any
+  # other territory's reservation is even counted. Reserving a civil crew
+  # EVERY day in Selangor alone would take 7 of those 14 and halve its
+  # booked work — and every other territory pays the same shape of cost
+  # independently, on top of this.
+  reserve_crew_days:
+    civil: 1
+    power: 1
+    electrical: 0
+    rf: 0
+
+  # Which horizon days carry reserve, by index. Empty list = every day.
+  # [0, 3, 6] is evenly spaced so no gap exceeds two consecutive days without
+  # civil cover — a defensible rule rather than an arbitrary pick.
+  # Costs 3 of 14 civil crew-days: 14 booked -> 11, unscheduled 23 -> 26.
+  # If the board needs to look busier, THIS is the lever. Never duration_hours.
+  reserve_days: [0, 3, 6]
+
+  # Rotate which crew of a type carries reserve duty, by day index, so the
+  # same crew is not benched all week and utilisation stays even.
+  rotate_reserve: true
+
+  # A job whose SLA deadline falls inside the horizon may consume reserve
+  # rather than go unscheduled. Safety valve: readiness must never cause a
+  # missed deadline.
+  sla_may_consume_reserve: true
+
+weather_hazard:
+  # Live forecast pulls maintenance deadlines FORWARD. Never pushes them out:
+  # a dry forecast is not evidence of safety, and lengthening an SLA on a
+  # three-day model run is the one move here that could damage a site.
+  #
+  # Off by default. The forecast is live, so enabling it makes a schedule run
+  # non-reproducible — the same reason demo_clock.today is pinned above. Turn
+  # on for an operational run, leave off for a rehearsed demo.
+  enabled: false
+
+  # Which mechanisms weather actually accelerates, and how strongly. Rain does
+  # not accelerate radio-unit wear-out, so pulling an equipment-dominant
+  # tower's 90-day refresh forward because a storm is coming would be nonsense.
+  # A slope saturates and fails more slowly than a cabinet floods, hence 0.5.
+  # Factors absent from this map are untouched by weather entirely.
+  coupled_factors:
+    flood: 1.0
+    terrain: 0.5
+
+  # mm of GFS-forecast rain in the next 24 h at the tower point. 60 mm is the
+  # lower edge of a MET Malaysia amber ("heavy rain") warning, 100 mm orange.
+  # Thresholds for bringing a visit forward, not a hazard classification.
+  rain_mm:
+    watch: 60
+    severe: 100
+
+  # SMAP surface soil moisture, m3/m3. Above this the ground is already wet
+  # enough that further rain runs off rather than infiltrating.
+  saturated_m3m3: 0.35
+
+  # Applied to the coupled share of urgency_days. Never above 1.0 — see the
+  # note on `enabled` above.
+  multipliers:
+    severe_rain: 0.5
+    watch_rain: 0.7
+    saturated_ground: 0.8
+
+  # Floor. Without it one regional storm collapses every flood-dominant tower
+  # onto the same deadline, the optimizer's priority ordering goes flat, and
+  # the resulting schedule is arbitrary.
+  min_multiplier: 0.4
+
+  # Latest GFS run is 6-hourly and SMAP 3-hourly; re-sampling faster than this
+  # costs Earth Engine calls and returns the same answer.
+  cache_minutes: 30
+
+restarts:
+  # Multi-start search. The solver runs the SAME greedy pass several times
+  # under slightly different work orderings and keeps the best result — it
+  # does not change a single constraint, only which order work is offered in.
+  # Restart 0 is always the unperturbed ordering, so the winner is chosen from
+  # a set that always contains today's answer and this can never return a
+  # worse schedule than single-pass.
+  #
+  # Assumed demo parameters (PRD §13). Measure before changing max_restarts:
+  # cost scales with jobs x days x crews, so the same count behaves very
+  # differently on the 132-tower pilot and the 1164-tower national set.
+  enabled: true
+
+  # Hard ceiling, restart 0 included. Best-of-N improves roughly
+  # logarithmically — most of the achievable gain lands by ~10 and it
+  # plateaus around ~25, so 16 sits at the knee.
+  max_restarts: 16
+
+  # The real bound. The initial solve is a page-load call, not an
+  # interaction: 1.5s is invisible behind a spinner, 5s is not. Raise this
+  # first if measurement shows headroom.
+  time_budget_ms: 1500
+
+  # Stop after this many consecutive restarts that fail to improve. On an
+  # easy instance the first few find the plateau and the rest are waste.
+  no_improve_stop: 5
+
+  # Multiplicative jitter on the sort key: key * (1 + U(-j, j)). Multiplicative
+  # because the key is a product whose scale varies by dataset, so additive
+  # noise would be meaningless on one and overwhelming on another. Too small
+  # and every restart reproduces restart 0; too large and the priority
+  # ordering stops meaning anything.
+  jitter: 0.15
+
+  # Fixed, never clock- or entropy-seeded. Reproducibility is a project
+  # invariant — the same reason demo_clock.today is pinned.
+  seed: 20260910

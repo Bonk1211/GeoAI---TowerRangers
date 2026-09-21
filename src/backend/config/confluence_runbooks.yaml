@@ -1,0 +1,16 @@
+# dominant_factor -> Confluence page id, mirrors actions.yaml's key set.
+#
+# Values are numeric Confluence page ids (the number in the page URL's
+# /pages/<id>/ segment), all in the space named by CONFLUENCE_SPACE_KEY
+# (src/backend/.env). A null/absent factor means no runbook exists yet — the
+# API returns 404 rather than fabricating a link, and the frontend renders
+# nothing for that factor rather than a dead link.
+#
+# Config over code: add a page, add its id here. Nothing in
+# api/routes/confluence.py or the frontend needs to change.
+
+flood: "327713"
+terrain: "295138"
+equipment: "262161"
+power: "163981"
+lightning: "262181"

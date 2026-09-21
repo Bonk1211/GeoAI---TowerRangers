@@ -1,0 +1,8574 @@
+[
+  {
+    "CountryID": 4,
+    "IsoCode": "ABW",
+    "LongName": "Aruba",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Aruba"
+  },
+  {
+    "CountryID": 6,
+    "IsoCode": "AFG",
+    "LongName": "Afghanistan",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Afghanistan"
+  },
+  {
+    "CountryID": 7,
+    "IsoCode": "ZAF",
+    "LongName": "South Africa (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "South Africa"
+  },
+  {
+    "CountryID": 8,
+    "IsoCode": "AGO",
+    "LongName": "Angola (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Angola"
+  },
+  {
+    "CountryID": 9,
+    "IsoCode": "AIA",
+    "LongName": "Anguilla",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      }
+    ],
+    "ShortName": "Anguilla"
+  },
+  {
+    "CountryID": 10,
+    "IsoCode": "ALB",
+    "LongName": "Albania (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Albania"
+  },
+  {
+    "CountryID": 11,
+    "IsoCode": "DZA",
+    "LongName": "Algeria (People's Democratic Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Algeria"
+  },
+  {
+    "CountryID": 14,
+    "IsoCode": "AND",
+    "LongName": "Andorra (Principality of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Andorra"
+  },
+  {
+    "CountryID": 16,
+    "IsoCode": "ARG",
+    "LongName": "Argentine Republic",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Argentina"
+  },
+  {
+    "CountryID": 17,
+    "IsoCode": "ARM",
+    "LongName": "Armenia (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 700,
+        "region": "CIS countries",
+        "regionCode": "CIS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Armenia"
+  },
+  {
+    "CountryID": 18,
+    "IsoCode": "SAU",
+    "LongName": "Saudi Arabia (Kingdom of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Saudi Arabia"
+  },
+  {
+    "CountryID": 20,
+    "IsoCode": "ATG",
+    "LongName": "Antigua and Barbuda",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Antigua and Barbuda"
+  },
+  {
+    "CountryID": 22,
+    "IsoCode": "ANT",
+    "LongName": "Netherlands Antilles",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      }
+    ],
+    "ShortName": "Neth. Antilles"
+  },
+  {
+    "CountryID": 23,
+    "IsoCode": "AUS",
+    "LongName": "Australia",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Australia"
+  },
+  {
+    "CountryID": 24,
+    "IsoCode": "AUT",
+    "LongName": "Austria",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Austria"
+  },
+  {
+    "CountryID": 25,
+    "IsoCode": "AZE",
+    "LongName": "Azerbaijani Republic",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 700,
+        "region": "CIS countries",
+        "regionCode": "CIS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Azerbaijan"
+  },
+  {
+    "CountryID": 27,
+    "IsoCode": "BRA",
+    "LongName": "Brazil (Federative Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Brazil"
+  },
+  {
+    "CountryID": 28,
+    "IsoCode": "BHS",
+    "LongName": "Bahamas (Commonwealth of the)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Bahamas"
+  },
+  {
+    "CountryID": 29,
+    "IsoCode": "BDI",
+    "LongName": "Burundi (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Burundi"
+  },
+  {
+    "CountryID": 30,
+    "IsoCode": "BEL",
+    "LongName": "Belgium",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Belgium"
+  },
+  {
+    "CountryID": 31,
+    "IsoCode": "BEN",
+    "LongName": "Benin (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Benin"
+  },
+  {
+    "CountryID": 32,
+    "IsoCode": "BMU",
+    "LongName": "Bermuda",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Bermuda"
+  },
+  {
+    "CountryID": 33,
+    "IsoCode": "BFA",
+    "LongName": "Burkina Faso",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Burkina Faso"
+  },
+  {
+    "CountryID": 34,
+    "IsoCode": "BGD",
+    "LongName": "Bangladesh (People's Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Bangladesh"
+  },
+  {
+    "CountryID": 35,
+    "IsoCode": "BHR",
+    "LongName": "Bahrain (Kingdom of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Bahrain"
+  },
+  {
+    "CountryID": 37,
+    "IsoCode": "BLR",
+    "LongName": "Belarus (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 700,
+        "region": "CIS countries",
+        "regionCode": "CIS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Belarus"
+  },
+  {
+    "CountryID": 38,
+    "IsoCode": "BLZ",
+    "LongName": "Belize",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Belize"
+  },
+  {
+    "CountryID": 39,
+    "IsoCode": "BOL",
+    "LongName": "Bolivia (Plurinational State of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Bolivia (Plurinational State of)"
+  },
+  {
+    "CountryID": 40,
+    "IsoCode": "BWA",
+    "LongName": "Botswana (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Botswana"
+  },
+  {
+    "CountryID": 41,
+    "IsoCode": "BRB",
+    "LongName": "Barbados",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Barbados"
+  },
+  {
+    "CountryID": 42,
+    "IsoCode": "MMR",
+    "LongName": "Myanmar (Union of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Myanmar"
+  },
+  {
+    "CountryID": 43,
+    "IsoCode": "BRN",
+    "LongName": "Brunei Darussalam",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Brunei Darussalam"
+  },
+  {
+    "CountryID": 44,
+    "IsoCode": "BTN",
+    "LongName": "Bhutan (Kingdom of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Bhutan"
+  },
+  {
+    "CountryID": 45,
+    "IsoCode": "BGR",
+    "LongName": "Bulgaria (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Bulgaria"
+  },
+  {
+    "CountryID": 46,
+    "IsoCode": "CAF",
+    "LongName": "Central African Republic",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Central African Rep."
+  },
+  {
+    "CountryID": 47,
+    "IsoCode": "CAN",
+    "LongName": "Canada",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Canada"
+  },
+  {
+    "CountryID": 48,
+    "IsoCode": "KHM",
+    "LongName": "Cambodia (Kingdom of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Cambodia"
+  },
+  {
+    "CountryID": 49,
+    "IsoCode": "CHL",
+    "LongName": "Chile",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Chile"
+  },
+  {
+    "CountryID": 50,
+    "IsoCode": "CHN",
+    "LongName": "China (People's Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "China"
+  },
+  {
+    "CountryID": 52,
+    "IsoCode": "COK",
+    "LongName": "Cook Islands",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      }
+    ],
+    "ShortName": "Cook Islands"
+  },
+  {
+    "CountryID": 53,
+    "IsoCode": "COL",
+    "LongName": "Colombia (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Colombia"
+  },
+  {
+    "CountryID": 54,
+    "IsoCode": "LKA",
+    "LongName": "Sri Lanka (Democratic Socialist Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Sri Lanka"
+  },
+  {
+    "CountryID": 55,
+    "IsoCode": "CMR",
+    "LongName": "Cameroon (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Cameroon"
+  },
+  {
+    "CountryID": 57,
+    "IsoCode": "COG",
+    "LongName": "Congo (Republic of the)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Congo (Rep. of the)"
+  },
+  {
+    "CountryID": 58,
+    "IsoCode": "COM",
+    "LongName": "Comoros (Union of the)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Comoros"
+  },
+  {
+    "CountryID": 59,
+    "IsoCode": "CPV",
+    "LongName": "Cape Verde (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Cabo Verde"
+  },
+  {
+    "CountryID": 61,
+    "IsoCode": "CIV",
+    "LongName": "Côte d'Ivoire (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Côte d'Ivoire"
+  },
+  {
+    "CountryID": 62,
+    "IsoCode": "CRI",
+    "LongName": "Costa Rica",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Costa Rica"
+  },
+  {
+    "CountryID": 63,
+    "IsoCode": "CUB",
+    "LongName": "Cuba",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Cuba"
+  },
+  {
+    "CountryID": 64,
+    "IsoCode": "VAT",
+    "LongName": "Vatican City State",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Vatican"
+  },
+  {
+    "CountryID": 65,
+    "IsoCode": "CYM",
+    "LongName": "Cayman Islands",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Cayman Islands"
+  },
+  {
+    "CountryID": 66,
+    "IsoCode": "CYP",
+    "LongName": "Cyprus (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Cyprus"
+  },
+  {
+    "CountryID": 67,
+    "IsoCode": "DEU",
+    "LongName": "Germany (Federal Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Germany"
+  },
+  {
+    "CountryID": 69,
+    "IsoCode": "DJI",
+    "LongName": "Djibouti (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Djibouti"
+  },
+  {
+    "CountryID": 70,
+    "IsoCode": "DMA",
+    "LongName": "Dominica (Commonwealth of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Dominica"
+  },
+  {
+    "CountryID": 71,
+    "IsoCode": "DNK",
+    "LongName": "Denmark",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Denmark"
+  },
+  {
+    "CountryID": 72,
+    "IsoCode": "DOM",
+    "LongName": "Dominican Republic",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Dominican Rep."
+  },
+  {
+    "CountryID": 73,
+    "IsoCode": "ESP",
+    "LongName": "Spain",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Spain"
+  },
+  {
+    "CountryID": 74,
+    "IsoCode": "EGY",
+    "LongName": "Egypt (Arab Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Egypt"
+  },
+  {
+    "CountryID": 75,
+    "IsoCode": "ECU",
+    "LongName": "Ecuador",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Ecuador"
+  },
+  {
+    "CountryID": 76,
+    "IsoCode": "EST",
+    "LongName": "Estonia (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Estonia"
+  },
+  {
+    "CountryID": 77,
+    "IsoCode": "ETH",
+    "LongName": "Ethiopia (Federal Democratic Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Ethiopia"
+  },
+  {
+    "CountryID": 78,
+    "IsoCode": "FRA",
+    "LongName": "France",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "France"
+  },
+  {
+    "CountryID": 79,
+    "IsoCode": "FJI",
+    "LongName": "Fiji (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Fiji"
+  },
+  {
+    "CountryID": 81,
+    "IsoCode": "FIN",
+    "LongName": "Finland",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Finland"
+  },
+  {
+    "CountryID": 83,
+    "IsoCode": "FSM",
+    "LongName": "Micronesia (Federated States of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Micronesia"
+  },
+  {
+    "CountryID": 84,
+    "IsoCode": "GBR",
+    "LongName": "United Kingdom of Great Britain and Northern Ireland",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "United Kingdom"
+  },
+  {
+    "CountryID": 85,
+    "IsoCode": "GAB",
+    "LongName": "Gabonese Republic",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Gabon"
+  },
+  {
+    "CountryID": 90,
+    "IsoCode": "GHA",
+    "LongName": "Ghana",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Ghana"
+  },
+  {
+    "CountryID": 91,
+    "IsoCode": "GIB",
+    "LongName": "Gibraltar",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Gibraltar"
+  },
+  {
+    "CountryID": 92,
+    "IsoCode": "GMB",
+    "LongName": "Gambia (Republic of the)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Gambia"
+  },
+  {
+    "CountryID": 93,
+    "IsoCode": "GNB",
+    "LongName": "Guinea-Bissau (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Guinea-Bissau"
+  },
+  {
+    "CountryID": 94,
+    "IsoCode": "GNQ",
+    "LongName": "Equatorial Guinea (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Equatorial Guinea"
+  },
+  {
+    "CountryID": 95,
+    "IsoCode": "GRC",
+    "LongName": "Greece",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Greece"
+  },
+  {
+    "CountryID": 96,
+    "IsoCode": "GRD",
+    "LongName": "Grenada",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Grenada"
+  },
+  {
+    "CountryID": 97,
+    "IsoCode": "GRL",
+    "LongName": "Greenland",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Greenland"
+  },
+  {
+    "CountryID": 98,
+    "IsoCode": "GTM",
+    "LongName": "Guatemala (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Guatemala"
+  },
+  {
+    "CountryID": 99,
+    "IsoCode": "GUF",
+    "LongName": "Guiana (French Department of)",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      }
+    ],
+    "ShortName": "French Guiana"
+  },
+  {
+    "CountryID": 100,
+    "IsoCode": "GIN",
+    "LongName": "Guinea (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Guinea"
+  },
+  {
+    "CountryID": 102,
+    "IsoCode": "GUY",
+    "LongName": "Guyana",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Guyana"
+  },
+  {
+    "CountryID": 103,
+    "IsoCode": "HKG",
+    "LongName": "Hong Kong, China",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Hong Kong, China"
+  },
+  {
+    "CountryID": 104,
+    "IsoCode": "HND",
+    "LongName": "Honduras (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Honduras"
+  },
+  {
+    "CountryID": 105,
+    "IsoCode": "HUN",
+    "LongName": "Hungary (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Hungary"
+  },
+  {
+    "CountryID": 106,
+    "IsoCode": "NLD",
+    "LongName": "Netherlands (Kingdom of the)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Netherlands"
+  },
+  {
+    "CountryID": 107,
+    "IsoCode": "HRV",
+    "LongName": "Croatia (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Croatia"
+  },
+  {
+    "CountryID": 108,
+    "IsoCode": "HTI",
+    "LongName": "Haiti (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Haiti"
+  },
+  {
+    "CountryID": 111,
+    "IsoCode": "ITA",
+    "LongName": "Italy",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Italy"
+  },
+  {
+    "CountryID": 113,
+    "IsoCode": "IND",
+    "LongName": "India (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "India"
+  },
+  {
+    "CountryID": 114,
+    "IsoCode": "IDN",
+    "LongName": "Indonesia (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Indonesia"
+  },
+  {
+    "CountryID": 115,
+    "IsoCode": "IRL",
+    "LongName": "Ireland",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Ireland"
+  },
+  {
+    "CountryID": 116,
+    "IsoCode": "IRN",
+    "LongName": "Iran (Islamic Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Iran (Islamic Republic of)"
+  },
+  {
+    "CountryID": 117,
+    "IsoCode": "IRQ",
+    "LongName": "Iraq (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Iraq"
+  },
+  {
+    "CountryID": 118,
+    "IsoCode": "ISL",
+    "LongName": "Iceland",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Iceland"
+  },
+  {
+    "CountryID": 119,
+    "IsoCode": "ISR",
+    "LongName": "Israel (State of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Israel"
+  },
+  {
+    "CountryID": 120,
+    "IsoCode": "JPN",
+    "LongName": "Japan",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Japan"
+  },
+  {
+    "CountryID": 122,
+    "IsoCode": "JAM",
+    "LongName": "Jamaica",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Jamaica"
+  },
+  {
+    "CountryID": 124,
+    "IsoCode": "JOR",
+    "LongName": "Jordan (Hashemite Kingdom of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Jordan"
+  },
+  {
+    "CountryID": 125,
+    "IsoCode": "KEN",
+    "LongName": "Kenya (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Kenya"
+  },
+  {
+    "CountryID": 127,
+    "IsoCode": "KIR",
+    "LongName": "Kiribati (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Kiribati"
+  },
+  {
+    "CountryID": 128,
+    "IsoCode": "KOR",
+    "LongName": "Korea (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Korea (Rep. of)"
+  },
+  {
+    "CountryID": 129,
+    "IsoCode": "PRK",
+    "LongName": "Democratic People's Republic of Korea",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Dem. People's Rep. of Korea"
+  },
+  {
+    "CountryID": 130,
+    "IsoCode": "KWT",
+    "LongName": "Kuwait (State of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Kuwait"
+  },
+  {
+    "CountryID": 131,
+    "IsoCode": "LAO",
+    "LongName": "Lao People's Democratic Republic",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Lao P.D.R."
+  },
+  {
+    "CountryID": 132,
+    "IsoCode": "LBN",
+    "LongName": "Lebanon",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Lebanon"
+  },
+  {
+    "CountryID": 133,
+    "IsoCode": "LBR",
+    "LongName": "Liberia (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Liberia"
+  },
+  {
+    "CountryID": 134,
+    "IsoCode": "LBY",
+    "LongName": "State of Libya",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Libya"
+  },
+  {
+    "CountryID": 135,
+    "IsoCode": "LCA",
+    "LongName": "Saint Lucia",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Saint Lucia"
+  },
+  {
+    "CountryID": 136,
+    "IsoCode": "LIE",
+    "LongName": "Liechtenstein (Principality of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Liechtenstein"
+  },
+  {
+    "CountryID": 137,
+    "IsoCode": "LSO",
+    "LongName": "Lesotho (Kingdom of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Lesotho"
+  },
+  {
+    "CountryID": 138,
+    "IsoCode": "LTU",
+    "LongName": "Lithuania (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Lithuania"
+  },
+  {
+    "CountryID": 139,
+    "IsoCode": "LUX",
+    "LongName": "Luxembourg",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Luxembourg"
+  },
+  {
+    "CountryID": 140,
+    "IsoCode": "LVA",
+    "LongName": "Latvia (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Latvia"
+  },
+  {
+    "CountryID": 141,
+    "IsoCode": "MAC",
+    "LongName": "Macao, China",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Macao, China"
+  },
+  {
+    "CountryID": 142,
+    "IsoCode": "MUS",
+    "LongName": "Mauritius (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Mauritius"
+  },
+  {
+    "CountryID": 143,
+    "IsoCode": "MCO",
+    "LongName": "Monaco (Principality of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Monaco"
+  },
+  {
+    "CountryID": 144,
+    "IsoCode": "MDG",
+    "LongName": "Madagascar (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Madagascar"
+  },
+  {
+    "CountryID": 147,
+    "IsoCode": "MEX",
+    "LongName": "Mexico",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Mexico"
+  },
+  {
+    "CountryID": 148,
+    "IsoCode": "MYS",
+    "LongName": "Malaysia",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Malaysia"
+  },
+  {
+    "CountryID": 149,
+    "IsoCode": "MDV",
+    "LongName": "Maldives (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Maldives"
+  },
+  {
+    "CountryID": 150,
+    "IsoCode": "MLI",
+    "LongName": "Mali (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Mali"
+  },
+  {
+    "CountryID": 151,
+    "IsoCode": "MLT",
+    "LongName": "Malta",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Malta"
+  },
+  {
+    "CountryID": 152,
+    "IsoCode": "MNG",
+    "LongName": "Mongolia",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Mongolia"
+  },
+  {
+    "CountryID": 153,
+    "IsoCode": "MOZ",
+    "LongName": "Mozambique (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Mozambique"
+  },
+  {
+    "CountryID": 155,
+    "IsoCode": "MAR",
+    "LongName": "Morocco (Kingdom of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Morocco"
+  },
+  {
+    "CountryID": 156,
+    "IsoCode": "MHL",
+    "LongName": "Marshall Islands (Republic of the)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Marshall Islands"
+  },
+  {
+    "CountryID": 158,
+    "IsoCode": "MTQ",
+    "LongName": "Martinique (French Department of)",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      }
+    ],
+    "ShortName": "Martinique"
+  },
+  {
+    "CountryID": 159,
+    "IsoCode": "MSR",
+    "LongName": "Montserrat",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      }
+    ],
+    "ShortName": "Montserrat"
+  },
+  {
+    "CountryID": 160,
+    "IsoCode": "MRT",
+    "LongName": "Mauritania (Islamic Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Mauritania"
+  },
+  {
+    "CountryID": 161,
+    "IsoCode": "MWI",
+    "LongName": "Malawi",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Malawi"
+  },
+  {
+    "CountryID": 163,
+    "IsoCode": "NIC",
+    "LongName": "Nicaragua",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Nicaragua"
+  },
+  {
+    "CountryID": 164,
+    "IsoCode": "NCL",
+    "LongName": "New Caledonia",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "New Caledonia"
+  },
+  {
+    "CountryID": 166,
+    "IsoCode": "NER",
+    "LongName": "Niger (Republic of the)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Niger"
+  },
+  {
+    "CountryID": 167,
+    "IsoCode": "NGA",
+    "LongName": "Nigeria (Federal Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Nigeria"
+  },
+  {
+    "CountryID": 168,
+    "IsoCode": "NIU",
+    "LongName": "Niue",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      }
+    ],
+    "ShortName": "Niue"
+  },
+  {
+    "CountryID": 169,
+    "IsoCode": "NAM",
+    "LongName": "Namibia (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Namibia"
+  },
+  {
+    "CountryID": 170,
+    "IsoCode": "NOR",
+    "LongName": "Norway",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Norway"
+  },
+  {
+    "CountryID": 171,
+    "IsoCode": "NPL",
+    "LongName": "Nepal (Federal Democratic Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Nepal (Republic of)"
+  },
+  {
+    "CountryID": 172,
+    "IsoCode": "NRU",
+    "LongName": "Nauru (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Nauru"
+  },
+  {
+    "CountryID": 173,
+    "IsoCode": "NZL",
+    "LongName": "New Zealand",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "New Zealand"
+  },
+  {
+    "CountryID": 175,
+    "IsoCode": "PYF",
+    "LongName": "French Polynesia",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "French Polynesia"
+  },
+  {
+    "CountryID": 176,
+    "IsoCode": "OMN",
+    "LongName": "Oman (Sultanate of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Oman"
+  },
+  {
+    "CountryID": 182,
+    "IsoCode": "PAK",
+    "LongName": "Pakistan (Islamic Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Pakistan"
+  },
+  {
+    "CountryID": 184,
+    "IsoCode": "PHL",
+    "LongName": "Philippines (Republic of the)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Philippines"
+  },
+  {
+    "CountryID": 187,
+    "IsoCode": "PLW",
+    "LongName": "Palau (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Palau"
+  },
+  {
+    "CountryID": 188,
+    "IsoCode": "PNG",
+    "LongName": "Papua New Guinea",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Papua New Guinea"
+  },
+  {
+    "CountryID": 189,
+    "IsoCode": "PAN",
+    "LongName": "Panama (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Panama"
+  },
+  {
+    "CountryID": 190,
+    "IsoCode": "POL",
+    "LongName": "Poland (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Poland"
+  },
+  {
+    "CountryID": 191,
+    "IsoCode": "PRT",
+    "LongName": "Portugal",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Portugal"
+  },
+  {
+    "CountryID": 192,
+    "IsoCode": "PRY",
+    "LongName": "Paraguay (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Paraguay"
+  },
+  {
+    "CountryID": 193,
+    "IsoCode": "PER",
+    "LongName": "Peru",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Peru"
+  },
+  {
+    "CountryID": 195,
+    "IsoCode": "PRI",
+    "LongName": "Puerto Rico",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Puerto Rico"
+  },
+  {
+    "CountryID": 196,
+    "IsoCode": "QAT",
+    "LongName": "Qatar (State of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Qatar"
+  },
+  {
+    "CountryID": 198,
+    "IsoCode": "REU",
+    "LongName": "Reunion (French Department of)",
+    "Regions": [],
+    "ShortName": "Réunion"
+  },
+  {
+    "CountryID": 200,
+    "IsoCode": "ROU",
+    "LongName": "Romania",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Romania"
+  },
+  {
+    "CountryID": 201,
+    "IsoCode": "RWA",
+    "LongName": "Rwanda (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Rwanda"
+  },
+  {
+    "CountryID": 202,
+    "IsoCode": "RUS",
+    "LongName": "Russian Federation",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 700,
+        "region": "CIS countries",
+        "regionCode": "CIS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Russian Federation"
+  },
+  {
+    "CountryID": 203,
+    "IsoCode": "SWE",
+    "LongName": "Sweden",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Sweden"
+  },
+  {
+    "CountryID": 204,
+    "IsoCode": "KNA",
+    "LongName": "Saint Kitts and Nevis (Federation of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Saint Kitts and Nevis"
+  },
+  {
+    "CountryID": 205,
+    "IsoCode": "SDN",
+    "LongName": "Sudan (Republic of the)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Sudan"
+  },
+  {
+    "CountryID": 206,
+    "IsoCode": "SEN",
+    "LongName": "Senegal (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Senegal"
+  },
+  {
+    "CountryID": 207,
+    "IsoCode": "SYC",
+    "LongName": "Seychelles (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Seychelles"
+  },
+  {
+    "CountryID": 208,
+    "IsoCode": "SHN",
+    "LongName": "Saint Helena",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      }
+    ],
+    "ShortName": "St. Helena"
+  },
+  {
+    "CountryID": 209,
+    "IsoCode": "SLB",
+    "LongName": "Solomon Islands",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Solomon Islands"
+  },
+  {
+    "CountryID": 210,
+    "IsoCode": "SLV",
+    "LongName": "El Salvador (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "El Salvador"
+  },
+  {
+    "CountryID": 211,
+    "IsoCode": "ASM",
+    "LongName": "American Samoa",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "American Samoa"
+  },
+  {
+    "CountryID": 212,
+    "IsoCode": "WSM",
+    "LongName": "Samoa (Independent State of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Samoa"
+  },
+  {
+    "CountryID": 213,
+    "IsoCode": "SMR",
+    "LongName": "San Marino (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "San Marino"
+  },
+  {
+    "CountryID": 214,
+    "IsoCode": "SGP",
+    "LongName": "Singapore (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Singapore"
+  },
+  {
+    "CountryID": 215,
+    "IsoCode": "SOM",
+    "LongName": "Somali Democratic Republic",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Somalia"
+  },
+  {
+    "CountryID": 217,
+    "IsoCode": "SLE",
+    "LongName": "Sierra Leone",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Sierra Leone"
+  },
+  {
+    "CountryID": 218,
+    "IsoCode": "STP",
+    "LongName": "Sao Tome and Principe (Democratic Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Sao Tome and Principe"
+  },
+  {
+    "CountryID": 219,
+    "IsoCode": "CHE",
+    "LongName": "Switzerland (Confederation of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Switzerland"
+  },
+  {
+    "CountryID": 220,
+    "IsoCode": "SUR",
+    "LongName": "Suriname (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Suriname"
+  },
+  {
+    "CountryID": 221,
+    "IsoCode": "SVN",
+    "LongName": "Slovenia (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Slovenia"
+  },
+  {
+    "CountryID": 223,
+    "IsoCode": "SWZ",
+    "LongName": "Kingdom of Eswatini",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Eswatini"
+  },
+  {
+    "CountryID": 224,
+    "IsoCode": "SYR",
+    "LongName": "Syrian Arab Republic",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Syrian Arab Republic"
+  },
+  {
+    "CountryID": 225,
+    "IsoCode": "TCA",
+    "LongName": "Turks and Caicos Islands",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Turks & Caicos Is."
+  },
+  {
+    "CountryID": 226,
+    "IsoCode": "TCD",
+    "LongName": "Chad (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Chad"
+  },
+  {
+    "CountryID": 227,
+    "IsoCode": "CZE",
+    "LongName": "Czech Republic",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Czech Republic"
+  },
+  {
+    "CountryID": 228,
+    "IsoCode": "TGO",
+    "LongName": "Togolese Republic",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Togo"
+  },
+  {
+    "CountryID": 229,
+    "IsoCode": "THA",
+    "LongName": "Thailand",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Thailand"
+  },
+  {
+    "CountryID": 230,
+    "IsoCode": "TKL",
+    "LongName": "Tokelau",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      }
+    ],
+    "ShortName": "Tokelau"
+  },
+  {
+    "CountryID": 232,
+    "IsoCode": "TON",
+    "LongName": "Tonga (Kingdom of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Tonga"
+  },
+  {
+    "CountryID": 234,
+    "IsoCode": "TTO",
+    "LongName": "Trinidad and Tobago",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Trinidad and Tobago"
+  },
+  {
+    "CountryID": 235,
+    "IsoCode": "TUN",
+    "LongName": "Tunisia",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Tunisia"
+  },
+  {
+    "CountryID": 236,
+    "IsoCode": "TUR",
+    "LongName": "Türkiye",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Türkiye"
+  },
+  {
+    "CountryID": 237,
+    "IsoCode": "TUV",
+    "LongName": "Tuvalu",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Tuvalu"
+  },
+  {
+    "CountryID": 238,
+    "IsoCode": "TZA",
+    "LongName": "Tanzania (United Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Tanzania"
+  },
+  {
+    "CountryID": 239,
+    "IsoCode": "ARE",
+    "LongName": "United Arab Emirates",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "United Arab Emirates"
+  },
+  {
+    "CountryID": 240,
+    "IsoCode": "UGA",
+    "LongName": "Uganda (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Uganda"
+  },
+  {
+    "CountryID": 241,
+    "IsoCode": "UKR",
+    "LongName": "Ukraine",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Ukraine"
+  },
+  {
+    "CountryID": 242,
+    "IsoCode": "URY",
+    "LongName": "Uruguay (Eastern Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Uruguay"
+  },
+  {
+    "CountryID": 244,
+    "IsoCode": "USA",
+    "LongName": "United States of America",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "United States"
+  },
+  {
+    "CountryID": 245,
+    "IsoCode": "UZB",
+    "LongName": "Uzbekistan (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 700,
+        "region": "CIS countries",
+        "regionCode": "CIS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Uzbekistan"
+  },
+  {
+    "CountryID": 246,
+    "IsoCode": "VCT",
+    "LongName": "Saint Vincent and the Grenadines",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Saint Vincent and the Grenadines"
+  },
+  {
+    "CountryID": 247,
+    "IsoCode": "VEN",
+    "LongName": "Venezuela (Bolivarian Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 646,
+        "region": "The Americas",
+        "regionCode": "AMS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Venezuela"
+  },
+  {
+    "CountryID": 248,
+    "IsoCode": "VIR",
+    "LongName": "United States Virgin Islands",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Virgin Islands (US)"
+  },
+  {
+    "CountryID": 249,
+    "IsoCode": "VGB",
+    "LongName": "British Virgin Islands",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "British Virgin Islands"
+  },
+  {
+    "CountryID": 250,
+    "IsoCode": "VNM",
+    "LongName": "Viet Nam (Socialist Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Viet Nam"
+  },
+  {
+    "CountryID": 251,
+    "IsoCode": "VUT",
+    "LongName": "Vanuatu (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Vanuatu"
+  },
+  {
+    "CountryID": 253,
+    "IsoCode": "WLF",
+    "LongName": "Wallis and Futuna Islands",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      }
+    ],
+    "ShortName": "Wallis and Futuna"
+  },
+  {
+    "CountryID": 255,
+    "IsoCode": "YEM",
+    "LongName": "Yemen (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 647,
+        "region": "Arab States",
+        "regionCode": "ARB"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Yemen"
+  },
+  {
+    "CountryID": 256,
+    "IsoCode": "SRB",
+    "LongName": "Serbia (Republic of )",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Serbia"
+  },
+  {
+    "CountryID": 257,
+    "IsoCode": "COD",
+    "LongName": "Democratic Republic of the Congo",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Dem. Rep. of the Congo"
+  },
+  {
+    "CountryID": 259,
+    "IsoCode": "ZMB",
+    "LongName": "Zambia (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Zambia"
+  },
+  {
+    "CountryID": 260,
+    "IsoCode": "ZWE",
+    "LongName": "Zimbabwe (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Zimbabwe"
+  },
+  {
+    "CountryID": 274,
+    "IsoCode": "MDA",
+    "LongName": "Moldova (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Moldova"
+  },
+  {
+    "CountryID": 275,
+    "IsoCode": "BIH",
+    "LongName": "Bosnia and Herzegovina",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Bosnia and Herzegovina"
+  },
+  {
+    "CountryID": 276,
+    "IsoCode": "GEO",
+    "LongName": "Georgia",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Georgia"
+  },
+  {
+    "CountryID": 277,
+    "IsoCode": "KAZ",
+    "LongName": "Kazakhstan (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 700,
+        "region": "CIS countries",
+        "regionCode": "CIS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Kazakhstan"
+  },
+  {
+    "CountryID": 278,
+    "IsoCode": "TJK",
+    "LongName": "Tajikistan (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 700,
+        "region": "CIS countries",
+        "regionCode": "CIS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Tajikistan"
+  },
+  {
+    "CountryID": 279,
+    "IsoCode": "TKM",
+    "LongName": "Turkmenistan",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 700,
+        "region": "CIS countries",
+        "regionCode": "CIS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Turkmenistan"
+  },
+  {
+    "CountryID": 280,
+    "IsoCode": "KGZ",
+    "LongName": "Kyrgyz Republic",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 700,
+        "region": "CIS countries",
+        "regionCode": "CIS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Kyrgyzstan"
+  },
+  {
+    "CountryID": 281,
+    "IsoCode": "SVK",
+    "LongName": "Slovakia",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Slovakia"
+  },
+  {
+    "CountryID": 283,
+    "IsoCode": "MKD",
+    "LongName": "Republic of North Macedonia",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "North Macedonia"
+  },
+  {
+    "CountryID": 285,
+    "IsoCode": "ERI",
+    "LongName": "Eritrea",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      }
+    ],
+    "ShortName": "Eritrea"
+  },
+  {
+    "CountryID": 288,
+    "IsoCode": "ASC",
+    "LongName": "Ascension",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      }
+    ],
+    "ShortName": "Ascension"
+  },
+  {
+    "CountryID": 290,
+    "IsoCode": "FLK",
+    "LongName": "Falkland Islands (Malvinas)",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      }
+    ],
+    "ShortName": "Falkland (Malvinas) Is."
+  },
+  {
+    "CountryID": 291,
+    "IsoCode": "FRO",
+    "LongName": "Faroe Islands",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Faroe Islands"
+  },
+  {
+    "CountryID": 292,
+    "IsoCode": "JEY",
+    "LongName": "Jersey",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      }
+    ],
+    "ShortName": "Jersey"
+  },
+  {
+    "CountryID": 293,
+    "IsoCode": "GLP",
+    "LongName": "Guadeloupe (French Department of)",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      }
+    ],
+    "ShortName": "Guadeloupe"
+  },
+  {
+    "CountryID": 294,
+    "IsoCode": "GUM",
+    "LongName": "Guam",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Guam"
+  },
+  {
+    "CountryID": 295,
+    "IsoCode": "MNP",
+    "LongName": "Northern Mariana Islands (Commonwealth of the)",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Northern Marianas"
+  },
+  {
+    "CountryID": 296,
+    "IsoCode": "MYT",
+    "LongName": "Mayotte",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      }
+    ],
+    "ShortName": "Mayotte"
+  },
+  {
+    "CountryID": 297,
+    "IsoCode": "SPM",
+    "LongName": "Saint Pierre and Miquelon",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      }
+    ],
+    "ShortName": "St. Pierre & Miquelon"
+  },
+  {
+    "CountryID": 298,
+    "IsoCode": "TWN",
+    "LongName": "Taiwan, Province of China",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Taiwan, Province of China"
+  },
+  {
+    "CountryID": 300,
+    "IsoCode": "GGY",
+    "LongName": "Guernsey",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      }
+    ],
+    "ShortName": "Guernsey"
+  },
+  {
+    "CountryID": 301,
+    "IsoCode": "CCK",
+    "LongName": "Cocos Keeling Islands",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      }
+    ],
+    "ShortName": "Cocos Keeling Islands"
+  },
+  {
+    "CountryID": 302,
+    "IsoCode": "TLS",
+    "LongName": "Timor-Leste (Democratic Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 648,
+        "region": "Asia & Pacific",
+        "regionCode": "ASP"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "Timor-Leste"
+  },
+  {
+    "CountryID": 306,
+    "IsoCode": "NFK",
+    "LongName": "Norfolk Island",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      }
+    ],
+    "ShortName": "Norfolk Islands"
+  },
+  {
+    "CountryID": 308,
+    "IsoCode": "PSE",
+    "LongName": "Palestine",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Palestine"
+  },
+  {
+    "CountryID": 316,
+    "IsoCode": "MNE",
+    "LongName": "Montenegro",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 649,
+        "region": "Europe countries",
+        "regionCode": "EUR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Montenegro"
+  },
+  {
+    "CountryID": 318,
+    "IsoCode": "KSO",
+    "LongName": "Kosovo",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2090,
+        "region": "Upper middle income",
+        "regionCode": "UMI"
+      }
+    ],
+    "ShortName": "Kosovo"
+  },
+  {
+    "CountryID": 321,
+    "IsoCode": "SSD",
+    "LongName": "South Sudan (Republic of)",
+    "Regions": [
+      {
+        "class": "ITU/BDT & Other Classification",
+        "classID": 177,
+        "id": 645,
+        "region": "Africa",
+        "regionCode": "AFR"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1892,
+        "region": "Land Locked Developing Countries (LLDC)",
+        "regionCode": "LLDC"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1894,
+        "region": "Least Developed Countries (LDC)",
+        "regionCode": "LDC"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2088,
+        "region": "Low income",
+        "regionCode": "LI"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2089,
+        "region": "Lower middle income",
+        "regionCode": "LMI"
+      }
+    ],
+    "ShortName": "South Sudan"
+  },
+  {
+    "CountryID": 329,
+    "IsoCode": "SXM",
+    "LongName": "Sint Maarten",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "St. Maarten"
+  },
+  {
+    "CountryID": 330,
+    "IsoCode": "CUW",
+    "LongName": "Curacao",
+    "Regions": [
+      {
+        "class": null,
+        "classID": null,
+        "id": 701,
+        "region": "World",
+        "regionCode": "WLD"
+      },
+      {
+        "class": null,
+        "classID": null,
+        "id": 1893,
+        "region": "Small Island Developing States (SIDS)",
+        "regionCode": "SIDS"
+      },
+      {
+        "class": "WB_Income",
+        "classID": 1303,
+        "id": 2087,
+        "region": "High income",
+        "regionCode": "HI"
+      }
+    ],
+    "ShortName": "Curacao"
+  }
+]

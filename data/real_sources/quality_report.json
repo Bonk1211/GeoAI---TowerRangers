@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-08-11T15:29:03.311427+00:00",
+  "geospatial_catalog": {
+    "missing_website_urls": 0,
+    "ml_candidate_records": 59,
+    "records": 474,
+    "unique_slugs": 474
+  },
+  "itu": {
+    "catalogue_families": 93,
+    "distinct_series": 2206,
+    "duplicate_grain_rows": 0,
+    "economies": [
+      "BRN",
+      "IDN",
+      "KHM",
+      "LAO",
+      "MMR",
+      "MYS",
+      "PHL",
+      "SGP",
+      "THA",
+      "TLS",
+      "VNM"
+    ],
+    "invalid_numeric_values": 0,
+    "last_modified_max": "2026-07-28",
+    "metadata_series": 10080,
+    "metadata_series_from_observation_export": 1341,
+    "missing_required": {
+      "AreaCode": 0,
+      "Series": 0,
+      "SeriesCode": 0,
+      "SeriesID": 0,
+      "Year": 0
+    },
+    "missing_values": 755,
+    "missing_values_by_economy": {
+      "BRN": {
+        "missing": 55,
+        "rate": 0.022079,
+        "records": 2491
+      },
+      "IDN": {
+        "missing": 67,
+        "rate": 0.011451,
+        "records": 5851
+      },
+      "KHM": {
+        "missing": 48,
+        "rate": 0.01904,
+        "records": 2521
+      },
+      "LAO": {
+        "missing": 0,
+        "rate": 0.0,
+        "records": 1601
+      },
+      "MMR": {
+        "missing": 43,
+        "rate": 0.021404,
+        "records": 2009
+      },
+      "MYS": {
+        "missing": 12,
+        "rate": 0.002146,
+        "records": 5592
+      },
+      "PHL": {
+        "missing": 168,
+        "rate": 0.070293,
+        "records": 2390
+      },
+      "SGP": {
+        "missing": 132,
+        "rate": 0.027346,
+        "records": 4827
+      },
+      "THA": {
+        "missing": 63,
+        "rate": 0.006765,
+        "records": 9312
+      },
+      "TLS": {
+        "missing": 166,
+        "rate": 0.184035,
+        "records": 902
+      },
+      "VNM": {
+        "missing": 1,
+        "rate": 0.00049,
+        "records": 2040
+      }
+    },
+    "observation_series_without_metadata": 0,
+    "primary_series_requested": 112,
+    "records": 39536,
+    "regional_aggregate_rows_excluded": 1966,
+    "repaired_multiline_source_records": 2,
+    "year_max": 2025,
+    "year_min": 1950
+  }
+}

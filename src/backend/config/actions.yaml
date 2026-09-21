@@ -1,0 +1,89 @@
+# Dominant factor -> intervention (PRD §6, Backend_Handoff §2/§8).
+# Deterministic lookup, no ML. Changing this file changes work-order output
+# without touching code (Backend_Handoff §9 review point).
+#
+# duration_hours is ON-SITE work time only. Travel is NOT included — the
+# optimizer derives it per leg from the actual route at policy
+# travel.avg_speed_kmh, so a far tower costs more of the shift than a near
+# one for the same job. Assumed demo figures (PRD §13), not operator data.
+#
+# crew_type must be one of the crew_type values in config/crews.json:
+#   civil | power | electrical | rf
+# "terrain" intervention needs rigging (guy-wire tension), but assignment
+# granularity is crew, not skill (PRD §7.2) — mapped to civil since our crews
+# are not split finer than that; noted as an assumption, not fabricated capability.
+
+flood:
+  action: raise_cabinet_and_seal
+  label: "Raise equipment cabinet, seal ingress, clear/install drainage"
+  crew_type: civil
+  parts: [cabinet_riser, sealant_kit, sump_pump]
+  lead_time_class: weeks
+  duration_hours: 4.0
+
+terrain:
+  action: slope_stabilize_and_tension
+  label: "Slope stabilization, access-road check, guy-wire tension"
+  crew_type: civil
+  parts: [ground_anchors, guy_wire]
+  lead_time_class: weeks
+  duration_hours: 5.0
+
+lightning:
+  action: surge_arrestor_swap
+  label: "Surge-arrestor swap, ground-resistance test"
+  crew_type: electrical
+  parts: [surge_arrestor, earth_rod]
+  lead_time_class: days
+  duration_hours: 2.0
+
+equipment:
+  action: radio_unit_refresh
+  label: "Radio-unit refresh, spares pre-stage"
+  crew_type: rf
+  parts: [rru_bbu_module]
+  lead_time_class: months
+  duration_hours: 3.0
+
+power:
+  action: battery_genset_service
+  label: "Battery-bank test, genset service, fuel top-up"
+  crew_type: power
+  parts: [batteries, genset_filters, fuel]
+  lead_time_class: days
+  duration_hours: 2.5
+
+# Added with the supervised scorer, which carries a `vegetation` factor the
+# noisy-OR index never had — EVI and land cover became per-tower features, not
+# only map tiles. Without this key propose_action() raises KeyError for every
+# vegetation-dominant tower, which is the right failure but stops the run.
+#
+# Informs MCMC MTSFB TC G041:2023 §6.3.3 (vegetation). It does NOT discharge
+# §6.3.3(b), the 1 m perimeter grass cut: no sensor in this project resolves
+# that, and the model raising this order cannot see it either.
+vegetation:
+  action: vegetation_clearance
+  label: "Clear encroaching vegetation, restore guy-wire and access clearance"
+  crew_type: civil
+  parts: [brush_cutter_consumables]
+  lead_time_class: days
+  duration_hours: 2.0
+
+# Reviewed fire-exposure inspection. NOT a risk factor and NOT reachable through
+# propose_action(): that function keys on tower["dominant_factor"], and no tower
+# ever carries a fire factor — fire is observed evidence beside the score, never
+# inside it (docs/Backend_Handoff.md §0.6, §1). This key is looked up by its literal
+# name from propose_fire_inspection(), which is the only caller.
+#
+# target_days is the one deadline in this file. Every other action inherits
+# urgency_days from the scored-tower record; a fire inspection has no such record
+# field, because the model never saw the fire. Assumed demo figure (PRD §13), not
+# operator data or a calibrated response time.
+fire_exposure_inspection:
+  action: fire_exposure_inspection
+  label: "Post-fire site inspection: compound, cable ladder, feeder runs, fuel store, earthing"
+  crew_type: civil
+  parts: []
+  lead_time_class: days
+  duration_hours: 2.0
+  target_days: 7

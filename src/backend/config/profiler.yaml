@@ -1,0 +1,125 @@
+# Contextual red flags — the BehavioralProfiler (model/profiler.py), Layer 3.
+#
+# "Behavioral" describes the SITE's operating context — whether a crew can reach
+# it, whether it was scored on complete evidence, whether a live forecast couples
+# to it — not a person. Deterministic rules, no ML. Changing this file changes
+# which towers are flagged and which escalate, without touching code
+# (Backend_Handoff §9 review point: config over code).
+#
+# Each rule's PREDICATE is a small function in model/profiler.py; this file holds
+# only what is tunable. That split is deliberate: a rules expression language in
+# YAML is a second language to debug, and policy.yaml sets the precedent that
+# config carries thresholds, not logic. Construction asserts the two sides match
+# in both directions, so a rule added here without a predicate fails the build.
+#
+# Two fields govern how a rule is used, and they are NOT the same switch:
+#
+#   enabled    does this rule run at all
+#   evaluable  may the notebook score it against needed_corrective_maintenance
+#
+# `evaluable: false` does not mark a weaker rule. It marks one whose value is
+# operational rather than predictive: "no crew territory" is a dispatch hole a
+# planner has to see, and scoring it against a maintenance label measures
+# nothing about it.
+#
+# These flags are DESCRIPTIVE. A planner reads them; no code consumes them.
+# They do not enter `risk`, and they do not enter `decision` either — each rule
+# carried a numeric `weight` while an escalation gate existed, and a
+# matched-budget measurement removed that gate (see adapter/ml_source.py), so
+# the weights went with it rather than lingering as a field nothing reads.
+#
+# FORBIDDEN, permanently: any rule reading n_corrective_36mo,
+# months_since_last_corrective, maintenance_records.csv or maintenance_labels.
+# The served label IS that first column thresholded — measured on the shipped
+# dataset, sum(n_corrective_36mo >= 1) = 246 and sum(needed_corrective_
+# maintenance) = 246, the same 246 rows — so such a rule predicts the target by
+# construction. That is exactly the arithmetic-scored-as-prediction failure that
+# withdrew `maintenance_classifier` (see CLAUDE.md). A repeat-visit rule is the
+# most natural rule to want here and it is the one that cannot exist in this
+# framing. model/test_ensemble.py parses this module's AST and fails the build on
+# those names. The honest home for site history is maintenance_panel.csv, whose
+# recency columns are computed strictly BEFORE each row's reference date — a
+# different framing, and a different plan.
+#
+# Three further rules were designed and dropped before this file was written:
+# age_years, exposed_pop and flash_density are null for all 1,164 national rows,
+# so a rule on any of them never fires. Same shape of gap as `lightning` and
+# `equipment` in model/maintenance_need.py — the mechanism is real and the data
+# is missing, and no rule design repairs that.
+
+rules:
+  model_high_ground_quiet:
+    enabled: true
+    evaluable: true
+    label: "High priority, ground quiet"
+    detail: "Maintain-band site with measured satellite change and telemetry in their quieter halves. Evidence disagreement, not proof that maintenance is unnecessary."
+    max_change: 0.50
+    max_condition: 0.50
+
+  model_low_ground_active:
+    enabled: true
+    evaluable: true
+    label: "Low priority, ground active"
+    detail: "Below-median priority with satellite growth in the top 15% of measured sites. Review the evidence; it does not confirm a maintenance outcome."
+    max_priority: 0.50
+    min_change: 0.85
+
+  # A tower outside every rostered ADM1 state. config/crews.json covers all 16;
+  # the handful whose coordinates land outside every outer ring (offshore
+  # platforms, border noise — 4 of 1,164) carry `unassigned` and the optimizer
+  # can never dispatch to them. Invisible in the UI without this flag.
+  unassigned_territory:
+    enabled: true
+    evaluable: false
+    label: "No crew territory"
+    detail: "Outside every rostered ADM1 state; the optimizer can never dispatch here."
+
+  # Every depot in this tower's territory is further than that crew's own
+  # max_travel_km. The optimizer already enforces this as a constraint and drops
+  # the tower into `unscheduled`; the flag is what makes the reason legible
+  # before the run rather than after it.
+  out_of_crew_range:
+    enabled: true
+    evaluable: false
+    label: "Beyond crew depot range"
+    detail: "Road distance from every depot in this territory exceeds its max_travel_km."
+
+  # One or more model features missing for this tower — cloud over Sentinel-2,
+  # a soil grid gap. LightGBM scores the row anyway by learning a split
+  # direction for NaN, which is the honest treatment, but the planner should
+  # know the score rests on less evidence than usual.
+  incomplete_evidence:
+    enabled: true
+    evaluable: true
+    label: "Incomplete evidence"
+    detail: "One or more model features missing; scored on a partial feature row."
+
+  # OpenStreetMap records no radio generation for this mast. Fires on 1,119 of
+  # 1,164 towers (96.1%), so it is a DISCLOSURE, not a discriminator — hence
+  # evaluable: false and a low weight. It exists so a near-universal data gap is
+  # stated on the record rather than hidden inside a 0.5 fallback.
+  unmapped_asset:
+    enabled: true
+    evaluable: false
+    label: "Unmapped asset"
+    detail: "OpenStreetMap records no radio generation for this mast."
+
+  # A live forecast fired at least one driver AND this site's flood attribution
+  # share clears the monsoon-zone threshold. Reads policy.yaml's threshold
+  # rather than declaring its own — two copies of a threshold drift and neither
+  # throws. evaluable: false because it depends on a live forecast, which is off
+  # by default and not reproducible in a notebook run.
+  storm_coupled:
+    enabled: true
+    evaluable: false
+    label: "Storm-coupled"
+    detail: "Live forecast fired a driver and this site's flood share clears the monsoon-zone threshold."
+
+  # A flood-zone site whose intervention needs a crew type blocked during the
+  # monsoon window. The optimizer honours this as a constraint; surfacing it as
+  # a flag says why a high-risk tower is not on the board.
+  monsoon_blocked:
+    enabled: true
+    evaluable: false
+    label: "Monsoon-blocked crew"
+    detail: "Flood-zone site whose crew type is blocked in the current monsoon window."

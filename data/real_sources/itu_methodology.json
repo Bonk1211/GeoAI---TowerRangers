@@ -1,0 +1,52 @@
+[
+  {
+    "datasetID": 1,
+    "datasetShortName": "WTI",
+    "datasetType": "Quantitative",
+    "email": "indicators@itu.int",
+    "hasFrozenPublicData": true,
+    "publiclyVisible": true,
+    "teamName": "ICT DATA & ANALYTICS DIVISION",
+    "teamShortName": "IDA"
+  },
+  {
+    "datasetID": 2,
+    "datasetShortName": "TREG",
+    "datasetType": "Qualitative",
+    "email": "treg@itu.int",
+    "hasFrozenPublicData": false,
+    "publiclyVisible": true,
+    "teamName": "REGULATORY & MARKET ENVIRONMENT DIVISION",
+    "teamShortName": "RME"
+  },
+  {
+    "datasetID": 4,
+    "datasetShortName": "TARIFFPOLICIES",
+    "datasetType": "Qualitative",
+    "email": "tariff@itu.int",
+    "hasFrozenPublicData": false,
+    "publiclyVisible": true,
+    "teamName": "REGULATORY & MARKET ENVIRONMENT DIVISION",
+    "teamShortName": "RME"
+  },
+  {
+    "datasetID": 8,
+    "datasetShortName": "HOUSEHOLDS",
+    "datasetType": "Quantitative",
+    "email": "indicators@itu.int",
+    "hasFrozenPublicData": true,
+    "publiclyVisible": true,
+    "teamName": "ICT DATA & ANALYTICS DIVISION",
+    "teamShortName": "IDA"
+  },
+  {
+    "datasetID": 13,
+    "datasetShortName": "Global Cybersecurity Index",
+    "datasetType": "Quantitative",
+    "email": "indicators@itu.int",
+    "hasFrozenPublicData": false,
+    "publiclyVisible": true,
+    "teamName": "Cybersecurity DIVISION",
+    "teamShortName": "GCI"
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "attribution": [
+    "Pekel, J-F. et al. (2016) JRC Global Surface Water v1.3, via Microsoft Planetary Computer.",
+    "UNOSAT / UNITAR, FL20191217MYS, CC BY 3.0 IGO.",
+    "Copernicus DEM GLO-30; ASF Global 30m HAND v1; OpenStreetMap contributors (ODbL); geoBoundaries ADM1."
+  ],
+  "counts": {
+    "event": {
+      "positive_flood_water": 247,
+      "positive_rate": 0.02058,
+      "rows_written": 12000
+    },
+    "gsw": {
+      "excluded_permanent_water": 320,
+      "excluded_trace_occurrence": 77,
+      "negative_never_water": 38731,
+      "positive_rate": 0.00557,
+      "positive_seasonal_water": 217,
+      "rows_written": 38948,
+      "sampled": 39345
+    }
+  },
+  "files": {
+    "flood_labels_event.csv": {
+      "bytes": 2294764,
+      "sha256": "11da865371375a13755359d4a3600177f78d7263825eb30c14d6d85880535208"
+    },
+    "flood_labels_gsw.csv": {
+      "bytes": 7239308,
+      "sha256": "9c17b6db3db347a319d13710249c4e5dc2f428994b431066a7341080df7ef36a"
+    }
+  },
+  "generated_at": "2026-08-31T07:09:04.369448+00:00",
+  "label_definition": {
+    "event_negative": "inside the UNOSAT AnalysisExtent, outside the flood polygons",
+    "event_positive": "inside a UNOSAT polygon classed 'Flood Water', 15 Dec 2019 Sentinel-1",
+    "excluded": "permanent water bodies, and trace occurrence below 5.0%",
+    "negative": "GSW occurrence == 0 (never observed as water 1984-2020)",
+    "positive": "5.0 <= GSW occurrence < 75.0 (observed under water, not permanent)"
+  },
+  "limitations": [
+    "GSW non-permanent water in Malaysia includes paddy, aquaculture and ex-mining ponds, which are managed water rather than flood; the UNOSAT set is the control for that confound.",
+    "The UNOSAT set is one event, one date, two AOIs in Johor.",
+    "GSW is Landsat-derived and misses flooding under cloud, which biases its negatives toward false negatives in the wet season."
+  ],
+  "not_a_failure_label": "Neither label records an outage, a fault or a maintenance action. Both record observed surface water. No failure label exists in this project and none is created here.",
+  "title": "Observed-inundation ground truth for the flood factor"
+}

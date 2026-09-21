@@ -1,0 +1,113 @@
+{
+  "aoi": {
+    "measurement_bounds_wgs84": [
+      101.591714,
+      3.056521009999999,
+      101.6133256,
+      3.0797618900000003
+    ],
+    "name": "Sunway University dense urban cellular pilot, Selangor, Malaysia",
+    "site_bounds_wgs84": [
+      101.5920181,
+      3.057131570000001,
+      101.6132802,
+      3.0789034899999996
+    ]
+  },
+  "attribution": [
+    "Kabeer, M., Nordin, R., Behjati, M. (2025), DOI 10.17632/dx5xyyfz2y.1 (CC BY 4.0).",
+    "Copernicus DEM GLO-30 Public, accessed through Microsoft Planetary Computer.",
+    "Global 30m HAND © 2022 Alaska Satellite Facility, CC0 1.0.",
+    "© OpenStreetMap contributors; data available under ODbL 1.0.",
+    "WorldPop R2025A Malaysia 2025, DOI 10.5258/SOTON/WP00839."
+  ],
+  "files": {
+    "operator_sites.csv": {
+      "bytes": 17470,
+      "sha256": "abdf5700725434d333c7f00309a98b98579c8ebc002f1d1628821b6d76c42105"
+    },
+    "osm_communications.csv": {
+      "bytes": 1437,
+      "sha256": "c15d302cdf4882d7c175faca93612806e4ce7abd43ee80ac001fb647ce06cd29"
+    },
+    "quality_report.json": {
+      "bytes": 3198,
+      "sha256": "dd0aa2335d7896686fb52e9ec6ebd17d8eac90b2126237421186e8d28f81682b"
+    },
+    "raw/asf_hand_samples.json": {
+      "bytes": 15668,
+      "sha256": "95a826878a264246911715091507470786ba44f53dd2e6659eb586a445ba413e"
+    },
+    "raw/copernicus_dem.npy": {
+      "bytes": 36988,
+      "sha256": "14014f20558d43edccd5eef6286708c3f99f001dda8aecda4e70782b31365038"
+    },
+    "raw/copernicus_dem_metadata.json": {
+      "bytes": 493,
+      "sha256": "a99a8bbda19aac8c2f5ee36a36ea61651a5d5c21c656790dd772528af52ac2f5"
+    },
+    "raw/mendeley/README.txt": {
+      "bytes": 2721,
+      "sha256": "f041ffae0508b675eca415366005bc582d0020d20f736ef3dc46550fb237fbe3"
+    },
+    "raw/mendeley/preprocessing.py": {
+      "bytes": 30357,
+      "sha256": "d72f5d4ae3b5421eb309f1bcbad5570fa859d2b6eef0cc567e193db0f517e05f"
+    },
+    "raw/mendeley/processed_dataset.csv": {
+      "bytes": 8888790,
+      "sha256": "f5e9593012fb3ea968af220db67e2ef7ac8e16ea64215360ab1b90982761b25f"
+    },
+    "raw/mendeley/raw_dataset.csv": {
+      "bytes": 8231217,
+      "sha256": "aaab9e0406ce54a2b6ee2aad263b297416d219a5a02d46a58b0603b4cbb7e2b7"
+    },
+    "raw/mendeley_files.json": {
+      "bytes": 2831,
+      "sha256": "7b856eb0668bd9db963de99ad7c17a499d7bf1a7653dcbc940ce8cfc216831df"
+    },
+    "raw/osm_infrastructure.json": {
+      "bytes": 966409,
+      "sha256": "8d6fcf3d08a938220bf731aaef9025fb89a5a977dbc86eb02c103aaea37949d7"
+    },
+    "raw/worldpop_exposure.json": {
+      "bytes": 25957,
+      "sha256": "d2fa3bc8648e7c496d76003afc23edc4f92665c582be5608f3b684788cc10e18"
+    },
+    "source_registry.csv": {
+      "bytes": 3070,
+      "sha256": "cbb7bdb0ae606390808a739cb65440c7523438c0bf6baa2b2ca451e03276aa70"
+    },
+    "tower_feature_table.csv": {
+      "bytes": 67469,
+      "sha256": "20fb3f220b4181897a8ba90d0b698b329a2d3fffaddb0df0636b2f7ff709ba1f"
+    }
+  },
+  "generated_at": "2026-08-11T15:59:02.291699+00:00",
+  "limitations": [
+    "Operator names are anonymized and node positions are source-estimated centroids, not an operator asset register.",
+    "OpenStreetMap infrastructure completeness varies; distances mean nearest mapped feature.",
+    "WorldPop exposure is an estimated 2025 population within a 1 km square, not a count of affected subscribers.",
+    "Copernicus GLO-30 is a surface model; buildings and vegetation can affect local slope/TRI.",
+    "Lightning is intentionally not imputed; tower installation age is unknown.",
+    "No outage/failure labels are present. This supports an interpretable index, not predictive-accuracy claims."
+  ],
+  "model_contract_complete": false,
+  "ready_fields": [
+    "tower_id",
+    "lon",
+    "lat",
+    "radio",
+    "dist_water_m",
+    "hand_m",
+    "slope_deg",
+    "tri",
+    "dist_power_m",
+    "exposed_pop"
+  ],
+  "title": "Sunway source-backed tower health risk pilot dataset",
+  "unresolved_fields": [
+    "flash_density",
+    "age_years"
+  ]
+}

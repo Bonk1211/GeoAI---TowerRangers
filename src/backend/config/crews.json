@@ -1,0 +1,306 @@
+{
+  "_comment": "Mock crew roster (PRD §7.2, Backend_Handoff §2). Assumed demo parameters, not operator data — flagged as such in the API response. Selangor is the reference AOI (Sunway pilot) and carries real depth; every other territory carries one placeholder crew per type so the national picture holds without inventing detail nobody can defend.",
+  "assumed": true,
+  "crews": [
+    {
+      "crew_id": "KEL-C1",
+      "name": "Kota Bharu Civil 1",
+      "crew_type": "civil",
+      "depot": { "lon": 102.238, "lat": 6.125, "name": "Kota Bharu" },
+      "territory": "Kelantan",
+      "max_travel_km": 120,
+      "shift_hours": 8,
+      "members": ["Ahmad R.", "Faizal M.", "Suriani A."]
+    },
+    {
+      "crew_id": "KEL-C2",
+      "name": "Gua Musang Civil 1",
+      "crew_type": "civil",
+      "depot": { "lon": 101.967, "lat": 4.884, "name": "Gua Musang" },
+      "territory": "Kelantan",
+      "max_travel_km": 120,
+      "shift_hours": 8,
+      "members": ["Rosli K.", "Wan Nor A."]
+    },
+    {
+      "crew_id": "KEL-P1",
+      "name": "Tanah Merah Power 1",
+      "crew_type": "power",
+      "depot": { "lon": 102.147, "lat": 5.807, "name": "Tanah Merah" },
+      "territory": "Kelantan",
+      "max_travel_km": 100,
+      "shift_hours": 8,
+      "members": ["Zulkifli H.", "Aina S."]
+    },
+    {
+      "crew_id": "KEL-E1",
+      "name": "Kota Bharu Electrical 1",
+      "crew_type": "electrical",
+      "depot": { "lon": 102.238, "lat": 6.125, "name": "Kota Bharu" },
+      "territory": "Kelantan",
+      "max_travel_km": 120,
+      "shift_hours": 8,
+      "members": ["Hafiz T.", "Meor A."]
+    },
+    {
+      "crew_id": "KEL-R1",
+      "name": "Kota Bharu RF 1",
+      "crew_type": "rf",
+      "depot": { "lon": 102.238, "lat": 6.125, "name": "Kota Bharu" },
+      "territory": "Kelantan",
+      "max_travel_km": 150,
+      "shift_hours": 8,
+      "members": ["Nurul I.", "Chong W."]
+    },
+    {
+      "crew_id": "TRG-C1",
+      "name": "Kuala Terengganu Civil 1",
+      "crew_type": "civil",
+      "depot": { "lon": 103.140, "lat": 5.330, "name": "Kuala Terengganu" },
+      "territory": "Terengganu",
+      "max_travel_km": 150,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "TRG-P1",
+      "name": "Kuala Terengganu Power 1",
+      "crew_type": "power",
+      "depot": { "lon": 103.140, "lat": 5.330, "name": "Kuala Terengganu" },
+      "territory": "Terengganu",
+      "max_travel_km": 150,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "PHG-C1",
+      "name": "Kuantan Civil 1",
+      "crew_type": "civil",
+      "depot": { "lon": 103.326, "lat": 3.808, "name": "Kuantan" },
+      "territory": "Pahang",
+      "max_travel_km": 150,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "PHG-P1",
+      "name": "Kuantan Power 1",
+      "crew_type": "power",
+      "depot": { "lon": 103.326, "lat": 3.808, "name": "Kuantan" },
+      "territory": "Pahang",
+      "max_travel_km": 150,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "PRK-C1",
+      "name": "Ipoh Civil 1",
+      "crew_type": "civil",
+      "depot": { "lon": 101.090, "lat": 4.598, "name": "Ipoh" },
+      "territory": "Perak",
+      "max_travel_km": 150,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "PRK-R1",
+      "name": "Ipoh RF 1",
+      "crew_type": "rf",
+      "depot": { "lon": 101.090, "lat": 4.598, "name": "Ipoh" },
+      "territory": "Perak",
+      "max_travel_km": 150,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "PNG-E1",
+      "name": "Georgetown Electrical 1",
+      "crew_type": "electrical",
+      "depot": { "lon": 100.329, "lat": 5.414, "name": "Georgetown" },
+      "territory": "Penang",
+      "max_travel_km": 100,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "KDH-C1",
+      "name": "Alor Setar Civil 1",
+      "crew_type": "civil",
+      "depot": { "lon": 100.370, "lat": 6.121, "name": "Alor Setar" },
+      "territory": "Kedah",
+      "max_travel_km": 150,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "PLS-P1",
+      "name": "Kangar Power 1",
+      "crew_type": "power",
+      "depot": { "lon": 100.199, "lat": 6.433, "name": "Kangar" },
+      "territory": "Perlis",
+      "max_travel_km": 100,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "SEL-C1",
+      "name": "Subang Jaya Civil 1",
+      "crew_type": "civil",
+      "depot": { "lon": 101.588, "lat": 3.045, "name": "Subang Jaya" },
+      "territory": "Selangor",
+      "max_travel_km": 40,
+      "shift_hours": 8,
+      "members": ["Azman I.", "Farah N.", "Kamal S."]
+    },
+    {
+      "crew_id": "SEL-C2",
+      "name": "Shah Alam Civil 1",
+      "crew_type": "civil",
+      "depot": { "lon": 101.518, "lat": 3.073, "name": "Shah Alam" },
+      "territory": "Selangor",
+      "max_travel_km": 50,
+      "shift_hours": 8,
+      "members": ["Ridwan Y.", "Syafiq D."]
+    },
+    {
+      "crew_id": "SEL-P1",
+      "name": "Petaling Jaya Power 1",
+      "crew_type": "power",
+      "depot": { "lon": 101.644, "lat": 3.107, "name": "Petaling Jaya" },
+      "territory": "Selangor",
+      "max_travel_km": 40,
+      "shift_hours": 8,
+      "members": ["Halim B.", "Norlia J."]
+    },
+    {
+      "crew_id": "SEL-E1",
+      "name": "Shah Alam Electrical 1",
+      "crew_type": "electrical",
+      "depot": { "lon": 101.518, "lat": 3.073, "name": "Shah Alam" },
+      "territory": "Selangor",
+      "max_travel_km": 50,
+      "shift_hours": 8,
+      "members": ["Firdaus K.", "Elina W."]
+    },
+    {
+      "crew_id": "SEL-R1",
+      "name": "Petaling Jaya RF 1",
+      "crew_type": "rf",
+      "depot": { "lon": 101.644, "lat": 3.107, "name": "Petaling Jaya" },
+      "territory": "Selangor",
+      "max_travel_km": 60,
+      "shift_hours": 8,
+      "members": ["Zaid M.", "Puteri L."]
+    },
+    {
+      "crew_id": "KUL-E1",
+      "name": "Kuala Lumpur Electrical 1",
+      "crew_type": "electrical",
+      "depot": { "lon": 101.687, "lat": 3.139, "name": "Kuala Lumpur" },
+      "territory": "Kuala Lumpur",
+      "max_travel_km": 60,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "NSN-C1",
+      "name": "Seremban Civil 1",
+      "crew_type": "civil",
+      "depot": { "lon": 101.940, "lat": 2.727, "name": "Seremban" },
+      "territory": "Negeri Sembilan",
+      "max_travel_km": 120,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "MLK-P1",
+      "name": "Melaka City Power 1",
+      "crew_type": "power",
+      "depot": { "lon": 102.250, "lat": 2.190, "name": "Melaka City" },
+      "territory": "Melaka",
+      "max_travel_km": 100,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "JHR-C1",
+      "name": "Johor Bahru Civil 1",
+      "crew_type": "civil",
+      "depot": { "lon": 103.759, "lat": 1.492, "name": "Johor Bahru" },
+      "territory": "Johor",
+      "max_travel_km": 150,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "JHR-R1",
+      "name": "Johor Bahru RF 1",
+      "crew_type": "rf",
+      "depot": { "lon": 103.759, "lat": 1.492, "name": "Johor Bahru" },
+      "territory": "Johor",
+      "max_travel_km": 150,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "SBH-C1",
+      "name": "Kota Kinabalu Civil 1",
+      "crew_type": "civil",
+      "depot": { "lon": 116.073, "lat": 5.980, "name": "Kota Kinabalu" },
+      "territory": "Sabah",
+      "max_travel_km": 200,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "SBH-P1",
+      "name": "Kota Kinabalu Power 1",
+      "crew_type": "power",
+      "depot": { "lon": 116.073, "lat": 5.980, "name": "Kota Kinabalu" },
+      "territory": "Sabah",
+      "max_travel_km": 200,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "SWK-C1",
+      "name": "Kuching Civil 1",
+      "crew_type": "civil",
+      "depot": { "lon": 110.342, "lat": 1.553, "name": "Kuching" },
+      "territory": "Sarawak",
+      "max_travel_km": 200,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "SWK-E1",
+      "name": "Kuching Electrical 1",
+      "crew_type": "electrical",
+      "depot": { "lon": 110.342, "lat": 1.553, "name": "Kuching" },
+      "territory": "Sarawak",
+      "max_travel_km": 200,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "PJY-C1",
+      "name": "Putrajaya Civil 1",
+      "crew_type": "civil",
+      "depot": { "lon": 101.689, "lat": 2.926, "name": "Putrajaya" },
+      "territory": "Putrajaya",
+      "max_travel_km": 60,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    },
+    {
+      "crew_id": "LBN-P1",
+      "name": "Labuan Power 1",
+      "crew_type": "power",
+      "depot": { "lon": 115.243, "lat": 5.280, "name": "Labuan" },
+      "territory": "Labuan",
+      "max_travel_km": 60,
+      "shift_hours": 8,
+      "members": ["placeholder"]
+    }
+  ]
+}

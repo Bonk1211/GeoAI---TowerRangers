@@ -1,0 +1,40 @@
+{
+  "attribution": [
+    "© OpenStreetMap contributors; data available under ODbL 1.0.",
+    "Copernicus DEM GLO-30 Public, accessed through Microsoft Planetary Computer.",
+    "Global 30m HAND © 2022 Alaska Satellite Facility, CC0 1.0.",
+    "geoBoundaries ADM1 (gbOpen), CC BY 4.0."
+  ],
+  "bbox_wgs84": [
+    98.9,
+    0.5,
+    119.5,
+    7.6
+  ],
+  "files": {
+    "osm_towers.csv": {
+      "bytes": 214866,
+      "sha256": "6debed436d92cc29bf370afa2ac31767031976735c27f56ccca04e94764272e9"
+    },
+    "tower_feature_table.csv": {
+      "bytes": 375718,
+      "sha256": "149bbca655af127c21d5938f837ca98d741c7ff7220b7e39551497ca97e167a8"
+    }
+  },
+  "generated_at": "2026-08-31T10:58:36.939362+00:00",
+  "model_columns": [
+    "tower_id",
+    "lon",
+    "lat",
+    "radio",
+    "dist_water_m",
+    "hand_m",
+    "slope_deg",
+    "tri",
+    "flash_density",
+    "dist_power_m",
+    "age_years",
+    "exposed_pop"
+  ],
+  "title": "Malaysia-wide OpenStreetMap communication tower feature table"
+}

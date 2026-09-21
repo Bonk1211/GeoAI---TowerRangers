@@ -1,0 +1,73 @@
+{
+  "caveats": [
+    "Tower positions are OpenStreetMap features, not an operator asset register; per-state counts describe OSM completeness, not deployment.",
+    "No outage, fault or maintenance label is present anywhere in this table.",
+    "Water and power distances saturate at 20 km, where both membership curves are already flat."
+  ],
+  "dropped_no_hand": 0,
+  "intentional_unresolved_fields": {
+    "age_years": "no source gives tower installation dates",
+    "exposed_pop": "per-point WorldPop call, and no risk factor consumes it",
+    "flash_density": "LIS/OTD climatology needs authenticated NASA acquisition"
+  },
+  "model_contract_complete": false,
+  "numeric_ranges": {
+    "dist_power_m": {
+      "max": 20000.0,
+      "median": 677.5286,
+      "min": 2.169
+    },
+    "dist_water_m": {
+      "max": 20000.0,
+      "median": 350.0374,
+      "min": 0.0
+    },
+    "elevation_m": {
+      "max": 2234.7305,
+      "median": 31.5947,
+      "min": -0.6328
+    },
+    "hand_m": {
+      "max": 442.4723,
+      "median": 3.8811,
+      "min": 0.0
+    },
+    "slope_deg": {
+      "max": 29.3744,
+      "median": 2.9605,
+      "min": 0.0
+    },
+    "tri": {
+      "max": 53.0251,
+      "median": 5.4913,
+      "min": 0.0
+    }
+  },
+  "radio": {
+    "GSM": 1,
+    "LTE": 15,
+    "NR": 29,
+    "UNKNOWN": 1119
+  },
+  "rows": 1164,
+  "states": {
+    "Johor": 148,
+    "Kedah": 80,
+    "Kelantan": 78,
+    "Kuala Lumpur": 38,
+    "Labuan": 2,
+    "Malacca": 46,
+    "Negeri Sembilan": 43,
+    "Pahang": 96,
+    "Penang": 32,
+    "Perak": 51,
+    "Perlis": 2,
+    "Putrajaya": 2,
+    "Sabah": 62,
+    "Sarawak": 232,
+    "Selangor": 188,
+    "Terengganu": 60,
+    "unassigned": 4
+  },
+  "unique_tower_ids": 1164
+}

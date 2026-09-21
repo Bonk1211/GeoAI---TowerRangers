@@ -1,0 +1,14 @@
+# Optional dependencies for live /flood/tiles and flood-data producers.
+#
+# Keep separate from requirements.txt so the core API still boots without Earth
+# Engine; live tile requests then return an explicit 503 with setup instructions.
+#
+# Setup, once, on a developer machine:
+#   pip install -r src/backend/requirements-flood.txt
+#   gcloud init && earthengine authenticate
+#
+# Requires a Google Cloud project with the Earth Engine API enabled; pass its id
+# to the script with --project.
+earthengine-api>=1.4
+hydrafloods>=2023.10
+pillow>=10

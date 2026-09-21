@@ -1,0 +1,88 @@
+{
+  "files": {
+    "geospatial_catalog": {
+      "bytes": 318962,
+      "path": "geospatial_catalog_data.csv",
+      "sha256": "0efab196baa524f23490410572abb3d1f132244d040e2b92c01a4640a9535791"
+    },
+    "geospatial_ml_sources": {
+      "bytes": 30132,
+      "path": "geospatial_ml_sources.csv",
+      "sha256": "258e7117c8f64a897f5377bf104764034e059ccc75a660bf7aa2b40b83cfaab0"
+    },
+    "itu_catalogue": {
+      "bytes": 107915,
+      "path": "itu_indicator_catalogue.json",
+      "sha256": "f0c955025af582b4a74d13b3c66fc3f19677f7d0a4885635c610b20d5ef0124d"
+    },
+    "itu_countries": {
+      "bytes": 184789,
+      "path": "itu_countries.json",
+      "sha256": "1350b323e2c06dc6b856c36155c82aacbbb1fc779be5d318db8d52be17addeae"
+    },
+    "itu_details": {
+      "bytes": 16845282,
+      "path": "itu_indicator_details.json",
+      "sha256": "ca15918a11a25422ba669c0c1cbd3399dcbe8b1d279fa8e1329c241ca804d2f2"
+    },
+    "itu_methodology": {
+      "bytes": 1392,
+      "path": "itu_methodology.json",
+      "sha256": "1060bea1c3bde6090d53ec0b08c8dd0adcc8512da277b9a854793b846d135b0a"
+    },
+    "itu_observations": {
+      "bytes": 9438714,
+      "path": "itu_asean_observations.csv",
+      "sha256": "22f605c0dbabadcd53685bd431d9775b6649c21465b4d69e5384a7764a02d643"
+    },
+    "itu_regions": {
+      "bytes": 1835,
+      "path": "itu_regions.json",
+      "sha256": "a7be782a8c18055fe865467194467d466d5e6577d63b4cfcca9352bcb880e0ec"
+    },
+    "itu_series": {
+      "bytes": 6260471,
+      "path": "itu_series_metadata.csv",
+      "sha256": "a362942cf3d2775b19b03c6cd18aa1f3544befdbf7328da3314901cd6a11c567"
+    },
+    "model_source_mapping": {
+      "bytes": 2655,
+      "path": "model_source_mapping.csv",
+      "sha256": "a29010e3d7c1954dc3a639e52eb0f157ef01d6ecee856d770a45b2fcf4ee59ab"
+    },
+    "quality_report": {
+      "bytes": 2123,
+      "path": "quality_report.json",
+      "sha256": "53baf084de42cdb725e5d5415d0ce9fd000d808cb2028efb36a42f8a851faed9"
+    }
+  },
+  "generated_at": "2026-08-11T15:29:03.311427+00:00",
+  "limitations": [
+    "ITU observations are country-level context and must not be joined to tower rows as if they were local measurements.",
+    "Geospatial Catalog records are discovery metadata; each linked provider's data and licence must be acquired separately.",
+    "The supplied sources do not expose a bulk tower-level radio-generation dataset. A model-contract feature table still requires a licensed OpenCellID export or an equivalent operator source.",
+    "No outage/failure labels are present; this dataset supports an index, not predictive-accuracy claims."
+  ],
+  "scope": "Geospatial source catalogue plus full-history ITU data for 11 ASEAN members",
+  "sources": [
+    {
+      "name": "Geospatial Catalog - Data",
+      "role": "discovery metadata; not tower-level measurements",
+      "url": "https://geospatialcatalog.com/categories/data"
+    },
+    {
+      "api": "https://api.datahub.itu.int/v3/data/download",
+      "license": "CC BY-NC-SA 3.0 IGO; third-party series retain owner terms",
+      "name": "ITU DataHub",
+      "role": "country-level ICT observations and provenance",
+      "url": "https://datahub.itu.int/data/"
+    },
+    {
+      "api": "https://api.datahub.itu.int/v3/dictionaries/getcategories",
+      "name": "ITU Indicator Catalogue",
+      "role": "indicator and series metadata",
+      "url": "https://datahub.itu.int/indicators/"
+    }
+  ],
+  "title": "Tower Health Risk Index real-source dataset"
+}

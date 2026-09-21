@@ -1,0 +1,7 @@
+# Load testing (locust). Optional, like every other requirements-*.txt here:
+# nothing on the serving path imports it, and the API boots without it.
+# Installs into the same src/backend/.venv as the other four files.
+#
+# Used by loadtest/locustfile.py to measure the latency of the endpoints the
+# disaster-response path actually calls. See loadtest/README.md.
+locust>=2.31

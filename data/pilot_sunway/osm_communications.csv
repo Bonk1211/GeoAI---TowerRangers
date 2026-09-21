@@ -1,0 +1,11 @@
+osm_type,osm_id,lon,lat,name,operator,man_made,mobile_phone,tags_json
+node,1982558019,101.5926442,3.0763002,,,communications_tower,,"{""man_made"": ""communications_tower""}"
+node,8047942568,101.6576021,3.0579681,,,mast,,"{""man_made"": ""mast"", ""tower:type"": ""communication""}"
+node,11403863828,101.5614581,3.0168439,,,tower,,"{""man_made"": ""tower"", ""tower:type"": ""communication""}"
+node,11548619078,101.6506067,3.1089118,,,tower,,"{""man_made"": ""tower"", ""tower:construction"": ""lattice"", ""tower:type"": ""communication""}"
+node,11853239841,101.5601282,3.0756348,,,mast,,"{""communication:television"": ""yes"", ""man_made"": ""mast"", ""tower:type"": ""communication""}"
+node,12366513311,101.5856225,3.1142316,,,tower,,"{""man_made"": ""tower"", ""tower:type"": ""communication""}"
+node,12366513312,101.5897492,3.1125047,,,tower,,"{""man_made"": ""tower"", ""tower:type"": ""communication""}"
+node,13763999844,101.5977962,3.1201172,,,mast,yes,"{""communication:mobile_phone"": ""yes"", ""man_made"": ""mast"", ""tower:construction"": ""lattice"", ""tower:type"": ""communication""}"
+way,138669843,101.65877101999999,3.0916894800000003,,,tower,,"{""layer"": ""1"", ""man_made"": ""tower"", ""tower:construction"": ""lattice"", ""tower:type"": ""communication""}"
+way,1264710479,101.65923476,3.0917456999999997,,,tower,,"{""man_made"": ""tower"", ""tower:construction"": ""lattice"", ""tower:type"": ""communication""}"

@@ -1,0 +1,13 @@
+# Raw provider responses, re-fetchable and large (~700 MB): 41 Overpass tiles,
+# ~800 Copernicus DEM windows, 400 JRC GSW windows, the ASF HAND samples.
+# Deleting this directory costs a ~2 h rebuild and nothing else.
+cache/
+*.log
+
+# The monthly tower-month panel (~35,000 rows). Built by
+# prepare_maintenance_records.py, read by nothing: it backs a model variant that
+# was measured and rejected — predicting need in a 6-month forward window scored
+# PR-AUC ~0.06-0.07 against the served 36-month model's 0.29, purely from the
+# rarer base rate. maintenance_need.py names it in a docstring to record that
+# result, not to load it. Regenerate if you want to re-run that comparison.
+maintenance_panel.csv

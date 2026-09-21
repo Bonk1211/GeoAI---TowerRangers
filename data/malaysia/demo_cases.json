@@ -1,0 +1,503 @@
+{
+  "budget": {
+    "cap": 45,
+    "planted": 33
+  },
+  "cases": [
+    {
+      "case_type": "protected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_positive",
+      "forced_latents": {
+        "behaves_at_pct": 15.0,
+        "build_quality": 0.92,
+        "demo_multiplier": 0.0,
+        "has_drainage": 1
+      },
+      "observable_percentile": 98.7,
+      "state": "Sarawak",
+      "tower_id": "MY_N11806207720",
+      "why": "Top-decile flood exposure, drainage already installed. The model ranks it on environment and cannot see the fix — this FP is the limit of environment, not model error."
+    },
+    {
+      "case_type": "protected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_positive",
+      "forced_latents": {
+        "behaves_at_pct": 15.0,
+        "build_quality": 0.92,
+        "demo_multiplier": 1e-06,
+        "has_drainage": 1
+      },
+      "observable_percentile": 95.0,
+      "state": "Negeri Sembilan",
+      "tower_id": "MY_W1368699691",
+      "why": "Top-decile flood exposure, drainage already installed. The model ranks it on environment and cannot see the fix — this FP is the limit of environment, not model error."
+    },
+    {
+      "case_type": "protected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_positive",
+      "forced_latents": {
+        "behaves_at_pct": 15.0,
+        "build_quality": 0.92,
+        "demo_multiplier": 0.0,
+        "has_drainage": 1
+      },
+      "observable_percentile": 99.1,
+      "state": "Negeri Sembilan",
+      "tower_id": "MY_N4193669752",
+      "why": "Top-decile flood exposure, drainage already installed. The model ranks it on environment and cannot see the fix — this FP is the limit of environment, not model error."
+    },
+    {
+      "case_type": "protected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_positive",
+      "forced_latents": {
+        "behaves_at_pct": 15.0,
+        "build_quality": 0.92,
+        "demo_multiplier": 0.0,
+        "has_drainage": 1
+      },
+      "observable_percentile": 97.8,
+      "state": "Sarawak",
+      "tower_id": "MY_N11875484222",
+      "why": "Top-decile flood exposure, drainage already installed. The model ranks it on environment and cannot see the fix — this FP is the limit of environment, not model error."
+    },
+    {
+      "case_type": "neglected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_negative",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "build_quality": 0.04,
+        "demo_multiplier": 21868904.517855,
+        "genset_age_years": 21.5,
+        "has_drainage": 0
+      },
+      "observable_percentile": 9.5,
+      "state": "Pahang",
+      "tower_id": "MY_W1545410197",
+      "why": "Benign environment, many tickets. Answers 'what would you miss?' — sites whose problem is workmanship, not geography."
+    },
+    {
+      "case_type": "neglected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_negative",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "build_quality": 0.04,
+        "demo_multiplier": 435106.866599,
+        "genset_age_years": 21.5,
+        "has_drainage": 0
+      },
+      "observable_percentile": 24.3,
+      "state": "Kuala Lumpur",
+      "tower_id": "MY_N9466091146",
+      "why": "Benign environment, many tickets. Answers 'what would you miss?' — sites whose problem is workmanship, not geography."
+    },
+    {
+      "case_type": "neglected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_negative",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "build_quality": 0.04,
+        "demo_multiplier": 61200.404925,
+        "genset_age_years": 21.5,
+        "has_drainage": 0
+      },
+      "observable_percentile": 35.7,
+      "state": "Sarawak",
+      "tower_id": "MY_N11802478955",
+      "why": "Benign environment, many tickets. Answers 'what would you miss?' — sites whose problem is workmanship, not geography."
+    },
+    {
+      "case_type": "neglected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_negative",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "build_quality": 0.04,
+        "demo_multiplier": 495795270.142374,
+        "genset_age_years": 21.5,
+        "has_drainage": 0
+      },
+      "observable_percentile": 3.5,
+      "state": "Johor",
+      "tower_id": "MY_N11388862434",
+      "why": "Benign environment, many tickets. Answers 'what would you miss?' — sites whose problem is workmanship, not geography."
+    },
+    {
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "quiet_half",
+      "forced_latents": {
+        "behaves_at_pct": 15.0,
+        "build_quality": 0.9,
+        "demo_multiplier": 0.000223
+      },
+      "observable_percentile": 65.2,
+      "partner_id": "MY_N12137024409",
+      "state": "Selangor",
+      "tower_id": "MY_N12137024408",
+      "why": "Paired with a site the model cannot distinguish from it, with the opposite outcome. The irreducible ceiling made visible."
+    },
+    {
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "loud_half",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "build_quality": 0.1,
+        "demo_multiplier": 643.61498
+      },
+      "observable_percentile": 68.0,
+      "partner_id": "MY_N12137024408",
+      "state": "Selangor",
+      "tower_id": "MY_N12137024409",
+      "why": "Paired with a site the model cannot distinguish from it, with the opposite outcome. The irreducible ceiling made visible."
+    },
+    {
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "quiet_half",
+      "forced_latents": {
+        "behaves_at_pct": 15.0,
+        "build_quality": 0.9,
+        "demo_multiplier": 8e-06
+      },
+      "observable_percentile": 85.4,
+      "partner_id": "MY_N11659562129",
+      "state": "Sarawak",
+      "tower_id": "MY_N11659562132",
+      "why": "Paired with a site the model cannot distinguish from it, with the opposite outcome. The irreducible ceiling made visible."
+    },
+    {
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "loud_half",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "build_quality": 0.1,
+        "demo_multiplier": 9.915255
+      },
+      "observable_percentile": 91.5,
+      "partner_id": "MY_N11659562132",
+      "state": "Sarawak",
+      "tower_id": "MY_N11659562129",
+      "why": "Paired with a site the model cannot distinguish from it, with the opposite outcome. The irreducible ceiling made visible."
+    },
+    {
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "quiet_half",
+      "forced_latents": {
+        "behaves_at_pct": 15.0,
+        "build_quality": 0.9,
+        "demo_multiplier": 0.003466
+      },
+      "observable_percentile": 44.8,
+      "partner_id": "MY_N12137013087",
+      "state": "Selangor",
+      "tower_id": "MY_N12137024405",
+      "why": "Paired with a site the model cannot distinguish from it, with the opposite outcome. The irreducible ceiling made visible."
+    },
+    {
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "loud_half",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "build_quality": 0.1,
+        "demo_multiplier": 18516.845909
+      },
+      "observable_percentile": 43.2,
+      "partner_id": "MY_N12137024405",
+      "state": "Selangor",
+      "tower_id": "MY_N12137013087",
+      "why": "Paired with a site the model cannot distinguish from it, with the opposite outcome. The irreducible ceiling made visible."
+    },
+    {
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "quiet_half",
+      "forced_latents": {
+        "behaves_at_pct": 15.0,
+        "build_quality": 0.9,
+        "demo_multiplier": 0.003463
+      },
+      "observable_percentile": 44.9,
+      "partner_id": "MY_N13015606467",
+      "state": "Selangor",
+      "tower_id": "MY_N13015606469",
+      "why": "Paired with a site the model cannot distinguish from it, with the opposite outcome. The irreducible ceiling made visible."
+    },
+    {
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "loud_half",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "build_quality": 0.1,
+        "demo_multiplier": 4195.629478
+      },
+      "observable_percentile": 53.3,
+      "partner_id": "MY_N13015606469",
+      "state": "Selangor",
+      "tower_id": "MY_N13015606467",
+      "why": "Paired with a site the model cannot distinguish from it, with the opposite outcome. The irreducible ceiling made visible."
+    },
+    {
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "quiet_half",
+      "forced_latents": {
+        "behaves_at_pct": 15.0,
+        "build_quality": 0.9,
+        "demo_multiplier": 0.000286
+      },
+      "observable_percentile": 63.0,
+      "partner_id": "MY_N12137013091",
+      "state": "Selangor",
+      "tower_id": "MY_N12137013095",
+      "why": "Paired with a site the model cannot distinguish from it, with the opposite outcome. The irreducible ceiling made visible."
+    },
+    {
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "loud_half",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "build_quality": 0.1,
+        "demo_multiplier": 764.720295
+      },
+      "observable_percentile": 66.8,
+      "partner_id": "MY_N12137013095",
+      "state": "Selangor",
+      "tower_id": "MY_N12137013091",
+      "why": "Paired with a site the model cannot distinguish from it, with the opposite outcome. The irreducible ceiling made visible."
+    },
+    {
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "quiet_half",
+      "forced_latents": {
+        "behaves_at_pct": 15.0,
+        "build_quality": 0.9,
+        "demo_multiplier": 0.495211
+      },
+      "observable_percentile": 18.6,
+      "partner_id": "MY_W1270085203",
+      "state": "Pahang",
+      "tower_id": "MY_W1270085208",
+      "why": "Paired with a site the model cannot distinguish from it, with the opposite outcome. The irreducible ceiling made visible."
+    },
+    {
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "loud_half",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "build_quality": 0.1,
+        "demo_multiplier": 438612.603902
+      },
+      "observable_percentile": 24.2,
+      "partner_id": "MY_W1270085208",
+      "state": "Pahang",
+      "tower_id": "MY_W1270085203",
+      "why": "Paired with a site the model cannot distinguish from it, with the opposite outcome. The irreducible ceiling made visible."
+    },
+    {
+      "case_type": "remediated_site",
+      "expectation_kind": "narrative",
+      "expected_role": "label_is_lossy",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "demo_multiplier": 2.371521,
+        "remediated_at_month": 14
+      },
+      "observable_percentile": 95.1,
+      "state": "Pahang",
+      "tower_id": "MY_N8327095826",
+      "why": "High 36-month count, but fixed 22 months ago. Shows why an aggregate target hides remediation, and why recency matters."
+    },
+    {
+      "case_type": "remediated_site",
+      "expectation_kind": "narrative",
+      "expected_role": "label_is_lossy",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "demo_multiplier": 30.880689,
+        "remediated_at_month": 14
+      },
+      "observable_percentile": 85.8,
+      "state": "Malacca",
+      "tower_id": "MY_N3902995326",
+      "why": "High 36-month count, but fixed 22 months ago. Shows why an aggregate target hides remediation, and why recency matters."
+    },
+    {
+      "case_type": "remediated_site",
+      "expectation_kind": "narrative",
+      "expected_role": "label_is_lossy",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "demo_multiplier": 10.83965,
+        "remediated_at_month": 14
+      },
+      "observable_percentile": 90.8,
+      "state": "Kelantan",
+      "tower_id": "MY_N8923088437",
+      "why": "High 36-month count, but fixed 22 months ago. Shows why an aggregate target hides remediation, and why recency matters."
+    },
+    {
+      "case_type": "new_commission",
+      "expectation_kind": "narrative",
+      "expected_role": "denominator_matters",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "demo_multiplier": 8.416033,
+        "months_in_service": 8
+      },
+      "observable_percentile": 91.8,
+      "state": "Sarawak",
+      "tower_id": "MY_N6354464187",
+      "why": "Low raw count, high rate. The concrete reason a count target ranks it wrongly and an exposure offset is needed."
+    },
+    {
+      "case_type": "new_commission",
+      "expectation_kind": "narrative",
+      "expected_role": "denominator_matters",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "demo_multiplier": 94.640872,
+        "months_in_service": 8
+      },
+      "observable_percentile": 79.6,
+      "state": "Selangor",
+      "tower_id": "MY_N12137013097",
+      "why": "Low raw count, high rate. The concrete reason a count target ranks it wrongly and an exposure offset is needed."
+    },
+    {
+      "case_type": "new_commission",
+      "expectation_kind": "narrative",
+      "expected_role": "denominator_matters",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "demo_multiplier": 0.415746,
+        "months_in_service": 8
+      },
+      "observable_percentile": 98.5,
+      "state": "Johor",
+      "tower_id": "MY_N3902995318",
+      "why": "Low raw count, high rate. The concrete reason a count target ranks it wrongly and an exposure offset is needed."
+    },
+    {
+      "case_type": "catastrophic",
+      "expectation_kind": "narrative",
+      "expected_role": "count_is_not_cost",
+      "forced_latents": {
+        "behaves_at_pct": 90.0,
+        "catastrophic": 1,
+        "demo_multiplier": 5.854558
+      },
+      "observable_percentile": 80.9,
+      "state": "Perak",
+      "tower_id": "MY_N8068563589",
+      "why": "Ranks low by ticket count, top by downtime. Opens the question of what the system should optimise, which this prototype does not answer."
+    },
+    {
+      "case_type": "catastrophic",
+      "expectation_kind": "narrative",
+      "expected_role": "count_is_not_cost",
+      "forced_latents": {
+        "behaves_at_pct": 90.0,
+        "catastrophic": 1,
+        "demo_multiplier": 15.583418
+      },
+      "observable_percentile": 75.7,
+      "state": "Sarawak",
+      "tower_id": "MY_N12116945444",
+      "why": "Ranks low by ticket count, top by downtime. Opens the question of what the system should optimise, which this prototype does not answer."
+    },
+    {
+      "case_type": "monsoon_locked",
+      "expectation_kind": "narrative",
+      "expected_role": "constraint_visible",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "demo_multiplier": 12.020762,
+        "has_drainage": 0
+      },
+      "observable_percentile": 90.3,
+      "state": "Kedah",
+      "tower_id": "MY_N6039478983",
+      "why": "Flood-dominant, civil crew. policy.yaml blocks civil work in flood zones Nov-Mar, so the optimizer must defer it and say why."
+    },
+    {
+      "case_type": "monsoon_locked",
+      "expectation_kind": "narrative",
+      "expected_role": "constraint_visible",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "demo_multiplier": 3.50268,
+        "has_drainage": 0
+      },
+      "observable_percentile": 94.2,
+      "state": "Sarawak",
+      "tower_id": "MY_N12309364295",
+      "why": "Flood-dominant, civil crew. policy.yaml blocks civil work in flood zones Nov-Mar, so the optimizer must defer it and say why."
+    },
+    {
+      "case_type": "monsoon_locked",
+      "expectation_kind": "narrative",
+      "expected_role": "constraint_visible",
+      "forced_latents": {
+        "behaves_at_pct": 97.0,
+        "demo_multiplier": 44.557176,
+        "has_drainage": 0
+      },
+      "observable_percentile": 83.8,
+      "state": "Sarawak",
+      "tower_id": "MY_N6457937009",
+      "why": "Flood-dominant, civil crew. policy.yaml blocks civil work in flood zones Nov-Mar, so the optimizer must defer it and say why."
+    },
+    {
+      "case_type": "lone_territory",
+      "expectation_kind": "narrative",
+      "expected_role": "capacity_edge",
+      "forced_latents": {
+        "build_quality": 0.08
+      },
+      "observable_percentile": 8.2,
+      "state": "Perlis",
+      "tower_id": "MY_W1317650252",
+      "why": "Perlis has 2 towers in OSM. Either it schedules or it lands in `unscheduled` with a reason — both correct, provided it is stated."
+    },
+    {
+      "case_type": "enclave",
+      "expectation_kind": "narrative",
+      "expected_role": "territory_assignment",
+      "forced_latents": {
+        "build_quality": 0.12
+      },
+      "observable_percentile": 10.7,
+      "state": "Kuala Lumpur",
+      "tower_id": "MY_W728820002",
+      "why": "An enclave state wholly inside another. Exercises assign_states' smallest-state-first rule live."
+    }
+  ],
+  "note": "Planted before training by forcing latent draws, never by writing labels. expected_role is the intent; the notebook reports observed_role, including disagreements.",
+  "seed": 0,
+  "synthetic": true,
+  "telemetry": {
+    "columns": [
+      "rectifier_alarms_30d",
+      "battery_sag_events_30d",
+      "door_open_hours_30d"
+    ],
+    "noise": 0.5,
+    "note": "Current-period counters. Predictive but UNTRAINABLE here: the counters cover 30 days and the label covers 36 months, so no aligned (telemetry, outcome) pair exists. model/maintenance_need.py's FEATURES excludes it by design; model/novelty.py reads it because an unsupervised layer needs no labels.",
+    "window_days": 30
+  }
+}

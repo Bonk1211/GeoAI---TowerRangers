@@ -1,0 +1,790 @@
+@import "tailwindcss";
+
+/* ============================================================
+   TowerRangers — "instrument paper" (light)
+   One ground, one chrome accent, warm hues reserved for data.
+   ------------------------------------------------------------
+   Rule that holds the whole app together:
+     cool accent  -> interface chrome (nav, focus, controls)
+     warm hues    -> data only, with an explicit numeric key
+     tower triad  -> risk severity
+     role family  -> crew capability (schedule tab only, see below)
+   If a warm colour appears on a control, it is a bug.
+
+   AMENDMENT (schedule tab): the original rule said colour could carry
+   nothing but chrome and severity, so the four crew capabilities were
+   distinguished by grouping, label and glyph alone. On a 900px board that
+   made Civil / Power / RF / Electrical four identical grey stripes, and the
+   tab was unreadable. Crew type now carries its own hue, from
+   lib/roleColors.ts.
+
+   The role ramp is deliberately COOL (indigo / sky / cyan / slate). Not
+   because the old prohibition survives -- it does not -- but because a job
+   bar shows role AND severity on the same element. If role could be orange,
+   the two readings would collide on one mark. Warm is still severity, and a
+   warm hue on a control is still a bug.
+   ------------------------------------------------------------
+   LIGHT-THEME NOTES
+
+   1. Ground is #f2f5fa, not #ffffff. A pure-white full-screen
+      ground under a data console is glare; the cool off-white
+      keeps panels (which ARE white) readable as raised surfaces
+      without needing a heavy border.
+
+   2. Elevation is carried by SHADOW, not by glow. On the dark
+      theme a panel separated from the ground by being lighter
+      than it. Here it separates by being lighter *and* casting.
+      Every glow was removed — a glow on a light ground reads as
+      a rendering artefact, not as depth.
+
+   3. `--color-overlay` is the hinge of the whole theme. Every
+      surface tint and hairline in the component tree is written
+      as `overlay/<alpha>`. On dark that token was #ffffff; here
+      it is the ink. Flipping the theme back is a one-line change
+      to this token plus the ground/text ramp below — no
+      component edits.
+
+   4. Severity has TWO ramps, and they are not interchangeable:
+        --color-<band>       large fills, map circles, bars   >=3:1
+        --color-<band>-ink   text, small chips, thin strokes  >=4.5:1
+      The dark theme could use one value for both because a
+      saturated hue on near-black clears both bars. On white it
+      does not: #ffb244 measures 1.9:1 as text. Use the -ink
+      variant for anything a user has to READ.
+      All values below are measured, not eyeballed.
+   ============================================================ */
+
+@theme {
+  /* ------------------------------------------------------------
+     TYPE. Two families, not three.
+
+     --font-display and --font-sans are deliberately the SAME face.
+     The old system split Space Grotesk (display) from IBM Plex Sans
+     (body), and the split never held: only 9 of 29 headings actually
+     carried the display face, so two thirds of the product's headings
+     were silently rendering in the body font. A split that is wrong
+     two thirds of the time is not a system.
+
+     Hierarchy is therefore carried by WEIGHT and SIZE, which cannot
+     drift the same way: a heading is 600/700 at a scale step, not a
+     different font you have to remember to ask for. --font-display is
+     kept as an alias so the 25 existing `font-display` usages stay
+     meaningful and keep documenting intent at the call site.
+     ------------------------------------------------------------ */
+  --font-display: "Fira Sans", "Segoe UI", system-ui, sans-serif;
+  --font-sans: "Fira Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "Fira Code", ui-monospace, "Cascadia Mono", monospace;
+
+  /* ------------------------------------------------------------
+     SCALE. Eight named roles, replacing 14 ad-hoc pixel values
+     (8 / 9 / 10 / 10.5 / 11 / 11.5 / 12 / 12.5 / 13 / 15 / 22 / 30 /
+     34 / 40) that were scattered across ~137 call sites.
+
+     Steps are named for their ROLE, not their size, so a component
+     asks for `text-ui` rather than `text-[12px]` and the density of
+     the whole console can be tuned from here. Line heights ride with
+     each step -- tight for display, open for prose.
+     ------------------------------------------------------------ */
+  --text-eyebrow: 10px;
+  --text-eyebrow--line-height: 1.4;
+  --text-micro: 11px;
+  --text-micro--line-height: 1.45;
+  --text-ui: 12px;
+  --text-ui--line-height: 1.5;
+  --text-body: 13px;
+  --text-body--line-height: 1.6;
+  --text-lead: 15px;
+  --text-lead--line-height: 1.6;
+  --text-title: 20px;
+  --text-title--line-height: 1.3;
+  --text-display: 32px;
+  --text-display--line-height: 1.15;
+  --text-hero: 40px;
+  --text-hero--line-height: 1.05;
+
+  /* ground — inverted ramp. ink-950 stays "the page", ink-700 stays
+     "the strongest fill", so every existing usage keeps its meaning. */
+  --color-ink-950: #f2f5fa;
+  --color-ink-900: #ffffff;
+  --color-ink-800: #e9eef6;
+  --color-ink-700: #dbe3ef;
+
+  /* text — measured against #ffffff / #f2f5fa / #e9eef6 (worst case last)
+     fg     18.22 / 16.68 / 15.64
+     muted   7.40 /  6.78 /  6.36
+     dim     5.62 /  5.14 /  4.82   (AA at every size) */
+  --color-fg: #0d1526;
+  --color-muted: #48566f;
+  --color-dim: #5b6880;
+
+  /* chrome — same violet identity, darkened to carry text and focus.
+     #C084FC measured 2.05:1 on white and could not stay.
+     accent 5.70 / 5.21 / 4.89 */
+  --color-accent: #7c3aed;
+  --color-accent-deep: #4c1d95;
+
+  /* data — severity bands, FILL ramp (>=3:1, non-text) */
+  --color-maintain: #e04a2f;
+  --color-watch: #c47500;
+  --color-ok: #0d9673;
+
+  /* data — severity bands, INK ramp (>=4.5:1, text and small marks) */
+  --color-maintain-ink: #c2321c;
+  --color-watch-ink: #8a5300;
+  --color-ok-ink: #00735a;
+
+  /* data — destructive / emergency */
+  --color-alert: #e01b41;
+  --color-alert-ink: #c2183c;
+
+  /* chrome — crew capability. Same two-ramp construction as the severity
+     bands: the plain token is a FILL (>=3:1, chip washes and spines), the
+     -ink token is TEXT (>=4.5:1). Measured against #ffffff and the #f2f5fa
+     ground, worst case shown. Mirrored in lib/roleColors.ts, which is what
+     components actually read -- these exist so Tailwind utilities
+     (bg-role-civil/12, text-role-civil-ink) resolve too. */
+  --color-role-civil: #4f46e5; /*      5.75:1 on ground */
+  --color-role-power: #0369a1; /*      5.43:1 on ground */
+  --color-role-rf: #0e7490; /*         4.90:1 on ground */
+  --color-role-electrical: #64748b; /* 4.35:1 on ground */
+
+  --color-role-civil-ink: #4338ca; /*      7.23:1 on ground */
+  --color-role-power-ink: #075985; /*      6.92:1 on ground */
+  --color-role-rf-ink: #155e75; /*         6.65:1 on ground */
+  --color-role-electrical-ink: #475569; /* 6.93:1 on ground */
+
+  /* The single hinge every surface tint and hairline hangs off.
+     Set to #ffffff to return the component tree to the dark theme. */
+  --color-overlay: #0d1526;
+}
+
+:root {
+  color-scheme: light;
+
+  /* Glass on a light ground is the inverse problem it was on dark: the
+     panel must sit ABOVE the page, so the fill goes lighter (toward white)
+     while the hairline goes darker (toward ink). Alphas are lower than the
+     dark theme's because dark-on-light reads roughly twice as strong as
+     light-on-dark at equal alpha. */
+  --glass-bg: rgba(255, 255, 255, 0.62);
+  --glass-bg-hi: rgba(255, 255, 255, 0.82);
+  --glass-line: rgba(13, 21, 38, 0.1);
+  --glass-line-hi: rgba(13, 21, 38, 0.18);
+
+  /* One extra text step for secondary body copy inside panels. 10.24:1. */
+  --color-sub: #33415c;
+  /* Surfaces the grey already hardcoded as UNSCORED_COLOR in lib/colors.ts.
+     Darkened from #4a5878 to clear 3:1 as a map fill on a light basemap. */
+  --color-unscored: #7c8799;
+
+  /* Blur ceiling, centralised. 14px is the cap — never blur a moving surface. */
+  --glass-blur: blur(14px) saturate(1.1);
+
+  /* Elevation scale. Light UI has no glow to lean on, so these do all the
+     depth work. Three steps only — resting, floating, overlay. */
+  --shadow-1: 0 1px 2px rgba(13, 21, 38, 0.06), 0 1px 1px rgba(13, 21, 38, 0.04);
+  --shadow-2: 0 6px 16px -6px rgba(13, 21, 38, 0.16), 0 2px 5px -2px rgba(13, 21, 38, 0.08);
+  --shadow-3: 0 18px 40px -16px rgba(13, 21, 38, 0.24), 0 4px 10px -4px rgba(13, 21, 38, 0.1);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-ink-950);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  /* "cv05"/"ss01" were IBM Plex Sans stylistic sets and are meaningless
+     to Fira Sans -- left in place they were a silent no-op. Fira's own
+     useful default is contextual alternates, which stays on for prose
+     and is switched OFF for data (see .tnum / --font-mono below). */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ambient field. On dark this was the app's only light source. On light there
+   is nothing to illuminate — a coloured radial on a white ground reads as a
+   print defect, not as atmosphere. What survives is a single cool wash at the
+   top, which stops the ground from going flat under a full-bleed white panel
+   and gives the console a horizon. Alphas here are deliberately below the
+   perceptual threshold for banding on an 8-bit display. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(70rem 45rem at 92% -12%, rgba(124, 58, 237, 0.05), transparent 62%),
+    radial-gradient(80rem 50rem at 10% 110%, rgba(13, 150, 115, 0.035), transparent 60%);
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+/* ------------------------------------------------------------
+   Everything below lives in @layer components on purpose.
+
+   Unlayered CSS beats *every* layered rule regardless of
+   specificity, so an unlayered `.glass { border: 1px }` would
+   defeat Tailwind's `border-x-0` and an unlayered
+   `position: relative` would defeat `absolute`. Both happened:
+   the map Legend was pushed out of the map, and the border-side
+   resets on the page headers were being ignored. These are
+   component defaults — a utility on the element must always win.
+   ------------------------------------------------------------ */
+
+@layer components {
+  /* ---------- glass ---------- */
+
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-line);
+    box-shadow: var(--shadow-1);
+  }
+
+  /* Raised surfaces: drawers, headers, anything floating over the map. */
+  .glass-raised {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(248, 250, 253, 0.88));
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-line);
+    box-shadow: var(--shadow-2);
+  }
+
+  /* A floating module over the map. The gradient fill is not decoration: it is
+     what keeps the surface legible when backdrop-filter is unsupported or the
+     user has asked for reduced transparency. */
+  .glass-float {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(246, 249, 252, 0.84));
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    /* Floating over a light basemap, a 0.10 hairline disappears. This one is
+       deliberately heavier than --glass-line so the module keeps an edge
+       against map imagery of any brightness. */
+    border: 1px solid rgba(13, 21, 38, 0.14);
+    box-shadow: var(--shadow-3);
+  }
+
+  /* A full-height glass column -- the schedule's detail panel, and anything
+     else that docks to an edge rather than floating free.
+
+     This is genuinely translucent where .glass-raised was not: that class
+     fills at 0.94..0.88 white, which is opaque enough that its backdrop
+     filter had nothing left to show. The panel used to refuse blur because
+     it animated its WIDTH, and blurring a resizing surface is the one thing
+     the blur budget forbids outright. It no longer does -- it mounts and
+     unmounts -- so the blur is affordable again, and the entrance animates
+     transform only (see .panel-enter). */
+  .glass-panel {
+    /* Deliberately below 0.6: this surface floats over the timeline, and the
+       point of the frost is that the board stays faintly legible through it.
+       At the 0.72 it started at, the panel was opaque enough to read as a
+       solid card and the blur was decorative. */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.58), rgba(244, 247, 255, 0.46));
+    backdrop-filter: blur(20px) saturate(1.35);
+    -webkit-backdrop-filter: blur(20px) saturate(1.35);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    /* The outer shadow separates the column from the board; the inset is the
+       catch-light along its top edge. .glass-sheen cannot do that job here
+       because this surface is a scroll parent. */
+    box-shadow:
+      var(--shadow-3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  }
+
+  /* The frosted dock the Ranger agent lives in. Lower fill than .glass-panel
+     because it floats over the board rather than docking to it, so there is
+     real content behind it worth seeing. */
+  .glass-dock {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.66), rgba(244, 246, 255, 0.56));
+    backdrop-filter: blur(24px) saturate(1.4);
+    -webkit-backdrop-filter: blur(24px) saturate(1.4);
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    box-shadow:
+      0 25px 60px -18px rgba(20, 30, 70, 0.28),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  }
+
+  /* An input or select sitting ON a glass surface. A normal opaque field on
+     frosted glass reads as a hole punched through it; this keeps the frost
+     continuous and lets the edge do the affordance work instead. */
+  .glass-field {
+    background: rgba(255, 255, 255, 0.62);
+    /* An INK hairline, not a white one. The border was white, which reads as
+       an edge on the frosted panel it was designed for and as nothing at all
+       on the light page header — so the timeline search rendered as floating
+       placeholder text with no box around it. The white edge survives as the
+       inner highlight below, which is what gives the field its lift; the
+       outer hairline is what makes it look like a control. */
+    border: 1px solid rgba(13, 21, 38, 0.14);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.85),
+      0 1px 1px rgba(13, 21, 38, 0.04);
+    transition:
+      background-color 150ms ease,
+      border-color 150ms ease;
+  }
+  .glass-field:hover {
+    background: rgba(255, 255, 255, 0.82);
+    border-color: rgba(13, 21, 38, 0.26);
+  }
+  /* focus-within, not :focus -- the wrapper carries the treatment for the
+     input inside it. The global :focus-visible outline still applies to the
+     control itself and is not suppressed here. */
+  .glass-field:focus-within {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: color-mix(in srgb, var(--color-accent) 60%, transparent);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.85),
+      0 0 0 3px color-mix(in srgb, var(--color-accent) 14%, transparent);
+  }
+
+  /* A menu surface: a popover holding form controls must be opaque enough to
+     read against whatever it covers. .glass-dock is tuned for the Ranger panel
+     — a large surface where seeing the board through it is the point — and at
+     that fill the filter popover let the hour axis and the day headers bleed
+     through its own labels. */
+  .glass-menu {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(250, 251, 255, 0.95));
+    backdrop-filter: blur(20px) saturate(1.3);
+    -webkit-backdrop-filter: blur(20px) saturate(1.3);
+    border: 1px solid rgba(13, 21, 38, 0.12);
+    box-shadow:
+      var(--shadow-3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  }
+
+  /* Solid equivalent, for any surface that must sit over a moving map. */
+  .solid-panel {
+    background: var(--color-ink-900);
+    border: 1px solid rgba(13, 21, 38, 0.1);
+    box-shadow: var(--shadow-2);
+  }
+
+  /* The catch-light along the top edge of a glass panel. Drawn on ::before so
+     it never enters the layout or fights a child's spacing. `relative` here is
+     only a fallback containing block — it must never win over an explicit
+     `absolute`/`fixed`/`sticky` utility. */
+  .glass-sheen {
+    position: relative;
+  }
+
+  /* Back-compat: earlier markup used .panel-glass. Kept as an alias so any
+     surface not yet migrated still renders on-theme. */
+  .panel-glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(18px) saturate(1.1);
+    -webkit-backdrop-filter: blur(18px) saturate(1.1);
+    border: 1px solid var(--glass-line);
+    box-shadow: var(--shadow-1);
+  }
+
+  /* ---------- signature: the risk spine ---------- */
+
+  /* A band-coloured edge on anything carrying a tower's severity, with a short
+     bleed into the surface. Set --spine to the band colour. */
+  .spine {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ---------- type roles ---------- */
+
+  /* The canonical heading recipe, previously retyped by hand at 9 sites and
+     forgotten at 8 more. Named so a heading is one class rather than four
+     utilities a component can get three-quarters right. With one family doing
+     both display and body, `font-weight` is what makes this a heading -- so
+     the weight lives here and cannot be dropped. */
+  .h-title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: var(--color-fg);
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: var(--text-eyebrow);
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-dim);
+  }
+
+  /* A 3px-tall range input is a 3px-tall hit target. This keeps the rule 3px
+     but gives the control a 32px box to be clicked and focused in. */
+  .slider-hit {
+    height: 32px;
+    background: linear-gradient(rgba(13, 21, 38, 0.18), rgba(13, 21, 38, 0.18)) center /
+      100% 3px no-repeat;
+    border-radius: 0;
+  }
+
+  /* Numbers sitting in a column must not jitter as they update. */
+  /* Numbers sitting in a column must not jitter as they update -- and
+     with Fira Code they must not LIGATE either. Fira Code's whole point
+     is programming ligatures, which is exactly wrong for readouts: the
+     interval "0.96 -- 0.99" renders its arrow as a glyph, "!=" becomes
+     a single mark, and a risk value can be silently restyled. Ligatures
+     are switched off everywhere the mono face carries data, which here
+     is everywhere it is used at all. */
+  .tnum {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-variant-ligatures: none;
+    font-feature-settings:
+      "tnum" 1,
+      "calt" 0,
+      "liga" 0;
+  }
+}
+
+/* The ligature kill has to cover every route to the mono face, not just
+   .tnum: 53 sites reach Fira Code through Tailwind's `font-mono` utility
+   directly. No Tailwind utility sets font-feature-settings, so there is no
+   conflict for this unlayered rule to lose -- it is a family default, not an
+   override. Without it, `->` inside a why-string and `=>` inside a formula
+   both render as single glyphs the user cannot copy back out. */
+.font-mono,
+code,
+pre,
+kbd,
+samp {
+  font-variant-ligatures: none;
+  font-feature-settings:
+    "calt" 0,
+    "liga" 0;
+}
+
+/* Pseudo-elements carry no utility conflict, so they stay unlayered. */
+.glass-sheen::before {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 1px;
+  pointer-events: none;
+  /* The catch-light inverts on a light ground: a white sheen on a white panel
+     is invisible, so the top edge is drawn as a faint shadow instead. */
+  background: linear-gradient(90deg, transparent, rgba(13, 21, 38, 0.14), transparent);
+}
+
+.spine::after {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  left: 0;
+  width: 3px;
+  /* The dark theme bled the band colour outward with a glow. On a light
+     surface that halo turns muddy, so the spine reads as a crisp 3px rule
+     instead — wider to keep the same signal strength it had when it glowed. */
+  background: var(--spine, transparent);
+}
+
+/* Neutralised: the old neon text-shadow utilities. Left defined so stray
+   usages degrade cleanly instead of leaking orange glow. */
+.text-glow-orange,
+.text-glow-green,
+.text-glow-cyan {
+  text-shadow: none;
+}
+
+/* ---------- focus ---------- */
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---------- motion ---------- */
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: rise 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* The detail column arriving from the right edge it docks to. Transform and
+   opacity only -- this surface is blurred, and animating its width or its
+   filter is what made the old panel refuse blur in the first place. */
+@keyframes panel-enter {
+  from {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.panel-enter {
+  animation: panel-enter 0.22s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes route-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  20%,
+  60% {
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-alert) 55%, transparent);
+  }
+}
+
+.route-pulse {
+  animation: route-pulse 1.4s ease-in-out 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---------- scrollbars ---------- */
+
+.scroll-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(13, 21, 38, 0.22) transparent;
+}
+.scroll-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scroll-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: rgba(13, 21, 38, 0.2);
+  border-radius: 99px;
+}
+.scroll-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(13, 21, 38, 0.34);
+}
+
+/* Alias for the class the schedule views already reference. */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(13, 21, 38, 0.22) transparent;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(13, 21, 38, 0.2);
+  border-radius: 99px;
+}
+
+/* ---------- form controls ---------- */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 3px;
+  border-radius: 99px;
+  background: rgba(13, 21, 38, 0.18);
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 99px;
+  background: var(--color-accent);
+  /* The ring was a glow on dark; here it is a real 1px containing edge plus a
+     drop shadow, so the thumb stays findable over a white track. */
+  border: 2px solid var(--color-ink-900);
+  box-shadow:
+    0 0 0 1px rgba(124, 58, 237, 0.55),
+    var(--shadow-1);
+}
+input[type="range"]::-moz-range-thumb {
+  height: 14px;
+  width: 14px;
+  border: 2px solid var(--color-ink-900);
+  border-radius: 99px;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 1px rgba(124, 58, 237, 0.55);
+}
+
+select,
+input[type="text"] {
+  font-family: var(--font-sans);
+}
+
+/* ---------- MapLibre chrome ---------- */
+
+.maplibregl-ctrl-top-left,
+.maplibregl-ctrl-top-right,
+.maplibregl-ctrl-bottom-left,
+.maplibregl-ctrl-bottom-right {
+  z-index: 30;
+}
+
+.maplibregl-ctrl-group {
+  background: rgba(255, 255, 255, 0.86) !important;
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--glass-line) !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+  box-shadow: var(--shadow-2) !important;
+}
+.maplibregl-ctrl-group button {
+  background: transparent;
+}
+.maplibregl-ctrl-group button + button {
+  border-top: 1px solid var(--glass-line);
+}
+.maplibregl-ctrl-group button:not(:disabled):hover {
+  background-color: rgba(13, 21, 38, 0.07);
+}
+/* MapLibre ships its control glyphs dark. The dark theme inverted them to
+   white; on light chrome they are already correct, so the filter is dropped
+   entirely rather than set to `none` on top of an inversion. */
+.maplibregl-ctrl-icon {
+  filter: none;
+}
+.maplibregl-ctrl-attrib {
+  background: rgba(255, 255, 255, 0.72) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 6px 0 0 0 !important;
+  font-family: var(--font-sans);
+}
+.maplibregl-ctrl-attrib,
+.maplibregl-ctrl-attrib a {
+  color: var(--color-dim) !important;
+}
+
+/* ---------- selected-tower reticle ----------
+   Decorative redundancy over the HUD readout — never the only cue for
+   selection, and aria-hidden at the call site. */
+
+@keyframes reticle-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  70%,
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+
+.reticle-pulse {
+  animation: reticle-pulse 2.6s ease-out infinite;
+}
+
+/* The global reduced-motion rule above already clamps every animation, but the
+   reticle is the one loop that runs forever over a map, so it is stopped
+   outright rather than merely shortened. */
+@media (prefers-reduced-motion: reduce) {
+  .reticle-pulse {
+    animation: none !important;
+  }
+}
+
+/* ---------- transparency fallback ----------
+   Required by the handoff: glass surfaces go solid and drop the filter. */
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass,
+  .glass-raised,
+  .glass-float,
+  .glass-panel,
+  .glass-dock,
+  .glass-menu,
+  .panel-glass {
+    background: #ffffff;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  /* A translucent field on a now-solid panel would be the only transparent
+     thing left on screen. */
+  .glass-field {
+    background: #ffffff;
+  }
+}
+
+/* ---------- route map markers ----------
+   MapLibre Markers live in the map's own DOM, outside React's tree and outside
+   any Tailwind-authored element, so these are plain unlayered rules. That is
+   also why they are safe here: nothing in @layer components can outrank them,
+   and nothing here needs to outrank a utility. */
+
+.route-depot {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  background: var(--color-accent);
+  border: 1.5px solid var(--color-ink-900);
+  box-shadow: var(--shadow-1);
+}
+
+.route-stop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 18px is below the 32px hit-target floor the rest of the app holds to.
+     Accepted deliberately: the marker is a hover affordance for cross-
+     highlighting, not a control. Every stop is reachable — and actionable —
+     through the schedule grid cell it mirrors, which is a full-size button. */
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-ink-900);
+  background: var(--stop-color, var(--color-unscored));
+  /* Stop numerals sit on a saturated band fill. On the light theme the band
+     ramp is dark enough that ink-on-band fails, so the numeral goes white —
+     >=4.5:1 against all four fills. */
+  color: #ffffff;
+  box-shadow: var(--shadow-1);
+  font-size: 10px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  cursor: default;
+  transition:
+    transform 140ms ease,
+    box-shadow 140ms ease;
+}
+
+.route-stop.is-hovered {
+  transform: scale(1.25);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 45%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-stop {
+    transition: none;
+  }
+}

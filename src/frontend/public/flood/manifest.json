@@ -1,0 +1,57 @@
+{
+  "bbox": [
+    101.55,
+    3.0,
+    101.68,
+    3.14
+  ],
+  "bbox_crs": "EPSG:4326",
+  "generated_at": "2026-08-27T15:23:41Z",
+  "image_crs": "EPSG:3857",
+  "image_size": [
+    1024,
+    1104
+  ],
+  "license": "CC0 1.0",
+  "note": "Terrain threshold on height above nearest drainage: each surface marks ground at or below the stated water level. Not a hydraulic model, not a forecast, and not a statement about any structure standing on that ground.",
+  "rendering_rule": "{\"rasterFunction\":\"Colormap\",\"rasterFunctionArguments\":{\"Colormap\":[[1,43,108,184]],\"Raster\":{\"rasterFunction\":\"Remap\",\"rasterFunctionArguments\":{\"InputRanges\":[-1,0.5],\"OutputValues\":[1],\"NoDataRanges\":[0.5,10000],\"AllowUnmatched\":false}}}}",
+  "source": "ASF GLO-30 HAND v1 (Copernicus GLO-30 derived)",
+  "source_url": "https://gis.asf.alaska.edu/arcgis/rest/services/GlobalHAND/GLO30_HAND/ImageServer/exportImage",
+  "stages": [
+    {
+      "bytes": 47016,
+      "file": "hand_le_0p5.png",
+      "sha256": "df0a7b14edd66238cdc19140c476a93e37888d039ed62c244c077de8595f95a8",
+      "stage_m": 0.5
+    },
+    {
+      "bytes": 53748,
+      "file": "hand_le_1.png",
+      "sha256": "08c80448475fb5a9e573fbc9a2a4731d885ac517acc624e9b93e6387ea57fc5c",
+      "stage_m": 1.0
+    },
+    {
+      "bytes": 61472,
+      "file": "hand_le_2.png",
+      "sha256": "c8a60d7fb42c83a79d1f0ff2a11b1dfa79b8d2f2d638814fe0b7efabdec33d90",
+      "stage_m": 2.0
+    },
+    {
+      "bytes": 64579,
+      "file": "hand_le_3.png",
+      "sha256": "997013a66401557ba76cea6c5fbd890dc984633ec75ce892efba27aaaff7c271",
+      "stage_m": 3.0
+    },
+    {
+      "bytes": 65741,
+      "file": "hand_le_5.png",
+      "sha256": "9113bb4ef33178be027136b4958a8748dd9ee5cc52edcf962cdc5937214e4d0a",
+      "stage_m": 5.0
+    }
+  ],
+  "water_rgb": [
+    43,
+    108,
+    184
+  ]
+}

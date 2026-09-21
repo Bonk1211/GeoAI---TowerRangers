@@ -1,0 +1,86 @@
+[
+  {
+    "className": "ITU/BDT & Other Classification",
+    "regionCode": "AFR",
+    "regionID": 645,
+    "regionName": "Africa"
+  },
+  {
+    "className": "ITU/BDT & Other Classification",
+    "regionCode": "AMS",
+    "regionID": 646,
+    "regionName": "The Americas"
+  },
+  {
+    "className": "ITU/BDT & Other Classification",
+    "regionCode": "ARB",
+    "regionID": 647,
+    "regionName": "Arab States"
+  },
+  {
+    "className": "ITU/BDT & Other Classification",
+    "regionCode": "ASP",
+    "regionID": 648,
+    "regionName": "Asia & Pacific"
+  },
+  {
+    "className": "ITU/BDT & Other Classification",
+    "regionCode": "EUR",
+    "regionID": 649,
+    "regionName": "Europe countries"
+  },
+  {
+    "className": "ITU/BDT & Other Classification",
+    "regionCode": "CIS",
+    "regionID": 700,
+    "regionName": "CIS countries"
+  },
+  {
+    "className": null,
+    "regionCode": "WLD",
+    "regionID": 701,
+    "regionName": "World"
+  },
+  {
+    "className": null,
+    "regionCode": "LLDC",
+    "regionID": 1892,
+    "regionName": "Land Locked Developing Countries (LLDC)"
+  },
+  {
+    "className": null,
+    "regionCode": "SIDS",
+    "regionID": 1893,
+    "regionName": "Small Island Developing States (SIDS)"
+  },
+  {
+    "className": null,
+    "regionCode": "LDC",
+    "regionID": 1894,
+    "regionName": "Least Developed Countries (LDC)"
+  },
+  {
+    "className": "WB_Income",
+    "regionCode": "HI",
+    "regionID": 2087,
+    "regionName": "High income"
+  },
+  {
+    "className": "WB_Income",
+    "regionCode": "LI",
+    "regionID": 2088,
+    "regionName": "Low income"
+  },
+  {
+    "className": "WB_Income",
+    "regionCode": "LMI",
+    "regionID": 2089,
+    "regionName": "Lower middle income"
+  },
+  {
+    "className": "WB_Income",
+    "regionCode": "UMI",
+    "regionID": 2090,
+    "regionName": "Upper middle income"
+  }
+]

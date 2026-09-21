@@ -1,0 +1,45 @@
+{
+  "max_missing_fraction": 0.05,
+  "missing_fraction": {
+    "evi_delta_per_year": 0.0,
+    "evi_median_baseline": 0.0,
+    "evi_median_recent": 0.0
+  },
+  "note": "Scene counts are per chunk and may overlap. EVI is ground greenness, not canopy height or clearance. land_cover_changed is unmeasured: the available WorldCover layer has only one epoch.",
+  "rows": 1164,
+  "scene_counts": {
+    "baseline": [
+      716,
+      220,
+      435,
+      658,
+      1075,
+      3165,
+      935,
+      2655
+    ],
+    "recent": [
+      806,
+      271,
+      515,
+      801,
+      1300,
+      3654,
+      945,
+      2970
+    ]
+  },
+  "source": "COPERNICUS/S2_SR_HARMONIZED",
+  "synthetic": false,
+  "windows": {
+    "baseline": [
+      "2023-09-13",
+      "2024-09-12"
+    ],
+    "recent": [
+      "2025-09-12",
+      "2026-09-12"
+    ]
+  },
+  "years_between": 2.0
+}

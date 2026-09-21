@@ -1,0 +1,17 @@
+# Optional dependencies for the national dataset producers and the flood-factor
+# evaluation. Kept separate from requirements.txt for the same reason as
+# requirements-flood.txt: the API must still boot without them.
+#
+#   pip install -r src/backend/requirements-dataset.txt
+#   python3 src/backend/data/prepare_malaysia_dataset.py
+#   python3 src/backend/data/prepare_flood_labels.py
+#   cd src/backend && python3 model/flood_eval.py
+scipy>=1.11          # cKDTree for nearest water/power, Nelder-Mead for the fit
+matplotlib>=3.8      # Path.contains_points — vectorised point-in-polygon
+pyshp>=2.3           # reads the UNOSAT flood shapefiles
+scikit-learn>=1.4    # GroupKFold and the ranking metrics, AND the serving path:
+                     # model/novelty.py's IsolationForest is imported by
+                     # adapter/ml_source.py, so this is no longer training-only.
+                     # Guarded like lightgbm — absent, every tower reads
+                     # novelty: null and the API still boots.
+lightgbm>=4.3        # model/maintenance_need.py — training AND inference (adapter/ml_source.py imports it)

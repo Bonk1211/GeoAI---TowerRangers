@@ -1,0 +1,48 @@
+{
+  "caveats": [
+    "SMAP is 9 km: regional wetness state, never site bearing capacity.",
+    "Clay is a 250 m ML prediction with its own uncertainty, not a borehole.",
+    "EVI is ground-cover greenness — not canopy height, not clearance from the structure, and far too coarse for the 1 m perimeter cut MCMC MTSFB TC G041:2023 6.3.3(b) requires.",
+    "GSW nulls are filled with 0 (never observed under water); every other column keeps NaN, because a missing reading is not a measurement."
+  ],
+  "end_date": "2026-08-31",
+  "missing_fraction": {
+    "clay_pct": 0.0137,
+    "evi_median": 0.0,
+    "evi_p10": 0.0,
+    "gsw_occurrence_pct": 0.9785,
+    "gsw_recurrence_pct": 0.9785,
+    "land_cover_class": 0.0,
+    "soil_moisture_mean": 0.006,
+    "soil_moisture_p90": 0.006
+  },
+  "rows": 1164,
+  "scales_m": {
+    "clay": 250,
+    "evi": 10,
+    "gsw": 30,
+    "land_cover": 10,
+    "soil_moisture": 9000
+  },
+  "sources": {
+    "land_cover": "ESA/WorldCover/v200",
+    "soil_moisture": "NASA/SMAP/SPL4SMGP/008",
+    "soil_texture": "OpenLandMap/SOL/SOL_CLAY-WFRACTION_USDA-3A1A1A_M/v02 band b0",
+    "surface_water": "JRC/GSW1_3/GlobalSurfaceWater",
+    "vegetation": "Copernicus Sentinel-2 SR Harmonized, EVI (MODIS coefficients)"
+  },
+  "synthetic": false,
+  "windows": {
+    "clay": null,
+    "evi": [
+      "2025-08-31",
+      "2026-08-31"
+    ],
+    "gsw": null,
+    "land_cover": null,
+    "soil_moisture": [
+      "2025-08-31",
+      "2026-08-31"
+    ]
+  }
+}

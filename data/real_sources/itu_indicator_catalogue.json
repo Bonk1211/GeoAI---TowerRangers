@@ -1,0 +1,2722 @@
+[
+  {
+    "category": "Connectivity",
+    "categorySort": 1,
+    "subCategory": [
+      {
+        "items": [
+          {
+            "codeID": 8941,
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 1,
+            "isCollection": false,
+            "label": "Households with a radio",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 8965,
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 2,
+            "isCollection": false,
+            "label": "Households with a TV",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100002,
+            "codes": [
+              {
+                "code": "HHA965ms-%_HH--",
+                "codeDesc": "HH13 - Households with multichannel television: direct - %_HH",
+                "codeID": 16271,
+                "label": "Direct-to-home (DTH) satellite services"
+              },
+              {
+                "code": "HHA965mc-%_HH--",
+                "codeDesc": "HH13 - Households with multichannel television: cable TV (CATV) - %_HH",
+                "codeID": 16262,
+                "label": "Cable TV (CATV)"
+              },
+              {
+                "code": "HHA965mi-%_HH--",
+                "codeDesc": "HH13 - Households with multichannel television: Internet - %_HH",
+                "codeID": 16280,
+                "label": "Internet-protocol TV (IPTV)"
+              },
+              {
+                "code": "HHA965mt-%_HH--",
+                "codeDesc": "HH13 - Households with multichannel television: digital terrestrial TV (DTT) - %_HH",
+                "codeID": 16289,
+                "label": "Digital terrestrial TV (DTT)"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 3,
+            "isCollection": true,
+            "label": "Households with multichannel television, by type",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 8749,
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 4,
+            "isCollection": false,
+            "label": "Households with telephone (fixed or mobile)",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 28027,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 5,
+            "isCollection": false,
+            "label": "Individuals who own a mobile cellular telephone",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 28318,
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 6,
+            "isCollection": false,
+            "label": "Individuals who own a smart telephone",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 8917,
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 7,
+            "isCollection": false,
+            "label": "Households with a computer",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100106,
+            "codes": [
+              {
+                "code": "HHA422t-%_HH--",
+                "codeDesc": "HH04 - Households with a computer: tablet - %_HH",
+                "codeID": 32067,
+                "label": "Tablet"
+              },
+              {
+                "code": "HHA422l-%_HH--",
+                "codeDesc": "HH04 - Households with a computer: laptop computer - %_HH",
+                "codeID": 32064,
+                "label": "Laptop computer"
+              },
+              {
+                "code": "HHA422d-%_HH--",
+                "codeDesc": "HH04 - Households with a computer: desktop computer - %_HH",
+                "codeID": 32061,
+                "label": "Desktop computer"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 8,
+            "isCollection": true,
+            "label": "Households with a computer, by type",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 12047,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 9,
+            "isCollection": false,
+            "label": "Households with Internet access at home",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100001,
+            "codes": [
+              {
+                "code": "HHA4213twb-%_HH--",
+                "codeDesc": "HH11 - Internet access, by connection: by a terrestrial fixed (wireless) broadband network - %_HH",
+                "codeID": 16244,
+                "label": "By terrestrial fixed (wireless) broadband network"
+              },
+              {
+                "code": "HHA4213fb-%_HH--",
+                "codeDesc": "HH11 - Internet access, by connection: by fixed broadband - %_HH",
+                "codeID": 8869,
+                "label": "By fixed (wired) broadband"
+              },
+              {
+                "code": "HHA4213bfo-%_HH--",
+                "codeDesc": "HH11 - Internet access, by connection: Fixed broadband network only (regardless of the type of fixed broadband connection) - %_HH",
+                "codeID": 32183,
+                "label": "By fixed broadband network only"
+              },
+              {
+                "code": "HHA4213mbh-%_HH--",
+                "codeDesc": "HH11 - Internet access, by connection: by mobile broadband network via a handset - %_HH",
+                "codeID": 16217,
+                "label": "By mobile broadband network via a handset"
+              },
+              {
+                "code": "HHA4213bmo-%_HH--",
+                "codeDesc": "HH11 - Internet access, by connection: Mobile broadband network only (regardless of the type of mobile broadband connection) - %_HH",
+                "codeID": 32192,
+                "label": "By mobile broadband network only"
+              },
+              {
+                "code": "HHA4213b-%_HH--",
+                "codeDesc": "HH11 - Internet access, by connection: via a broadband connection - %_HH",
+                "codeID": 12470,
+                "label": "By broadband"
+              },
+              {
+                "code": "HHA4213d-%_HH--",
+                "codeDesc": "HH11 - Internet access, by connection: by narrowband - %_HH",
+                "codeID": 8845,
+                "label": "By fixed narrowband network"
+              },
+              {
+                "code": "HHA4213s-%_HH--",
+                "codeDesc": "HH11 - Internet access, by connection: by a satellite broadband network - %_HH",
+                "codeID": 16235,
+                "label": "By satellite broadband network"
+              },
+              {
+                "code": "HHA4213mbu-%_HH--",
+                "codeDesc": "HH11 - Internet access, by connection: by mobile broadband network via a card or USB modem - %_HH",
+                "codeID": 16226,
+                "label": "By mobile broadband network via a card or USB modem"
+              },
+              {
+                "code": "HHA4213bfm-%_HH--",
+                "codeDesc": "HH11 - Internet access, by connection: Both fixed broadband and mobile broadband network (regardless of the type of connection) - %_HH",
+                "codeID": 32201,
+                "label": "By fixed broadband and mobile broadband network"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 10,
+            "isCollection": true,
+            "label": "Households with access to Internet, by type of service",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100000,
+            "codes": [
+              {
+                "code": "HHA4213bc-%_HHNOINT--",
+                "codeDesc": "HH14 - Households not using the Internet, by type of reason: Cost of the equipment is too high - %_HHNOINT",
+                "codeID": 16325,
+                "label": "Cost of the equipment is too high"
+              },
+              {
+                "code": "HHA4213bh-%_HHNOINT--",
+                "codeDesc": "HH14 - Households not using the Internet, by type of reason: Internet service is available but it does not correspond to household needs - %_HHNOINT",
+                "codeID": 16361,
+                "label": "Internet service is available but it does not correspond to household needs"
+              },
+              {
+                "code": "HHA4213bd-%_HHNOINT--",
+                "codeDesc": "HH14 - Households not using the Internet, by type of reason: no electricity in the household - %_HHNOINT",
+                "codeID": 32219,
+                "label": "No electricity in the household"
+              },
+              {
+                "code": "HHA4213bp-%_HHNOINT--",
+                "codeDesc": "HH14 - Households not using the Internet, by type of reason: Privacy or security concerns - %_HHNOINT",
+                "codeID": 16343,
+                "label": "Privacy or security concerns"
+              },
+              {
+                "code": "HHA4213be-%_HHNOINT--",
+                "codeDesc": "HH14 - Households not using the Internet, by type of reason: Have access to the Internet elsewhere - %_HHNOINT",
+                "codeID": 16307,
+                "label": "Have access to the Internet elsewhere"
+              },
+              {
+                "code": "HHA4213bo-%_HHNOINT--",
+                "codeDesc": "HH14 - Households not using the Internet, by type of reason: other reason - %_HHNOINT",
+                "codeID": 32228,
+                "label": "Other reason"
+              },
+              {
+                "code": "HHA4213bs-%_HHNOINT--",
+                "codeDesc": "HH14 - Households not using the Internet, by type of reason: Cost of service is too high - %_HHNOINT",
+                "codeID": 16334,
+                "label": "Cost of service is too high"
+              },
+              {
+                "code": "HHA4213ba-%_HHNOINT--",
+                "codeDesc": "HH14 - Households not using the Internet, by type of reason: Internet service is not available in the area - %_HHNOINT",
+                "codeID": 16352,
+                "label": "Internet service is not available in the area"
+              },
+              {
+                "code": "HHA4213bn-%_HHNOINT--",
+                "codeDesc": "HH14 - Households not using the Internet, by type of reason: Do not need the Internet - %_HHNOINT",
+                "codeID": 16298,
+                "label": "Do not need the Internet"
+              },
+              {
+                "code": "HHA4213br-%_HHNOINT--",
+                "codeDesc": "HH14 - Households not using the Internet, by type of reason: cultural reasons - %_HHNOINT",
+                "codeID": 16370,
+                "label": "Cultural reasons"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 11,
+            "isCollection": true,
+            "label": "Reasons for not having Internet access (i.e. Barriers)",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 15,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 13,
+            "isCollection": false,
+            "label": "Fixed-telephone subscriptions",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 11621,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 14,
+            "isCollection": false,
+            "label": "VoIP subscriptions",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 11622,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 15,
+            "isCollection": false,
+            "label": "Fixed-telephone numbers ported",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 27,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 16,
+            "isCollection": false,
+            "label": "Fixed-telephone subscriptions that are residential ",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 178,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 17,
+            "isCollection": false,
+            "label": "Mobile-cellular subscriptions",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100095,
+            "codes": [
+              {
+                "code": "i271G",
+                "codeDesc": "Percentage of the population covered by at least a 3G mobile network ",
+                "codeID": 430,
+                "label": "At least 3G"
+              },
+              {
+                "code": "i271GA",
+                "codeDesc": "Percentage of the population covered by at least an LTE/WiMAX mobile network.",
+                "codeID": 19306,
+                "label": "At least LTE/WiMAX"
+              },
+              {
+                "code": "i271G5_pop",
+                "codeDesc": "Percentage of the population covered by at least a 5G mobile network  ",
+                "codeID": 34236,
+                "label": "At least 5G"
+              },
+              {
+                "code": "i271pop",
+                "codeDesc": "Percentage of the population covered by a mobile-cellular network ",
+                "codeID": 194,
+                "label": "At least 2G"
+              }
+            ],
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 18,
+            "isCollection": true,
+            "label": "Population coverage, by mobile network technology",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 19304,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 19,
+            "isCollection": false,
+            "label": "M2M mobile-network subscriptions",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 193,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 20,
+            "isCollection": false,
+            "label": "Mobile-cellular subscriptions: Prepaid",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 11623,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 21,
+            "isCollection": false,
+            "label": "Mobile-cellular numbers ported ",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 19307,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 22,
+            "isCollection": false,
+            "label": "Subscriptions to fixed-broadband and fixed-telephone bundles",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 19308,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 23,
+            "isCollection": false,
+            "label": "Subscriptions to fixed-broadband, fixed-telephone and pay-TV bundles",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 34215,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 24,
+            "isCollection": false,
+            "label": "Households covered by fixed wired network",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 19305,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 25,
+            "isCollection": false,
+            "label": "Fixed-broadband subscriptions for organizations",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 19257,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 26,
+            "isCollection": false,
+            "label": "Fixed-broadband subscriptions",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 11632,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 27,
+            "isCollection": false,
+            "label": "Active mobile-broadband subscriptions",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 4262,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 28,
+            "isCollection": false,
+            "label": "Multichannel TV subscriptions",
+            "seriesType": "base"
+          }
+        ],
+        "subCategory": "Access",
+        "subCategorySort": 1
+      },
+      {
+        "items": [
+          {
+            "codeID": 242,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 1,
+            "isCollection": false,
+            "label": "International bandwidth usage",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 19255,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 2,
+            "isCollection": false,
+            "label": "Lit/equipped international bandwidth capacity",
+            "seriesType": "base"
+          }
+        ],
+        "subCategory": "Backbone/core infrastructure",
+        "subCategorySort": 2
+      },
+      {
+        "items": [
+          {
+            "codeID": 34246,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 1,
+            "isCollection": false,
+            "label": "Roaming by home subscribers abroad (outbound roaming on CLRAs)",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 458,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 2,
+            "isCollection": false,
+            "label": "Incoming international traffic to mobile network",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 459,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 3,
+            "isCollection": false,
+            "label": "Roaming by foreign subscribers (inbound roaming)",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 34244,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 4,
+            "isCollection": false,
+            "label": "Number of countries with which there is a country-level roaming agreement",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 4248,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 5,
+            "isCollection": false,
+            "label": "Number of countries with which there is an operator-level roaming agreement",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 13069,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 6,
+            "isCollection": false,
+            "label": "Mobile-broadband Internet traffic (outside the country, roaming out)",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 34245,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 7,
+            "isCollection": false,
+            "label": "Mobile-broadband Internet traffic (outside the country, roaming out on CLRAs)",
+            "seriesType": "base"
+          }
+        ],
+        "subCategory": "International roaming",
+        "subCategorySort": 6
+      },
+      {
+        "items": [
+          {
+            "codeID": 12657,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 3,
+            "isCollection": false,
+            "label": "Mobile-cellular dropped call ratio",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 34239,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 4,
+            "isCollection": false,
+            "label": "Average Download Throughput for Mobile Broadband",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 34242,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 5,
+            "isCollection": false,
+            "label": "Packet Latency for Mobile Broadband",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 34240,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 6,
+            "isCollection": false,
+            "label": "Average Upload Throughput for Mobile Broadband",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 12656,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 7,
+            "isCollection": false,
+            "label": "Mobile-cellular unsuccessful call ratio",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 34237,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 8,
+            "isCollection": false,
+            "label": "Average Download Throughput for Fixed Broadband",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 34243,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 9,
+            "isCollection": false,
+            "label": "Fault Resolution Period for Fixed Broadband Service",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 34241,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 10,
+            "isCollection": false,
+            "label": "Packet Latency for Fixed Broadband",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 13065,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 11,
+            "isCollection": false,
+            "label": "Service activation time for fixed-broadband service",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 34238,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 12,
+            "isCollection": false,
+            "label": "Average upload Throughput for Fixed Broadband",
+            "seriesType": "base"
+          }
+        ],
+        "subCategory": "Quality of Service (QoS)",
+        "subCategorySort": 8
+      },
+      {
+        "items": [
+          {
+            "codeID": 54,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 1,
+            "isCollection": false,
+            "label": "Fixed-to-mobile telephone traffic",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 56,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 2,
+            "isCollection": false,
+            "label": "Domestic fixed-to-fixed telephone traffic",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 63,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 3,
+            "isCollection": false,
+            "label": "International outgoing fixed-telephone traffic",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 64,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 4,
+            "isCollection": false,
+            "label": "International incoming and outgoing fixed-telephone traffic",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 65,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 5,
+            "isCollection": false,
+            "label": "International incoming fixed-telephone traffic",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 4253,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 6,
+            "isCollection": false,
+            "label": "Total international outgoing telephone traffic",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 4250,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 7,
+            "isCollection": false,
+            "label": "Total international telephone traffic",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 4254,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 8,
+            "isCollection": false,
+            "label": "Total international incoming telephone traffic",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 76,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 9,
+            "isCollection": false,
+            "label": "Outgoing mobile traffic to fixed networks",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 447,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 10,
+            "isCollection": false,
+            "label": "Outgoing mobile traffic to international",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 80,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 11,
+            "isCollection": false,
+            "label": "SMS sent",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 82,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 12,
+            "isCollection": false,
+            "label": "Domestic mobile-telephone traffic",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 13067,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 13,
+            "isCollection": false,
+            "label": "Fixed-broadband Internet traffic",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 13068,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 14,
+            "isCollection": false,
+            "label": "Mobile-broadband Internet traffic (within the country)",
+            "seriesType": "base"
+          }
+        ],
+        "subCategory": "Traffic",
+        "subCategorySort": 9
+      },
+      {
+        "items": [
+          {
+            "codeID": 9145,
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 1,
+            "isCollection": false,
+            "label": "Individuals using a mobile cellular telephone",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 28228,
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 2,
+            "isCollection": false,
+            "label": "Individuals using a smart phone",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 11485,
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 3,
+            "isCollection": false,
+            "label": "Individuals using a computer",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100069,
+            "codes": [
+              {
+                "code": "HHU422l-%_POP--",
+                "codeDesc": "HH05 - Individuals using a laptop computer (from any location) in the last 3 months - %_POP",
+                "codeID": 16457,
+                "label": "Laptop computer"
+              },
+              {
+                "code": "HHU422d-%_POP--",
+                "codeDesc": "HH05 - Individuals using a desktop computer (from any location) in the last 3 months - %_POP",
+                "codeID": 16448,
+                "label": "Desktop computer"
+              },
+              {
+                "code": "HHU422t-%_POP--",
+                "codeDesc": "HH05 - Individuals using a tablet (from any location) in the last 3 months - %_POP",
+                "codeID": 16466,
+                "label": "Tablet"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 4,
+            "isCollection": true,
+            "label": "Individuals using a computer, by type of device",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 11624,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 5,
+            "isCollection": false,
+            "label": "Individuals using the Internet",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100007,
+            "codes": [
+              {
+                "code": "HHU4212fw-%_INT--",
+                "codeDesc": "HH12 - Internet use, by frequency: at least once a week but not every day - %_INT",
+                "codeID": 11017,
+                "label": "At least once a week but not every day"
+              },
+              {
+                "code": "HHU4212fd-%_INT--",
+                "codeDesc": "HH12 - Internet use, by frequency: at least once a day - %_INT",
+                "codeID": 10861,
+                "label": "At least once a day"
+              },
+              {
+                "code": "HHU4212fm-%_INT--",
+                "codeDesc": "HH12 - Internet use, by frequency: less than once a week - %_INT",
+                "codeID": 10939,
+                "label": "Less than once a week"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 6,
+            "isCollection": true,
+            "label": "Individuals using the Internet (from any location), by frequency",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100003,
+            "codes": [
+              {
+                "code": "HHU4212ah-%_INT--",
+                "codeDesc": "HH08 - Internet use, by location of use: at another persons home - %_INT",
+                "codeID": 10393,
+                "label": "At another persons home"
+              },
+              {
+                "code": "HHU4212mob-%_INT--",
+                "codeDesc": "HH08 - Internet use, by location of use: while commuting, in transport or walking - %_INT",
+                "codeID": 16475,
+                "label": "While commuting, in transport or walking"
+              },
+              {
+                "code": "HHU4212h-%_INT--",
+                "codeDesc": "HH08 - Internet use, by location of use: at home - %_INT",
+                "codeID": 11095,
+                "label": "At home"
+              },
+              {
+                "code": "HHU4212w-%_INT--",
+                "codeDesc": "HH08 - Internet use, by location of use: at work - %_INT",
+                "codeID": 11407,
+                "label": "At work"
+              },
+              {
+                "code": "HHU4212fop-%_INT--",
+                "codeDesc": "HH08 - Internet use, by location of use: facility open to the public - %_INT",
+                "codeID": 33289,
+                "label": "Facility open to the public"
+              },
+              {
+                "code": "HHU4212cf-%_INT--",
+                "codeDesc": "HH08 - Internet use, by location of use: at community Internet access facility - %_INT",
+                "codeID": 10627,
+                "label": "At community Internet access facility"
+              },
+              {
+                "code": "HHU4212e-%_INT--",
+                "codeDesc": "HH08 - Internet use, by location of use: at place of education - %_INT",
+                "codeID": 10783,
+                "label": "At place of education"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 7,
+            "isCollection": true,
+            "label": "Individuals using the Internet, by location of use",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100005,
+            "codes": [
+              {
+                "code": "HHU4212mobcell-%_INT--",
+                "codeDesc": "HH17 - Internet use, by type of portable device and network used to access the Internet: mobile phone, via mobile cellular network - %_INT",
+                "codeID": 21031,
+                "label": "By mobile phone - via mobile cellular network"
+              },
+              {
+                "code": "HHU4212comp-%_INT--",
+                "codeDesc": "HH17 - Internet use, by type of portable device and network used to access the Internet: portable computer (laptop, notebook, netbook) - %_INT",
+                "codeID": 20797,
+                "label": "By portable computer"
+              },
+              {
+                "code": "HHU4212mobi-%_INT--",
+                "codeDesc": "HH17 - Internet use, by type of portable device and network used to access the Internet: mobile phone - %_INT",
+                "codeID": 21109,
+                "label": "By mobile phone"
+              },
+              {
+                "code": "HHU4212tab-%_INT--",
+                "codeDesc": "HH17 - Internet use, by type of portable device and network used to access the Internet: tablet - %_INT",
+                "codeID": 21343,
+                "label": "By tablet"
+              },
+              {
+                "code": "HHU4212compcell-%_INT--",
+                "codeDesc": "HH17 - Internet use, by type of portable device and network used to access the Internet: portable computer (laptop, notebook, netbook), via mobile cellular network, using USB key/dongle or integrated data SIM card or mobile cellular telephone as modem - %_INT",
+                "codeID": 20875,
+                "label": "By portable computer - via mobile cellular network"
+              },
+              {
+                "code": "HHU4212tabwifi-%_INT--",
+                "codeDesc": "HH17 - Internet use, by type of portable device and network used to access the Internet: tablet, via other wireless networks (e.g. WiFi) - %_INT",
+                "codeID": 21499,
+                "label": "By tablet - via WiFi or other wireless networks"
+              },
+              {
+                "code": "HHU4212compwifi-%_INT--",
+                "codeDesc": "HH17 - Internet use, by type of portable device and network used to access the Internet: portable computer (laptop, notebook, netbook), via other wireless networks (e.g. WiFi) - %_INT",
+                "codeID": 20953,
+                "label": "By portable computer - via WiFi or other wireless networks"
+              },
+              {
+                "code": "HHU4212mobwifi-%_INT--",
+                "codeDesc": "HH17 - Internet use, by type of portable device and network used to access the Internet: mobile phone, via other wireless networks (e.g. WiFi) - %_INT",
+                "codeID": 21187,
+                "label": "By mobile phone - via WiFi or other wireless networks"
+              },
+              {
+                "code": "HHU4212tabcell-%_INT--",
+                "codeDesc": "HH17 - Internet use, by type of portable device and network used to access the Internet: tablet, via mobile cellular network, using USB key/dongle or integrated data SIM card - %_INT",
+                "codeID": 21421,
+                "label": "By tablet - via mobile cellular network"
+              },
+              {
+                "code": "HHU4212othpor-%_INT--",
+                "codeDesc": "HH17 - Internet use, by type of portable device and network used to access the Internet: other portable devices (e.g. portable games consoles, watches, e - %_INT",
+                "codeID": 21265,
+                "label": "By other portable devices"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 8,
+            "isCollection": true,
+            "label": "Individuals using the Internet, by type of portable device and network used to access the Internet",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100004,
+            "codes": [
+              {
+                "code": "HHU4212ada-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: downloading software or applications - %_INT",
+                "codeID": 16583,
+                "label": "Downloading software or applications"
+              },
+              {
+                "code": "HHU4212aha-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: making an appointment with a health practitioner via a website - %_INT",
+                "codeID": 16493,
+                "label": "Making an appointment with a health practitioner via a website"
+              },
+              {
+                "code": "HHU4212ash-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: seeking health information (on injury, disease, nutrition, etc.) - %_INT",
+                "codeID": 16484,
+                "label": "Finding health information"
+              },
+              {
+                "code": "HHU4212awl-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: consulting wikis, online encyclopaedias or other websites for formal learning purposes - %_INT",
+                "codeID": 16547,
+                "label": "Consulting wikis, encyclopaedias or other websites for learning purposes"
+              },
+              {
+                "code": "HHU4212acb-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: accessing or posting opinions on chat sites, blogs, newsgroups or online discussions - %_INT",
+                "codeID": 16511,
+                "label": "Accessing or posting opinions on chat sites, blogs, newsgroups or discussions"
+              },
+              {
+                "code": "HHU4212acv-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: making calls (Telephoning over the Internet/VoIP, using Skype, iTalk, etc.; includes video calls via webcam). - %_INT",
+                "codeID": 9691,
+                "label": "Making calls using VoIP or messaging app"
+              },
+              {
+                "code": "HHU4212adn-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: accessing news or books in a digital format - %_INT",
+                "codeID": 9925,
+                "label": "Accessing news or books in a digital format"
+              },
+              {
+                "code": "HHU4212awr-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: listening to web radio - %_INT",
+                "codeID": 16556,
+                "label": "Listening to web radio"
+              },
+              {
+                "code": "HHU4212asn-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: participating on social networking platforms - %_INT",
+                "codeID": 16502,
+                "label": "Participating on social networking platforms"
+              },
+              {
+                "code": "HHU4212agg-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: finding information about goods or services - %_INT",
+                "codeID": 10159,
+                "label": "Finding information about goods or services"
+              },
+              {
+                "code": "HHU4212amg-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: streaming or downloading images, movies, videos or music, playing or downloading games - %_INT",
+                "codeID": 16574,
+                "label": "Streaming, playing or downloading games, images, movies, videos or music"
+              },
+              {
+                "code": "HHU4212apv-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: taking part in consultations via the Internet to define civic or social issues - %_INT",
+                "codeID": 16646,
+                "label": "Taking part in consultations via the Internet or video calls"
+              },
+              {
+                "code": "HHU4212apn-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: participating in professional networks - %_INT",
+                "codeID": 16601,
+                "label": "Participating in professional networks"
+              },
+              {
+                "code": "HHU4212auc-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: uploading self/user - %_INT",
+                "codeID": 16619,
+                "label": "Uploading self/user-created content to a website to be shared"
+              },
+              {
+                "code": "HHU4212awt-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: watching web television - %_INT",
+                "codeID": 16565,
+                "label": "Watching web television"
+              },
+              {
+                "code": "HHU4212aiv-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: interacting with general government organizations - %_INT",
+                "codeID": 10471,
+                "label": "Interacting with general government organizations"
+              },
+              {
+                "code": "HHU4212ap-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: purchasing or ordering goods or services - %_INT",
+                "codeID": 10549,
+                "label": "Purchasing or ordering goods or services"
+              },
+              {
+                "code": "HHU4212ace-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: sending or receiving email - %_INT",
+                "codeID": 9535,
+                "label": "Sending or receiving e-mail"
+              },
+              {
+                "code": "HHU4212asp-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: using storage space on the Internet to save documents, pictures, music, video or other files - %_INT",
+                "codeID": 16655,
+                "label": "Using storage space on the Internet to save documents, pictures, music, video or other files"
+              },
+              {
+                "code": "HHU4212aoc-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: doing an online course or accessing online learning material - %_INT",
+                "codeID": 16538,
+                "label": "Doing an online course or accessing online learning materials"
+              },
+              {
+                "code": "HHU4212ab-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: using Internet or mobile banking - %_INT",
+                "codeID": 9457,
+                "label": "Using Internet or mobile banking"
+              },
+              {
+                "code": "HHU4212asg-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: selling goods or services - %_INT",
+                "codeID": 16520,
+                "label": "Selling goods or services"
+              },
+              {
+                "code": "HHU4212ast-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: using services related to travel or travel - %_INT",
+                "codeID": 16529,
+                "label": "Using services related to travel or travel-related accommodation"
+              },
+              {
+                "code": "HHU4212ase-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: editing text documents, spreadsheets or presentations using digital tools - %_INT",
+                "codeID": 16664,
+                "label": "Editing text documents, spreadsheets or presentations"
+              },
+              {
+                "code": "HHU4212agv-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: getting information from general government organizations - %_INT",
+                "codeID": 10315,
+                "label": "Getting information from general government organizations"
+              },
+              {
+                "code": "HHU4212aja-%_INT--",
+                "codeDesc": "HH09 - Internet use, by activity: looking for a job or sending/submitting a job application - %_INT",
+                "codeID": 16592,
+                "label": "Looking for a job or sending/submitting a job application"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 9,
+            "isCollection": true,
+            "label": "Individuals using the Internet, by type of activity",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100006,
+            "codes": [
+              {
+                "code": "HHU4212re-%_NOINT--",
+                "codeDesc": "HH19 - Individuals not using the Internet, by type of reason. Internet service is not available in the area - %_NOINT",
+                "codeID": 23571,
+                "label": "Internet service is not available in the area"
+              },
+              {
+                "code": "HHU4212rg-%_NOINT--",
+                "codeDesc": "HH19 - Individuals not using the Internet, by type of reason. Don’t know what Internet is - %_NOINT",
+                "codeID": 23573,
+                "label": "Don’t know what Internet is"
+              },
+              {
+                "code": "HHU4212rf-%_NOINT--",
+                "codeDesc": "HH19 - Individuals not using the Internet, by type of reason. Cultural reasons (e.g. exposure to harmful content) - %_NOINT",
+                "codeID": 23572,
+                "label": "Cultural reasons"
+              },
+              {
+                "code": "HHU4212rb-%_NOINT--",
+                "codeDesc": "HH19 - Individuals not using the Internet, by type of reason. Do not know how to use it - %_NOINT",
+                "codeID": 23568,
+                "label": "Do not know how to use it"
+              },
+              {
+                "code": "HHU4212rd-%_NOINT--",
+                "codeDesc": "HH19 - Individuals not using the Internet, by type of reason. Privacy or security concerns - %_NOINT",
+                "codeID": 23570,
+                "label": "Privacy or security concerns"
+              },
+              {
+                "code": "HHU4212rc-%_NOINT--",
+                "codeDesc": "HH19 - Individuals not using the Internet, by type of reason. Cost of Internet use is too high (service charges, etc.) - %_NOINT",
+                "codeID": 23569,
+                "label": "Cost of Internet use is too high"
+              },
+              {
+                "code": "HHU4212rh-%_NOINT--",
+                "codeDesc": "HH19 - Individuals not using the Internet, by type of reason. Not allowed to use the Internet - %_NOINT",
+                "codeID": 23574,
+                "label": "Not allowed to use the Internet"
+              },
+              {
+                "code": "HHU4212rj-%_NOINT--",
+                "codeDesc": "HH19 - Individuals not using the Internet, by type of reason. Other reason - %_NOINT",
+                "codeID": 23576,
+                "label": "Other reason"
+              },
+              {
+                "code": "HHU4212ri-%_NOINT--",
+                "codeDesc": "HH19 - Individuals not using the Internet, by type of reason. Lack of local content - %_NOINT",
+                "codeID": 23575,
+                "label": "Lack of local content"
+              },
+              {
+                "code": "HHU4212ra-%_NOINT--",
+                "codeDesc": "HH19 - Individuals not using the Internet, by type of reason. Do not need the Internet - %_NOINT",
+                "codeID": 23567,
+                "label": "Do not need the Internet"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 10,
+            "isCollection": true,
+            "label": "Individuals not using the Internet, by type of reason",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100009,
+            "codes": [
+              {
+                "code": "HHU21a-%_INT--",
+                "codeDesc": "HH21 - Payment channels for online purchases: Cash on delivery - %_INT",
+                "codeID": 29848,
+                "label": "Cash on delivery"
+              },
+              {
+                "code": "HHU21c-%_INT--",
+                "codeDesc": "HH21 - Payment channels for online purchases: Debit card or electronic bank transfer online - %_INT",
+                "codeID": 30028,
+                "label": "Debit card or electronic bank transfer online"
+              },
+              {
+                "code": "HHU21g-%_INT--",
+                "codeDesc": "HH21 - Payment channels for online purchases: Points from rewards or redemption program (e.g. Air Miles) - %_INT",
+                "codeID": 30388,
+                "label": "Points from rewards or redemption program"
+              },
+              {
+                "code": "HHU21f-%_INT--",
+                "codeDesc": "HH21 - Payment channels for online purchases: Prepaid gift card or online voucher - %_INT",
+                "codeID": 30298,
+                "label": "Prepaid gift card or online voucher"
+              },
+              {
+                "code": "HHU21h-%_INT--",
+                "codeDesc": "HH21 - Payment channels for online purchases: Other (e.g. bank check by post, etc.) - %_INT",
+                "codeID": 30478,
+                "label": "Other (e.g. bank check by post)"
+              },
+              {
+                "code": "HHU21e-%_INT--",
+                "codeDesc": "HH21 - Payment channels for online purchases: Online payment service (e.g. PayPal, Google Checkout) - %_INT",
+                "codeID": 30208,
+                "label": "Online payment service"
+              },
+              {
+                "code": "HHU21b-%_INT--",
+                "codeDesc": "HH21 - Payment channels for online purchases: Credit card online - %_INT",
+                "codeID": 29938,
+                "label": "Credit card online"
+              },
+              {
+                "code": "HHU21d-%_INT--",
+                "codeDesc": "HH21 - Payment channels for online purchases: Mobile money account (account connected to the mobile number) - %_INT",
+                "codeID": 30118,
+                "label": "Mobile money account"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 11,
+            "isCollection": true,
+            "label": "Number of individuals who purchased goods or services online, by type of payment channel",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100008,
+            "codes": [
+              {
+                "code": "HHU20a-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Books, magazines or newspapers - %_INT",
+                "codeID": 28408,
+                "label": "Books, magazines or newspapers"
+              },
+              {
+                "code": "HHU20f-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Cosmetics - %_INT",
+                "codeID": 28858,
+                "label": "Cosmetics"
+              },
+              {
+                "code": "HHU20d-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Computer or video games - %_INT",
+                "codeID": 28678,
+                "label": "Computer or video games"
+              },
+              {
+                "code": "HHU20p-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Travel products (travel tickets, accommodation, vehicle hire, transport services etc.) - %_INT",
+                "codeID": 29758,
+                "label": "Travel products (e.g. tickets or bookings)"
+              },
+              {
+                "code": "HHU20c-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Computer equipment or parts (including peripheral equipment) - %_INT",
+                "codeID": 28588,
+                "label": "Computer equipment or parts"
+              },
+              {
+                "code": "HHU20i-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Household goods (e.g. furniture, toys, etc.; excluding consumer electronics) - %_INT",
+                "codeID": 29128,
+                "label": "Household goods"
+              },
+              {
+                "code": "HHU20e-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Computer software (includes upgrades and paid apps; not games) - %_INT",
+                "codeID": 28768,
+                "label": "Computer software"
+              },
+              {
+                "code": "HHU20h-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Food, groceries, alcohol or tobacco - %_INT",
+                "codeID": 29038,
+                "label": "Food, groceries, alcohol or tobacco"
+              },
+              {
+                "code": "HHU20l-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Movies, short films or images - %_INT",
+                "codeID": 29398,
+                "label": "Movies, short films or images"
+              },
+              {
+                "code": "HHU20j-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: ICT services (excluding software) - %_INT",
+                "codeID": 29218,
+                "label": "ICT services (excluding software)"
+              },
+              {
+                "code": "HHU20k-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Medicine - %_INT",
+                "codeID": 29308,
+                "label": "Medicine"
+              },
+              {
+                "code": "HHU20o-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Tickets or bookings for entertainment events (sports, theatre, concerts, etc.) - %_INT",
+                "codeID": 29668,
+                "label": "Tickets or bookings for entertainment events"
+              },
+              {
+                "code": "HHU20b-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Clothing, footwear, sporting goods or accessories - %_INT",
+                "codeID": 28498,
+                "label": "Clothing, footwear, sporting goods or accessories"
+              },
+              {
+                "code": "HHU20n-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Photographic, telecommunications or optical equipment - %_INT",
+                "codeID": 29578,
+                "label": "Photographic, telecommunications or optical equipment"
+              },
+              {
+                "code": "HHU20m-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Music products - %_INT",
+                "codeID": 29488,
+                "label": "Music products"
+              },
+              {
+                "code": "HHU20g-%_INT--",
+                "codeDesc": "HH20 - Type of goods and services purchased online: Financial products (including shares and insurance) - %_INT",
+                "codeID": 28948,
+                "label": "Financial products"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 12,
+            "isCollection": true,
+            "label": "Number of individuals who purchased goods or servies online, by type of goods and services purchased online",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100010,
+            "codes": [
+              {
+                "code": "HHU22b-%_INT--",
+                "codeDesc": "HH22 - Method of delivery for online purchases: Picked up from point of sale or service point - %_INT",
+                "codeID": 30659,
+                "label": "Picked up from point of sale or service point"
+              },
+              {
+                "code": "HHU22a-%_INT--",
+                "codeDesc": "HH22 - Method of delivery for online purchases: Delivery directly to the buyer using regular postal services or other forms of delivery - %_INT",
+                "codeID": 30569,
+                "label": "Delivery directly to the buyer using postal services"
+              },
+              {
+                "code": "HHU22c-%_INT--",
+                "codeDesc": "HH22 - Method of delivery for online purchases: Online / electronic delivery by downloading from a website or through an application, software or other device (e.g. in - %_INT",
+                "codeID": 30749,
+                "label": "Online / electronic delivery by downloading"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 13,
+            "isCollection": true,
+            "label": "Number of individuals who purchased goods or services online, by method of delivery",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100011,
+            "codes": [
+              {
+                "code": "HHU23b-%_INT--",
+                "codeDesc": "HH23 - Reasons for not purchasing online: Prefer to shop in person - %_INT",
+                "codeID": 30929,
+                "label": "Prefer to shop in person"
+              },
+              {
+                "code": "HHU23f-%_INT--",
+                "codeDesc": "HH23 - Reasons for not purchasing online: Trust concerns (e.g. about warranties, receiving or returning products) - %_INT",
+                "codeID": 31289,
+                "label": "Trust concerns"
+              },
+              {
+                "code": "HHU23g-%_INT--",
+                "codeDesc": "HH23 - Reasons for not purchasing online: Lack of confidence, knowledge or skills - %_INT",
+                "codeID": 31379,
+                "label": "Lack of confidence, knowledge or skills"
+              },
+              {
+                "code": "HHU23d-%_INT--",
+                "codeDesc": "HH23 - Reasons for not purchasing online: Privacy concerns (e.g. about giving personal details) - %_INT",
+                "codeID": 31109,
+                "label": "Privacy concerns"
+              },
+              {
+                "code": "HHU23c-%_INT--",
+                "codeDesc": "HH23 - Reasons for not purchasing online: Security concerns (e.g. about giving debit or credit card details) - %_INT",
+                "codeID": 31019,
+                "label": "Security concerns"
+              },
+              {
+                "code": "HHU23e-%_INT--",
+                "codeDesc": "HH23 - Reasons for not purchasing online: Technical concerns (e.g. about websites, payment or delivery) - %_INT",
+                "codeID": 31199,
+                "label": "Technical concerns"
+              },
+              {
+                "code": "HHU23a-%_INT--",
+                "codeDesc": "HH23 - Reasons for not purchasing online: Not interested - %_INT",
+                "codeID": 30839,
+                "label": "Not interested"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 14,
+            "isCollection": true,
+            "label": "Number of individuals who did not purchase goods or services online, by reason",
+            "seriesType": "base"
+          }
+        ],
+        "subCategory": "Use",
+        "subCategorySort": 11
+      }
+    ]
+  },
+  {
+    "category": "Affordability",
+    "categorySort": 2,
+    "subCategory": [
+      {
+        "items": [
+          {
+            "codeID": 16379,
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 1,
+            "isCollection": false,
+            "label": "Household expenditure on ICTs",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100023,
+            "codes": [
+              {
+                "code": "HHA699x-%_HHEXP--",
+                "codeDesc": "HH16 - Household expenditure: Software excluding games computer software packages, such as operating systems, applications, programming languages, etc. (COICOP 08.2) - %_HHEXP",
+                "codeID": 33307,
+                "label": "Software excluding games and computer software packages"
+              },
+              {
+                "code": "HHA699z-%_HHEXP--",
+                "codeDesc": "HH16 - Household expenditure: Games toys and hobbies (COICOP 09.2.1) - %_HHEXP",
+                "codeID": 33325,
+                "label": "Games toys and hobbies"
+              },
+              {
+                "code": "HHA699y-%_HHEXP--",
+                "codeDesc": "HH16 - Household expenditure: Information and communication services (COICOP 08.3) - %_HHEXP",
+                "codeID": 33316,
+                "label": "Information and communication services"
+              },
+              {
+                "code": "HHA699w-%_HHEXP--",
+                "codeDesc": "HH16 - Household expenditure: Information and communication equipment (COICOP 08.1) - %_HHEXP",
+                "codeID": 33298,
+                "label": "Information and communication equipment"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 2,
+            "isCollection": true,
+            "label": "Household expenditure on ICTs, by type",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100122,
+            "codes": [
+              {
+                "code": "i154_FBB5_GNI",
+                "codeDesc": "Fixed-broadband Internet 5GB, as a % of GNI pc",
+                "codeID": 33331,
+                "label": "Fixed-broadband Internet basket (5GB)"
+              },
+              {
+                "code": "i271mb_low_1GB_GNI",
+                "codeDesc": "Mobile broadband data and voice low-consumption basket total (70 min, 50 SMS, 1 GB), as a % of monthly GNI per capita",
+                "codeID": 38965,
+                "label": "Mobile broadband data and voice low-consumption basket total (70 min, 50 SMS, 1 GB)"
+              },
+              {
+                "code": "i271mb_high_5GB_GNI",
+                "codeDesc": "Mobile broadband data and voice high-consumption basket total (140 min, 20 SMS, 5 GB), % GNI p.c.",
+                "codeID": 38968,
+                "label": "Mobile broadband data and voice high-consumption basket total (140 min, 70 SMS, 5 GB)"
+              },
+              {
+                "code": "i271mb_5GB_GNI",
+                "codeDesc": "Data-only mobile broadband basket 5 GB, as a % of GNI pc",
+                "codeID": 36056,
+                "label": "The data-only mobile-broadband basket (5GB)"
+              }
+            ],
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 3,
+            "isCollection": true,
+            "label": "Current ICT price baskets",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 100123,
+            "codes": [
+              {
+                "code": "i271mb_high_2GB_GNI",
+                "codeDesc": "Mobile data and voice high-consumption basket (140 min, 70 SMS, 2 GB), as a % of GNI pc",
+                "codeID": 34600,
+                "label": "Mobile broadband data and voice high-consumption basket total (140 min, 70 SMS, 2 GB) (2021-)"
+              },
+              {
+                "code": "i271mb_1GB5_GNI",
+                "codeDesc": "Data-only mobile broadband 1.5 GB, as a % of GNI pc",
+                "codeID": 33351,
+                "label": "The data-only mobile-broadband basket (1.5GB) (2018-2020)"
+              },
+              {
+                "code": "i271mb_high_1GB5_GNI",
+                "codeDesc": "High usage bundle (140 min, 70 SMS, 1.5 GB), as a % of GNI pc",
+                "codeID": 33346,
+                "label": "Mobile broadband data and voice high-consumption basket total (140 min, 70 SMS, 1.5 GB) (2018-2020)"
+              },
+              {
+                "code": "i271mb_1GB_GNI",
+                "codeDesc": "Data-only mobile broadband basket 1 GB, as a % of GNI pc",
+                "codeID": 36051,
+                "label": "The data-only mobile-broadband basket (1GB) (Experimental; 2021-)"
+              },
+              {
+                "code": "i271mb_low_500_GNI",
+                "codeDesc": "Low usage bundle (70 min, 20 SMS, 500 MB), as a % of GNI pc",
+                "codeID": 33341,
+                "label": "Mobile broadband data and voice low-consumption basket total (70 min, 20 SMS, 500 MB) (2018-2024)"
+              },
+              {
+                "code": "i271mb_2GB_GNI",
+                "codeDesc": "Data-only mobile broadband 2 GB, as a % of GNI pc",
+                "codeID": 34593,
+                "label": "The data-only mobile-broadband basket (2GB) (2021-2024)"
+              },
+              {
+                "code": "i271mb_10GB_GNI",
+                "codeDesc": "Data-only mobile broadband basket 10 GB, as a % of GNI pc",
+                "codeID": 36060,
+                "label": "The data-only mobile-broadband basket (10GB) (Experimental; 2021-)"
+              }
+            ],
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 4,
+            "isCollection": true,
+            "label": "Other ICT price baskets",
+            "seriesType": "base"
+          }
+        ],
+        "subCategory": "ICT prices",
+        "subCategorySort": 3
+      }
+    ]
+  },
+  {
+    "category": "Markets",
+    "categorySort": 4,
+    "subCategory": [
+      {
+        "items": [
+          {
+            "codeID": 372,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 1,
+            "isCollection": false,
+            "label": "Annual investment in telecommunication services",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 10,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 2,
+            "isCollection": false,
+            "label": "Annual foreign investment in telecommunications",
+            "seriesType": "base"
+          }
+        ],
+        "subCategory": "Investment",
+        "subCategorySort": 3
+      },
+      {
+        "items": [
+          {
+            "codeID": 33432,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 5,
+            "isCollection": false,
+            "label": "Amount of spectrum offered for IMT systems, in MHz",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 33436,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 6,
+            "isCollection": false,
+            "label": "Amount of spectrum licensed for IMT systems, in MHz",
+            "seriesType": "base"
+          }
+        ],
+        "subCategory": "Spectrum",
+        "subCategorySort": 6
+      },
+      {
+        "items": [
+          {
+            "codeID": 331,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 1,
+            "isCollection": false,
+            "label": "Revenue from mobile networks",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 349,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 2,
+            "isCollection": false,
+            "label": "Revenue from all telecommunication services",
+            "seriesType": "base"
+          }
+        ],
+        "subCategory": "Revenues",
+        "subCategorySort": 10
+      },
+      {
+        "items": [
+          {
+            "codeID": 253,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 1,
+            "isCollection": false,
+            "label": "Full-time equivalent telecommunication employees ",
+            "seriesType": "base"
+          }
+        ],
+        "subCategory": "Workforce",
+        "subCategorySort": 12
+      }
+    ]
+  },
+  {
+    "category": "Sustainability",
+    "categorySort": 5,
+    "subCategory": [
+      {
+        "items": [
+          {
+            "codeID": 267,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 1,
+            "isCollection": false,
+            "label": "Gross Domestic Product (GDP)",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 270,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 2,
+            "isCollection": false,
+            "label": "GNI per capita",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 274,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 3,
+            "isCollection": false,
+            "label": "Gross Fixed Capital Formation (GFCF)",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 276,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 4,
+            "isCollection": false,
+            "label": "Annual exchange rate",
+            "seriesType": "base"
+          }
+        ],
+        "subCategory": "Economy",
+        "subCategorySort": 2
+      },
+      {
+        "items": [
+          {
+            "codeID": 100124,
+            "codes": [
+              {
+                "code": "HHU781IDL2-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Information and data literacy (above basic skills) - %_POP",
+                "codeID": 37375,
+                "label": "above basic"
+              },
+              {
+                "code": "HHU781e-%_POP--",
+                "codeDesc": "HH15 - ICT skills: sending content in messages - %_POP",
+                "codeID": 16700,
+                "label": "Sending content in messages"
+              },
+              {
+                "code": "HHU781DCC1-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Digital content creation (basic skills) - %_POP",
+                "codeID": 37377,
+                "label": "basic"
+              },
+              {
+                "code": "HHU4212ab-%_POP--",
+                "codeDesc": "HH09 - Internet use, by activity: using Internet or mobile banking - %_POP",
+                "codeID": 37506,
+                "label": "Using Internet or mobile banking"
+              },
+              {
+                "code": "HHU781IDL1-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Information and data literacy (basic skills) - %_POP",
+                "codeID": 37374,
+                "label": "basic"
+              },
+              {
+                "code": "HHU781SF0-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Safety (no skills) - %_POP",
+                "codeID": 37370,
+                "label": "below basic"
+              },
+              {
+                "code": "HHU781OB-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Basic skills in 5 of 5 skill areas - %_POP",
+                "codeID": 38421,
+                "label": "basic"
+              },
+              {
+                "code": "HHU781PS2-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Problem solving (above basic skills) - %_POP",
+                "codeID": 37384,
+                "label": "above basic"
+              },
+              {
+                "code": "HHU781CC0-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Communication and collaboration (no skills) - %_POP",
+                "codeID": 37379,
+                "label": "below basic"
+              },
+              {
+                "code": "HHU781O2-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Basic skills in 2 of 5 skill areas - %_POP",
+                "codeID": 38061,
+                "label": "2 of 5 basic"
+              },
+              {
+                "code": "HHU4212agg-%_POP--",
+                "codeDesc": "HH09 - Internet use, by activity: finding information about goods or services - %_POP",
+                "codeID": 37434,
+                "label": "Finding information about goods or services"
+              },
+              {
+                "code": "HHU4212acv-%_POP--",
+                "codeDesc": "HH09 - Internet use, by activity: making calls (Telephoning over the Internet/VoIP, using Skype, iTalk, etc.; includes video calls via webcam). - %_POP",
+                "codeID": 37461,
+                "label": "Making calls using VoIP or messaging app"
+              },
+              {
+                "code": "HHU781ON-%_POP--",
+                "codeDesc": "HH15 - Individuals with ICT skills, by skill level: Internet users with low or no overall ICT skills - %_POP",
+                "codeID": 39153,
+                "label": "0-1 of 5 basic"
+              },
+              {
+                "code": "HHU781SF1-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Safety (basic skills) - %_POP",
+                "codeID": 37371,
+                "label": "basic"
+              },
+              {
+                "code": "HHU781IDL0-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Information and data literacy (no skills) - %_POP",
+                "codeID": 37373,
+                "label": "below basic"
+              },
+              {
+                "code": "HHU781SF2-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Safety (above basic skills) - %_POP",
+                "codeID": 37372,
+                "label": "above basic"
+              },
+              {
+                "code": "HHU781DCC2-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Digital content creation (above basic skills) - %_POP",
+                "codeID": 37378,
+                "label": "above basic"
+              },
+              {
+                "code": "HHU781O4-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Basic skills in 4 of 5 skill areas - %_POP",
+                "codeID": 38241,
+                "label": "4 of 5 basic"
+              },
+              {
+                "code": "HHU4212aoc-%_POP--",
+                "codeDesc": "HH09 - Internet use, by activity: doing an online course or accessing online learning material - %_POP",
+                "codeID": 37488,
+                "label": "Doing an online course or accessing online learning materials"
+              },
+              {
+                "code": "HHU781CC2-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Communication and collaboration (above basic skills) - %_POP",
+                "codeID": 37381,
+                "label": "above basic"
+              },
+              {
+                "code": "HHU4212adn-%_POP--",
+                "codeDesc": "HH09 - Internet use, by activity: accessing news or books in a digital format - %_POP",
+                "codeID": 37425,
+                "label": "Accessing news or books in a digital format"
+              },
+              {
+                "code": "HHU781PS1-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Problem solving (basic skills) - %_POP",
+                "codeID": 37383,
+                "label": "basic"
+              },
+              {
+                "code": "HHU4212ase-%_POP--",
+                "codeDesc": "HH09 - Internet use, by activity: editing text documents, spreadsheets or presentations using digital tools - %_POP",
+                "codeID": 37443,
+                "label": "Editing text documents, spreadsheets or presentations"
+              },
+              {
+                "code": "HHU781m-%_POP--",
+                "codeDesc": "HH15 - ICT skills: taking security measures to protect devices and online accounts - %_POP",
+                "codeID": 34031,
+                "label": "Taking security measures to protect devices and data"
+              },
+              {
+                "code": "HHU781l-%_POP--",
+                "codeDesc": "HH15 - ICT skills: taking measures to protect privacy on your device account or app - %_POP",
+                "codeID": 33797,
+                "label": "Taking measures to protect privacy on your devices"
+              },
+              {
+                "code": "HHU781f-%_POP--",
+                "codeDesc": "HH15 - ICT skills: using spreadsheet software - %_POP",
+                "codeID": 16709,
+                "label": "Using spreadsheet software"
+              },
+              {
+                "code": "HHU781OAB-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Above basic skills in 5 of 5 skill areas - %_POP",
+                "codeID": 38331,
+                "label": "above basic"
+              },
+              {
+                "code": "HHU4212asn-%_POP--",
+                "codeDesc": "HH09 - Internet use, by activity: participating on social networking platforms - %_POP",
+                "codeID": 37470,
+                "label": "Participating on social networking platforms"
+              },
+              {
+                "code": "HHU781PS0-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Problem solving (no skills) - %_POP",
+                "codeID": 37382,
+                "label": "below basic"
+              },
+              {
+                "code": "HHU4212ash-%_POP--",
+                "codeDesc": "HH09 - Internet use, by activity: seeking health information (on injury, disease, nutrition, etc.) - %_POP",
+                "codeID": 37416,
+                "label": "Finding health information"
+              },
+              {
+                "code": "HHU781i-%_POP--",
+                "codeDesc": "HH15 - ICT skills: connecting new devices - %_POP",
+                "codeID": 16718,
+                "label": "Connecting new devices"
+              },
+              {
+                "code": "HHU781p-%_POP--",
+                "codeDesc": "HH15 - ICT skills: creating content combining different digital media - %_POP",
+                "codeID": 16736,
+                "label": "Creating content combing different digital media"
+              },
+              {
+                "code": "HHU781O1-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Basic skills in 0_1 of 5 skill areas - %_POP",
+                "codeID": 37971,
+                "label": "Overall ICT skill level"
+              },
+              {
+                "code": "HHU781v-%_POP--",
+                "codeDesc": "HH15 - ICT skills: verifying the truthfulness of information found online - %_POP",
+                "codeID": 33719,
+                "label": "Verifying the truthfulness of information found online"
+              },
+              {
+                "code": "HHU781d-%_POP--",
+                "codeDesc": "HH15 - ICT skills: duplicating or moving data, information and content in digital environments - %_POP",
+                "codeID": 16691,
+                "label": "Duplicating or moving data, information and content"
+              },
+              {
+                "code": "HHU781w-%_POP--",
+                "codeDesc": "HH15 - ICT skills: programming or coding in digital environments - %_POP",
+                "codeID": 16754,
+                "label": "Programming or coding in digital environments"
+              },
+              {
+                "code": "HHU781OBB-%_POP--",
+                "codeDesc": "HH15 - Individuals with ICT skills, by skill level: Internet users with below basic overall ICT skills - %_POP",
+                "codeID": 39333,
+                "label": "below basic"
+              },
+              {
+                "code": "HHU4212ap-%_POP--",
+                "codeDesc": "HH09 - Internet use, by activity: purchasing or ordering goods or services - %_POP",
+                "codeID": 37497,
+                "label": "Purchasing or ordering goods or services"
+              },
+              {
+                "code": "HHU4212apv-%_POP--",
+                "codeDesc": "HH09 - Internet use, by activity: taking part in consultations via the Internet to define civic or social issues - %_POP",
+                "codeID": 37479,
+                "label": "Taking part in consultations via the Internet or video calls"
+              },
+              {
+                "code": "HHU781DCC0-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Digital content creation (no skills) - %_POP",
+                "codeID": 37376,
+                "label": "below basic"
+              },
+              {
+                "code": "HHU781O3-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Basic skills in 3 of 5 skill areas - %_POP",
+                "codeID": 38151,
+                "label": "3 of 5 basic"
+              },
+              {
+                "code": "HHU781CC1-%_POP--",
+                "codeDesc": "HH15 - ICT skills: Communication and collaboration (basic skills) - %_POP",
+                "codeID": 37380,
+                "label": "basic"
+              },
+              {
+                "code": "HHU781s-%_POP--",
+                "codeDesc": "HH15 - ICT skills: installing software or apps - %_POP",
+                "codeID": 16727,
+                "label": "Installing software or apps"
+              }
+            ],
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 1,
+            "isCollection": true,
+            "label": "Individuals with ICT skills",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 8989,
+            "database": {
+              "databaseID": 8,
+              "databaseName": "ITU Households Database",
+              "databaseType": "IDA",
+              "datasetShortName": "HOUSEHOLDS",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 8,
+            "indicatorSort": 9,
+            "isCollection": false,
+            "label": "Proportion of households with electricity",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 260,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 11,
+            "isCollection": false,
+            "label": "Total population",
+            "seriesType": "base"
+          },
+          {
+            "codeID": 265,
+            "database": {
+              "databaseID": 1,
+              "databaseName": "ITU World Telecommunication Indicators Database",
+              "databaseType": "IDA",
+              "datasetShortName": "WTI",
+              "datasetType": "Quantitative",
+              "external": false
+            },
+            "databaseID": 1,
+            "indicatorSort": 12,
+            "isCollection": false,
+            "label": "Persons per household",
+            "seriesType": "base"
+          }
+        ],
+        "subCategory": "Society",
+        "subCategorySort": 5
+      }
+    ]
+  }
+]

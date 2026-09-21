@@ -1,0 +1,131 @@
+{
+  "aoi": {
+    "measurement_bounds_wgs84": [
+      101.591714,
+      3.056521009999999,
+      101.6133256,
+      3.0797618900000003
+    ],
+    "name": "Sunway University dense urban cellular pilot, Selangor, Malaysia",
+    "site_bounds_wgs84": [
+      101.5920181,
+      3.057131570000001,
+      101.6132802,
+      3.0789034899999996
+    ]
+  },
+  "duplicate_tower_ids": 0,
+  "generated_at": "2026-08-11T15:59:02.291699+00:00",
+  "intentional_unresolved_fields": {
+    "age_years": "no tower installation-date source; first observation is not installation",
+    "flash_density": "not usable at this AOI grain without authenticated NASA acquisition"
+  },
+  "mendeley": {
+    "archive_sha256": "a6610c251ce9fe55ffdc7f49d0d171023acc0f7d794621f73958aa7991263c0a",
+    "files": {
+      "README.txt": {
+        "bytes": 2721,
+        "sha256": "f041ffae0508b675eca415366005bc582d0020d20f736ef3dc46550fb237fbe3"
+      },
+      "preprocessing.py": {
+        "bytes": 30357,
+        "sha256": "d72f5d4ae3b5421eb309f1bcbad5570fa859d2b6eef0cc567e193db0f517e05f"
+      },
+      "processed_dataset.csv": {
+        "bytes": 8888790,
+        "sha256": "f5e9593012fb3ea968af220db67e2ef7ac8e16ea64215360ab1b90982761b25f"
+      },
+      "raw_dataset.csv": {
+        "bytes": 8231217,
+        "sha256": "aaab9e0406ce54a2b6ee2aad263b297416d219a5a02d46a58b0603b4cbb7e2b7"
+      }
+    },
+    "processed_rows": 30925,
+    "raw_columns": 51,
+    "raw_rows": 30925
+  },
+  "missing_by_model_column": {
+    "age_years": 132,
+    "dist_power_m": 0,
+    "dist_water_m": 0,
+    "exposed_pop": 0,
+    "flash_density": 132,
+    "hand_m": 0,
+    "lat": 0,
+    "lon": 0,
+    "radio": 0,
+    "slope_deg": 0,
+    "tower_id": 0,
+    "tri": 0
+  },
+  "model_contract_complete": false,
+  "numeric_ranges": {
+    "dist_power_m": {
+      "max": 1085.82547,
+      "min": 17.319004
+    },
+    "dist_water_m": {
+      "max": 682.80859,
+      "min": 25.152941
+    },
+    "exposed_pop": {
+      "max": 8527.0,
+      "min": 4815.09
+    },
+    "hand_m": {
+      "max": 15.962903,
+      "min": 0.0
+    },
+    "slope_deg": {
+      "max": 21.72236,
+      "min": 0.450734
+    },
+    "tri": {
+      "max": 28.98094,
+      "min": 1.052341
+    }
+  },
+  "osm": {
+    "bounds_wgs84": [
+      101.5420181,
+      3.007131570000001,
+      101.6632802,
+      3.1289034899999995
+    ],
+    "classified_elements": {
+      "communications": 10,
+      "power": 310,
+      "water": 805
+    },
+    "elements": 1125,
+    "power_geometry_paths": 300,
+    "timestamp": "2026-08-11T15:39:59Z",
+    "water_geometry_paths": 788
+  },
+  "rows": 132,
+  "sites": {
+    "duplicate_full_measurement_rows": 0,
+    "first_measurement": "2024.12.03_11.30.19",
+    "last_measurement": "2025.04.02_14.30.31",
+    "measurement_rows": 30925,
+    "operator_sites": 132,
+    "operators_anonymized": 3,
+    "physical_coordinate_locations": 84,
+    "radio_counts_sites": {
+      "LTE": 41,
+      "NR": 91
+    },
+    "sessions": 23,
+    "technology_counts_measurements": {
+      "4G": 9893,
+      "5G": 21032
+    }
+  },
+  "unique_tower_ids": 132,
+  "worldpop": {
+    "aggregation": "1 km square centered on site",
+    "resolution": "100m",
+    "unique_queries": 84,
+    "year": 2025
+  }
+}

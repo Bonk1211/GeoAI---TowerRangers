@@ -1,0 +1,1342 @@
+{
+  "attribution": {
+    "dominant_counts": {
+      "flood": 874,
+      "power": 81,
+      "terrain": 25,
+      "vegetation": 184
+    },
+    "mean_shares": {
+      "flood": 0.4135,
+      "power": 0.1717,
+      "terrain": 0.1582,
+      "vegetation": 0.2566
+    }
+  },
+  "caveat": "SYNTHETIC. No operator or MCMC maintenance history was available for this prototype, so these records are simulated. Figures computed against them validate the evaluation pipeline, not real-world accuracy, and will change when real work orders arrive.",
+  "cv": {
+    "folds": 5,
+    "operating_point": "top-10%",
+    "scheme": "GroupKFold on ADM1 state"
+  },
+  "dataset": {
+    "base_rate": 0.2088,
+    "positives": 243,
+    "rejected_tickets": {
+      "closed_before_opened": 1,
+      "duplicate_ticket_id": 1,
+      "unknown_tower_id": 1
+    },
+    "states": 17,
+    "towers": 1164,
+    "window": [
+      "2023-08-01",
+      "2026-08-01"
+    ]
+  },
+  "demo_case_checks": {
+    "confusion_held": 7,
+    "confusion_total": 8,
+    "note": "Narrative cases are excluded from both counts on purpose: their expected_role names a lesson, not a confusion cell.",
+    "pairs": [
+      {
+        "a": "MY_N12137024408",
+        "b": "MY_N12137024409",
+        "held": true,
+        "outcomes_differ": true,
+        "risk_a": 0.0198,
+        "risk_b": 0.0294,
+        "score_gap": 0.0096,
+        "scores_close": true
+      },
+      {
+        "a": "MY_N11659562132",
+        "b": "MY_N11659562129",
+        "held": false,
+        "outcomes_differ": true,
+        "risk_a": 0.8436,
+        "risk_b": 0.6285,
+        "score_gap": 0.2151,
+        "scores_close": false
+      },
+      {
+        "a": "MY_N12137024405",
+        "b": "MY_N12137013087",
+        "held": true,
+        "outcomes_differ": true,
+        "risk_a": 0.0024,
+        "risk_b": 0.0047,
+        "score_gap": 0.0023,
+        "scores_close": true
+      },
+      {
+        "a": "MY_N13015606469",
+        "b": "MY_N13015606467",
+        "held": true,
+        "outcomes_differ": true,
+        "risk_a": 0.0049,
+        "risk_b": 0.0049,
+        "score_gap": 0.0,
+        "scores_close": true
+      },
+      {
+        "a": "MY_N12137013095",
+        "b": "MY_N12137013091",
+        "held": true,
+        "outcomes_differ": true,
+        "risk_a": 0.0078,
+        "risk_b": 0.0143,
+        "score_gap": 0.0065,
+        "scores_close": true
+      },
+      {
+        "a": "MY_W1270085208",
+        "b": "MY_W1270085203",
+        "held": true,
+        "outcomes_differ": true,
+        "risk_a": 0.0086,
+        "risk_b": 0.0115,
+        "score_gap": 0.0029,
+        "scores_close": true
+      }
+    ],
+    "pairs_held": 5,
+    "pairs_total": 6
+  },
+  "demo_case_outcomes": [
+    {
+      "actually_needed": false,
+      "case_type": "protected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_positive",
+      "in_top_decile": true,
+      "observed_role": "false_positive",
+      "partner_id": null,
+      "risk": 0.99,
+      "tower_id": "MY_N11806207720"
+    },
+    {
+      "actually_needed": false,
+      "case_type": "protected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_positive",
+      "in_top_decile": false,
+      "observed_role": "true_negative",
+      "partner_id": null,
+      "risk": 0.2663,
+      "tower_id": "MY_W1368699691"
+    },
+    {
+      "actually_needed": false,
+      "case_type": "protected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_positive",
+      "in_top_decile": true,
+      "observed_role": "false_positive",
+      "partner_id": null,
+      "risk": 0.9586,
+      "tower_id": "MY_N4193669752"
+    },
+    {
+      "actually_needed": false,
+      "case_type": "protected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_positive",
+      "in_top_decile": true,
+      "observed_role": "false_positive",
+      "partner_id": null,
+      "risk": 0.8925,
+      "tower_id": "MY_N11875484222"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "neglected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_negative",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": null,
+      "risk": 0.0049,
+      "tower_id": "MY_W1545410197"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "neglected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_negative",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": null,
+      "risk": 0.0055,
+      "tower_id": "MY_N9466091146"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "neglected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_negative",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": null,
+      "risk": 0.0112,
+      "tower_id": "MY_N11802478955"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "neglected_site",
+      "expectation_kind": "confusion",
+      "expected_role": "false_negative",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": null,
+      "risk": 0.0129,
+      "tower_id": "MY_N11388862434"
+    },
+    {
+      "actually_needed": false,
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "quiet_half",
+      "in_top_decile": false,
+      "observed_role": "true_negative",
+      "partner_id": "MY_N12137024409",
+      "risk": 0.0198,
+      "tower_id": "MY_N12137024408"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "loud_half",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": "MY_N12137024408",
+      "risk": 0.0294,
+      "tower_id": "MY_N12137024409"
+    },
+    {
+      "actually_needed": false,
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "quiet_half",
+      "in_top_decile": true,
+      "observed_role": "false_positive",
+      "partner_id": "MY_N11659562129",
+      "risk": 0.8436,
+      "tower_id": "MY_N11659562132"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "loud_half",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": "MY_N11659562132",
+      "risk": 0.6285,
+      "tower_id": "MY_N11659562129"
+    },
+    {
+      "actually_needed": false,
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "quiet_half",
+      "in_top_decile": false,
+      "observed_role": "true_negative",
+      "partner_id": "MY_N12137013087",
+      "risk": 0.0024,
+      "tower_id": "MY_N12137024405"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "loud_half",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": "MY_N12137024405",
+      "risk": 0.0047,
+      "tower_id": "MY_N12137013087"
+    },
+    {
+      "actually_needed": false,
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "quiet_half",
+      "in_top_decile": false,
+      "observed_role": "true_negative",
+      "partner_id": "MY_N13015606467",
+      "risk": 0.0049,
+      "tower_id": "MY_N13015606469"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "loud_half",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": "MY_N13015606469",
+      "risk": 0.0049,
+      "tower_id": "MY_N13015606467"
+    },
+    {
+      "actually_needed": false,
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "quiet_half",
+      "in_top_decile": false,
+      "observed_role": "true_negative",
+      "partner_id": "MY_N12137013091",
+      "risk": 0.0078,
+      "tower_id": "MY_N12137013095"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "loud_half",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": "MY_N12137013095",
+      "risk": 0.0143,
+      "tower_id": "MY_N12137013091"
+    },
+    {
+      "actually_needed": false,
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "quiet_half",
+      "in_top_decile": false,
+      "observed_role": "true_negative",
+      "partner_id": "MY_W1270085203",
+      "risk": 0.0086,
+      "tower_id": "MY_W1270085208"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "twin_pair",
+      "expectation_kind": "pair",
+      "expected_role": "loud_half",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": "MY_W1270085208",
+      "risk": 0.0115,
+      "tower_id": "MY_W1270085203"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "remediated_site",
+      "expectation_kind": "narrative",
+      "expected_role": "label_is_lossy",
+      "in_top_decile": true,
+      "observed_role": "true_positive",
+      "partner_id": null,
+      "risk": 0.9003,
+      "tower_id": "MY_N8327095826"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "remediated_site",
+      "expectation_kind": "narrative",
+      "expected_role": "label_is_lossy",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": null,
+      "risk": 0.3266,
+      "tower_id": "MY_N3902995326"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "remediated_site",
+      "expectation_kind": "narrative",
+      "expected_role": "label_is_lossy",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": null,
+      "risk": 0.4227,
+      "tower_id": "MY_N8923088437"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "new_commission",
+      "expectation_kind": "narrative",
+      "expected_role": "denominator_matters",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": null,
+      "risk": 0.4205,
+      "tower_id": "MY_N6354464187"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "new_commission",
+      "expectation_kind": "narrative",
+      "expected_role": "denominator_matters",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": null,
+      "risk": 0.0159,
+      "tower_id": "MY_N12137013097"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "new_commission",
+      "expectation_kind": "narrative",
+      "expected_role": "denominator_matters",
+      "in_top_decile": true,
+      "observed_role": "true_positive",
+      "partner_id": null,
+      "risk": 0.9456,
+      "tower_id": "MY_N3902995318"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "catastrophic",
+      "expectation_kind": "narrative",
+      "expected_role": "count_is_not_cost",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": null,
+      "risk": 0.7259,
+      "tower_id": "MY_N8068563589"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "catastrophic",
+      "expectation_kind": "narrative",
+      "expected_role": "count_is_not_cost",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": null,
+      "risk": 0.0569,
+      "tower_id": "MY_N12116945444"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "monsoon_locked",
+      "expectation_kind": "narrative",
+      "expected_role": "constraint_visible",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": null,
+      "risk": 0.6453,
+      "tower_id": "MY_N6039478983"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "monsoon_locked",
+      "expectation_kind": "narrative",
+      "expected_role": "constraint_visible",
+      "in_top_decile": true,
+      "observed_role": "true_positive",
+      "partner_id": null,
+      "risk": 0.8864,
+      "tower_id": "MY_N12309364295"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "monsoon_locked",
+      "expectation_kind": "narrative",
+      "expected_role": "constraint_visible",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": null,
+      "risk": 0.3485,
+      "tower_id": "MY_N6457937009"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "lone_territory",
+      "expectation_kind": "narrative",
+      "expected_role": "capacity_edge",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": null,
+      "risk": 0.0047,
+      "tower_id": "MY_W1317650252"
+    },
+    {
+      "actually_needed": true,
+      "case_type": "enclave",
+      "expectation_kind": "narrative",
+      "expected_role": "territory_assignment",
+      "in_top_decile": false,
+      "observed_role": "false_negative",
+      "partner_id": null,
+      "risk": 0.0081,
+      "tower_id": "MY_W728820002"
+    }
+  ],
+  "encroachment_note": "The synthetic label deliberately carries measured EVI growth so change detection can be tested rather than guaranteed null. This grades our own generator, not real-world maintenance. Missing change adds no charge.",
+  "factor_groups": {
+    "flood": [
+      "hand_m",
+      "dist_water_m",
+      "soil_moisture_mean",
+      "soil_moisture_p90"
+    ],
+    "power": [
+      "dist_power_m"
+    ],
+    "terrain": [
+      "slope_deg",
+      "tri",
+      "elevation_m",
+      "clay_pct"
+    ],
+    "vegetation": [
+      "evi_median",
+      "evi_p10",
+      "land_cover_class"
+    ]
+  },
+  "features": [
+    "hand_m",
+    "dist_water_m",
+    "soil_moisture_mean",
+    "soil_moisture_p90",
+    "slope_deg",
+    "tri",
+    "elevation_m",
+    "clay_pct",
+    "evi_median",
+    "evi_p10",
+    "land_cover_class",
+    "dist_power_m"
+  ],
+  "generator_version": "2.3",
+  "leak_check": {
+    "beats_index_by": 0.4138,
+    "gap_to_oracle": 0.2012,
+    "verdict": "clear"
+  },
+  "not_a_failure_label": "The target is 'a corrective work order was raised'. It is not an outage, a fault, or a probability of one.",
+  "scorers": [
+    {
+      "at_top_10_percent": {
+        "accuracy": 0.8608,
+        "balanced_accuracy": 0.6939,
+        "f1": 0.55,
+        "false_negative": 144,
+        "false_positive": 18,
+        "lift_over_random": 4.053,
+        "precision": 0.8462,
+        "recall": 0.4074,
+        "selected_fraction": 0.1005,
+        "specificity": 0.9805,
+        "threshold": 0.755632,
+        "true_negative": 903,
+        "true_positive": 99
+      },
+      "ranking": {
+        "base_rate": 0.20876,
+        "pr_auc": 0.7509,
+        "roc_auc": 0.8971
+      },
+      "scorer": "lightgbm"
+    },
+    {
+      "at_top_10_percent": {
+        "accuracy": 0.7766,
+        "balanced_accuracy": 0.5665,
+        "f1": 0.2778,
+        "false_negative": 193,
+        "false_positive": 67,
+        "lift_over_random": 2.047,
+        "precision": 0.4274,
+        "recall": 0.2058,
+        "selected_fraction": 0.1005,
+        "specificity": 0.9273,
+        "threshold": 0.970235,
+        "true_negative": 854,
+        "true_positive": 50
+      },
+      "ranking": {
+        "base_rate": 0.20876,
+        "pr_auc": 0.3371,
+        "roc_auc": 0.6845
+      },
+      "scorer": "ahp_index"
+    },
+    {
+      "at_top_10_percent": {
+        "accuracy": 0.8918,
+        "balanced_accuracy": 0.7407,
+        "f1": 0.65,
+        "false_negative": 126,
+        "false_positive": 0,
+        "lift_over_random": 4.79,
+        "precision": 1.0,
+        "recall": 0.4815,
+        "selected_fraction": 0.1005,
+        "specificity": 1.0,
+        "threshold": 4.981571,
+        "true_negative": 921,
+        "true_positive": 117
+      },
+      "ranking": {
+        "base_rate": 0.20876,
+        "pr_auc": 0.9521,
+        "roc_auc": 0.9845
+      },
+      "scorer": "oracle"
+    },
+    {
+      "at_top_10_percent": {
+        "accuracy": 0.7405,
+        "balanced_accuracy": 0.524,
+        "f1": 0.1968,
+        "false_negative": 206,
+        "false_positive": 96,
+        "lift_over_random": 1.333,
+        "precision": 0.2782,
+        "recall": 0.1523,
+        "selected_fraction": 0.1143,
+        "specificity": 0.8958,
+        "threshold": -6e-05,
+        "true_negative": 825,
+        "true_positive": 37
+      },
+      "ranking": {
+        "base_rate": 0.20876,
+        "pr_auc": 0.2824,
+        "roc_auc": 0.6195
+      },
+      "scorer": "hand_only"
+    }
+  ],
+  "second_opinion": {
+    "blend_sweep": [
+      {
+        "pr_auc": 0.7531,
+        "roc_auc": 0.9004,
+        "w_novelty": 0.0
+      },
+      {
+        "pr_auc": 0.7345,
+        "roc_auc": 0.8977,
+        "w_novelty": 0.1
+      },
+      {
+        "pr_auc": 0.7117,
+        "roc_auc": 0.8909,
+        "w_novelty": 0.2
+      },
+      {
+        "pr_auc": 0.68,
+        "roc_auc": 0.8791,
+        "w_novelty": 0.3
+      },
+      {
+        "pr_auc": 0.6078,
+        "roc_auc": 0.8413,
+        "w_novelty": 0.5
+      }
+    ],
+    "blend_weight": 0.25,
+    "change_blend_sweep": [
+      {
+        "budget": 116,
+        "delta_f1": 0.0,
+        "f1": 0.5738,
+        "in_band_auc": 0.6072,
+        "model_auc": 0.6745,
+        "phase": "sweep",
+        "seed": 0,
+        "tp": 103,
+        "w_change": 0.0
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0223,
+        "f1": 0.5961,
+        "in_band_auc": 0.6072,
+        "model_auc": 0.6745,
+        "phase": "sweep",
+        "seed": 0,
+        "tp": 107,
+        "w_change": 0.1
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0,
+        "f1": 0.5738,
+        "in_band_auc": 0.6072,
+        "model_auc": 0.6745,
+        "phase": "sweep",
+        "seed": 0,
+        "tp": 103,
+        "w_change": 0.15
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0111,
+        "f1": 0.5627,
+        "in_band_auc": 0.6072,
+        "model_auc": 0.6745,
+        "phase": "sweep",
+        "seed": 0,
+        "tp": 101,
+        "w_change": 0.2
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0167,
+        "f1": 0.5571,
+        "in_band_auc": 0.6072,
+        "model_auc": 0.6745,
+        "phase": "sweep",
+        "seed": 0,
+        "tp": 100,
+        "w_change": 0.3
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0,
+        "f1": 0.5778,
+        "in_band_auc": 0.5546,
+        "model_auc": 0.678,
+        "phase": "sweep",
+        "seed": 1,
+        "tp": 104,
+        "w_change": 0.0
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0056,
+        "f1": 0.5722,
+        "in_band_auc": 0.5546,
+        "model_auc": 0.678,
+        "phase": "sweep",
+        "seed": 1,
+        "tp": 103,
+        "w_change": 0.1
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0111,
+        "f1": 0.5667,
+        "in_band_auc": 0.5546,
+        "model_auc": 0.678,
+        "phase": "sweep",
+        "seed": 1,
+        "tp": 102,
+        "w_change": 0.15
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0222,
+        "f1": 0.5556,
+        "in_band_auc": 0.5546,
+        "model_auc": 0.678,
+        "phase": "sweep",
+        "seed": 1,
+        "tp": 100,
+        "w_change": 0.2
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0333,
+        "f1": 0.5444,
+        "in_band_auc": 0.5546,
+        "model_auc": 0.678,
+        "phase": "sweep",
+        "seed": 1,
+        "tp": 98,
+        "w_change": 0.3
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0,
+        "f1": 0.6077,
+        "in_band_auc": 0.6106,
+        "model_auc": 0.698,
+        "phase": "sweep",
+        "seed": 2,
+        "tp": 110,
+        "w_change": 0.0
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0055,
+        "f1": 0.6022,
+        "in_band_auc": 0.6106,
+        "model_auc": 0.698,
+        "phase": "sweep",
+        "seed": 2,
+        "tp": 109,
+        "w_change": 0.1
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0055,
+        "f1": 0.6022,
+        "in_band_auc": 0.6106,
+        "model_auc": 0.698,
+        "phase": "sweep",
+        "seed": 2,
+        "tp": 109,
+        "w_change": 0.15
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.011,
+        "f1": 0.5967,
+        "in_band_auc": 0.6106,
+        "model_auc": 0.698,
+        "phase": "sweep",
+        "seed": 2,
+        "tp": 108,
+        "w_change": 0.2
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0276,
+        "f1": 0.5801,
+        "in_band_auc": 0.6106,
+        "model_auc": 0.698,
+        "phase": "sweep",
+        "seed": 2,
+        "tp": 105,
+        "w_change": 0.3
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0,
+        "f1": 0.5938,
+        "in_band_auc": 0.6273,
+        "model_auc": 0.6301,
+        "phase": "sweep",
+        "seed": 3,
+        "tp": 106,
+        "w_change": 0.0
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0056,
+        "f1": 0.5882,
+        "in_band_auc": 0.6273,
+        "model_auc": 0.6301,
+        "phase": "sweep",
+        "seed": 3,
+        "tp": 105,
+        "w_change": 0.1
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0056,
+        "f1": 0.5994,
+        "in_band_auc": 0.6273,
+        "model_auc": 0.6301,
+        "phase": "sweep",
+        "seed": 3,
+        "tp": 107,
+        "w_change": 0.15
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0056,
+        "f1": 0.5882,
+        "in_band_auc": 0.6273,
+        "model_auc": 0.6301,
+        "phase": "sweep",
+        "seed": 3,
+        "tp": 105,
+        "w_change": 0.2
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0168,
+        "f1": 0.577,
+        "in_band_auc": 0.6273,
+        "model_auc": 0.6301,
+        "phase": "sweep",
+        "seed": 3,
+        "tp": 103,
+        "w_change": 0.3
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0,
+        "f1": 0.5826,
+        "in_band_auc": 0.6138,
+        "model_auc": 0.665,
+        "phase": "sweep",
+        "seed": 4,
+        "tp": 104,
+        "w_change": 0.0
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0112,
+        "f1": 0.5938,
+        "in_band_auc": 0.6138,
+        "model_auc": 0.665,
+        "phase": "sweep",
+        "seed": 4,
+        "tp": 106,
+        "w_change": 0.1
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0168,
+        "f1": 0.5994,
+        "in_band_auc": 0.6138,
+        "model_auc": 0.665,
+        "phase": "sweep",
+        "seed": 4,
+        "tp": 107,
+        "w_change": 0.15
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0168,
+        "f1": 0.5658,
+        "in_band_auc": 0.6138,
+        "model_auc": 0.665,
+        "phase": "sweep",
+        "seed": 4,
+        "tp": 101,
+        "w_change": 0.2
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0168,
+        "f1": 0.5658,
+        "in_band_auc": 0.6138,
+        "model_auc": 0.665,
+        "phase": "sweep",
+        "seed": 4,
+        "tp": 101,
+        "w_change": 0.3
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0,
+        "f1": 0.577,
+        "in_band_auc": 0.6314,
+        "model_auc": 0.6493,
+        "phase": "verification",
+        "seed": 5,
+        "tp": 103,
+        "w_change": 0.0
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0224,
+        "f1": 0.5994,
+        "in_band_auc": 0.6314,
+        "model_auc": 0.6493,
+        "phase": "verification",
+        "seed": 5,
+        "tp": 107,
+        "w_change": 0.1
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0168,
+        "f1": 0.5938,
+        "in_band_auc": 0.6314,
+        "model_auc": 0.6493,
+        "phase": "verification",
+        "seed": 5,
+        "tp": 106,
+        "w_change": 0.15
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0112,
+        "f1": 0.5882,
+        "in_band_auc": 0.6314,
+        "model_auc": 0.6493,
+        "phase": "verification",
+        "seed": 5,
+        "tp": 105,
+        "w_change": 0.2
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0112,
+        "f1": 0.5658,
+        "in_band_auc": 0.6314,
+        "model_auc": 0.6493,
+        "phase": "verification",
+        "seed": 5,
+        "tp": 101,
+        "w_change": 0.3
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0,
+        "f1": 0.5785,
+        "in_band_auc": 0.5904,
+        "model_auc": 0.6882,
+        "phase": "verification",
+        "seed": 6,
+        "tp": 105,
+        "w_change": 0.0
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0,
+        "f1": 0.5785,
+        "in_band_auc": 0.5904,
+        "model_auc": 0.6882,
+        "phase": "verification",
+        "seed": 6,
+        "tp": 105,
+        "w_change": 0.1
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0055,
+        "f1": 0.573,
+        "in_band_auc": 0.5904,
+        "model_auc": 0.6882,
+        "phase": "verification",
+        "seed": 6,
+        "tp": 104,
+        "w_change": 0.15
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0,
+        "f1": 0.5785,
+        "in_band_auc": 0.5904,
+        "model_auc": 0.6882,
+        "phase": "verification",
+        "seed": 6,
+        "tp": 105,
+        "w_change": 0.2
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.022,
+        "f1": 0.5565,
+        "in_band_auc": 0.5904,
+        "model_auc": 0.6882,
+        "phase": "verification",
+        "seed": 6,
+        "tp": 101,
+        "w_change": 0.3
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0,
+        "f1": 0.5967,
+        "in_band_auc": 0.588,
+        "model_auc": 0.6887,
+        "phase": "verification",
+        "seed": 7,
+        "tp": 108,
+        "w_change": 0.0
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0055,
+        "f1": 0.6022,
+        "in_band_auc": 0.588,
+        "model_auc": 0.6887,
+        "phase": "verification",
+        "seed": 7,
+        "tp": 109,
+        "w_change": 0.1
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0055,
+        "f1": 0.5912,
+        "in_band_auc": 0.588,
+        "model_auc": 0.6887,
+        "phase": "verification",
+        "seed": 7,
+        "tp": 107,
+        "w_change": 0.15
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0166,
+        "f1": 0.5801,
+        "in_band_auc": 0.588,
+        "model_auc": 0.6887,
+        "phase": "verification",
+        "seed": 7,
+        "tp": 105,
+        "w_change": 0.2
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0387,
+        "f1": 0.558,
+        "in_band_auc": 0.588,
+        "model_auc": 0.6887,
+        "phase": "verification",
+        "seed": 7,
+        "tp": 101,
+        "w_change": 0.3
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0,
+        "f1": 0.6201,
+        "in_band_auc": 0.5901,
+        "model_auc": 0.6754,
+        "phase": "verification",
+        "seed": 8,
+        "tp": 111,
+        "w_change": 0.0
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0,
+        "f1": 0.6201,
+        "in_band_auc": 0.5901,
+        "model_auc": 0.6754,
+        "phase": "verification",
+        "seed": 8,
+        "tp": 111,
+        "w_change": 0.1
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0112,
+        "f1": 0.6089,
+        "in_band_auc": 0.5901,
+        "model_auc": 0.6754,
+        "phase": "verification",
+        "seed": 8,
+        "tp": 109,
+        "w_change": 0.15
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0168,
+        "f1": 0.6034,
+        "in_band_auc": 0.5901,
+        "model_auc": 0.6754,
+        "phase": "verification",
+        "seed": 8,
+        "tp": 108,
+        "w_change": 0.2
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0335,
+        "f1": 0.5866,
+        "in_band_auc": 0.5901,
+        "model_auc": 0.6754,
+        "phase": "verification",
+        "seed": 8,
+        "tp": 105,
+        "w_change": 0.3
+      },
+      {
+        "budget": 116,
+        "delta_f1": 0.0,
+        "f1": 0.5833,
+        "in_band_auc": 0.5683,
+        "model_auc": 0.6536,
+        "phase": "verification",
+        "seed": 9,
+        "tp": 105,
+        "w_change": 0.0
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0056,
+        "f1": 0.5778,
+        "in_band_auc": 0.5683,
+        "model_auc": 0.6536,
+        "phase": "verification",
+        "seed": 9,
+        "tp": 104,
+        "w_change": 0.1
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0111,
+        "f1": 0.5722,
+        "in_band_auc": 0.5683,
+        "model_auc": 0.6536,
+        "phase": "verification",
+        "seed": 9,
+        "tp": 103,
+        "w_change": 0.15
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0333,
+        "f1": 0.55,
+        "in_band_auc": 0.5683,
+        "model_auc": 0.6536,
+        "phase": "verification",
+        "seed": 9,
+        "tp": 99,
+        "w_change": 0.2
+      },
+      {
+        "budget": 116,
+        "delta_f1": -0.0389,
+        "f1": 0.5444,
+        "in_band_auc": 0.5683,
+        "model_auc": 0.6536,
+        "phase": "verification",
+        "seed": 9,
+        "tp": 98,
+        "w_change": 0.3
+      }
+    ],
+    "change_verdict": "Satellite change in-band AUC 0.6072 vs model 0.6745. Necessary condition failed; descriptive only, weight 0.0.",
+    "change_weight": 0.0,
+    "detectors_in_escalation_band": {
+      "isolation_forest": {
+        "delta": -0.1804,
+        "in_band_auc": 0.4962,
+        "may_gate": false,
+        "model_auc": 0.6766
+      },
+      "one_sided_change": {
+        "delta": -0.0674,
+        "in_band_auc": 0.6072,
+        "may_gate": false,
+        "model_auc": 0.6745
+      },
+      "one_sided_condition": {
+        "delta": 0.1351,
+        "in_band_auc": 0.8096,
+        "may_gate": true,
+        "model_auc": 0.6745
+      }
+    },
+    "flag_coverage": {
+      "incomplete_evidence": {
+        "evaluable": true,
+        "lift": 1.198,
+        "towers": 20
+      },
+      "model_high_ground_quiet": {
+        "evaluable": true,
+        "lift": null,
+        "towers": 0
+      },
+      "model_low_ground_active": {
+        "evaluable": true,
+        "lift": 0.171,
+        "towers": 56
+      },
+      "monsoon_blocked": {
+        "evaluable": false,
+        "lift": null,
+        "towers": 0
+      },
+      "out_of_crew_range": {
+        "evaluable": false,
+        "lift": null,
+        "towers": 318
+      },
+      "storm_coupled": {
+        "evaluable": false,
+        "lift": null,
+        "towers": 0
+      },
+      "unassigned_territory": {
+        "evaluable": false,
+        "lift": null,
+        "towers": 4
+      },
+      "unmapped_asset": {
+        "evaluable": false,
+        "lift": null,
+        "towers": 1119
+      }
+    },
+    "matched_budget": {
+      "budget": 116,
+      "delta_f1": 0.0278,
+      "ensemble": {
+        "f1": 0.5738,
+        "fp": 13,
+        "n": 116,
+        "precision": 0.8879,
+        "recall": 0.4239,
+        "tp": 103
+      },
+      "lower_cut": {
+        "f1": 0.546,
+        "fp": 18,
+        "n": 116,
+        "precision": 0.8448,
+        "recall": 0.4033,
+        "tp": 98
+      }
+    },
+    "note": "No second opinion touches `risk`. Condition enters `decision`: the one-sided condition score over the 30-day telemetry block, which the supervised model cannot train on because its label covers 36 months. It enters as a rank BLEND, not a gate: a gate reorders nothing and scored -0.0125 F1 on held-out seeds against the blend's +0.0191. The isolation forest is descriptive — it scores |deviation| and need is monotone. Satellite change enters priority only when its measured necessary condition passes.",
+    "novelty": {
+      "pr_auc": 0.4037,
+      "roc_auc": 0.6938,
+      "scorable_towers": 1144,
+      "spearman_with_model": 0.4837
+    },
+    "novelty_by_quintile": [
+      {
+        "base_rate": 0.0742,
+        "calibration_error": 0.0178,
+        "n": 229,
+        "quintile": 1,
+        "roc_auc": 0.6892
+      },
+      {
+        "base_rate": 0.1485,
+        "calibration_error": 0.0004,
+        "n": 229,
+        "quintile": 2,
+        "roc_auc": 0.8971
+      },
+      {
+        "base_rate": 0.1535,
+        "calibration_error": 0.0033,
+        "n": 228,
+        "quintile": 3,
+        "roc_auc": 0.9448
+      },
+      {
+        "base_rate": 0.2707,
+        "calibration_error": 0.028,
+        "n": 229,
+        "quintile": 4,
+        "roc_auc": 0.9421
+      },
+      {
+        "base_rate": 0.393,
+        "calibration_error": 0.0461,
+        "n": 229,
+        "quintile": 5,
+        "roc_auc": 0.8286
+      }
+    ],
+    "swapped_in_hits": 8,
+    "telemetry_roc_auc": 0.9548,
+    "towers_swapped_in": 12,
+    "verdict": "ensemble_beats_matched_budget"
+  },
+  "split_check": {
+    "grouped_pr_auc": 0.7509,
+    "inflation": 0.0269,
+    "random_kfold_pr_auc": 0.7778
+  },
+  "synthetic_labels": true,
+  "trained_at": "2026-09-12T02:29:52.126290+00:00",
+  "traps_removed": {
+    "latent_strength": 0.15,
+    "note": "Planted traps were removed and the generator retuned for accuracy. The headline below is higher because the LABEL is more learnable, not because the model improved.",
+    "observable_log_spread": 5.5,
+    "removed": [
+      "interaction_clay_wet",
+      "nonmonotone_evi",
+      "threshold_power",
+      "state_effect",
+      "leakage_bait"
+    ]
+  }
+}

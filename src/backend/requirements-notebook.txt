@@ -1,0 +1,14 @@
+# Training-only dependencies for notebooks/maintenance_need.ipynb. Kept
+# separate from requirements.txt and requirements-dataset.txt for the same
+# reason as requirements-flood.txt: the API must still boot without them.
+# lightgbm itself lives in requirements-dataset.txt, not here — the adapter's
+# serving path (adapter/ml_source.py -> model/maintenance_need.py) imports it
+# too, so it cannot be training-only.
+#
+#   pip install -r src/backend/requirements-dataset.txt
+#   pip install -r src/backend/requirements-notebook.txt
+#   cd notebooks && jupyter nbconvert --to notebook --execute --inplace maintenance_need.ipynb
+#   jupyter nbconvert --clear-output --inplace maintenance_need.ipynb   # before every commit
+jupyter>=1.0
+nbconvert>=7.16
+matplotlib>=3.8
